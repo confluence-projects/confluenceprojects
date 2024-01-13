@@ -1,6 +1,7 @@
 project:
   type: website
-
+  output-dir: docs
+  
 website:
   title: "The Confluence Projects"
   favicon: "img/confluence2.png"
@@ -28,6 +29,3 @@ format:
 
 editor: visual
 
-project:
-  type: website
-  output-dir: docs

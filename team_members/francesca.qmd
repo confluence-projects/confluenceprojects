@@ -1,0 +1,17 @@
+---
+title: "Francesca Dominici, PhD"
+subtitle: "Principal Investigator"
+description: "Professor of Statistics and Director, Harvard Data Science"
+author: "Chirag"
+date: "12/11/2022"
+image: /img/francesca.png
+categories:
+  - geospatial analytics
+  - air pollution
+  - climate change
+  - machine-learning
+  - data-science
+about:
+  template: trestles
+  image: /img/francesca.png
+---

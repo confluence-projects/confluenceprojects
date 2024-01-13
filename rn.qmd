@@ -1,0 +1,9 @@
+---
+title: "News and Posts"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  categories: true
+  fields: [image, date, title, author, reading-time]
+---

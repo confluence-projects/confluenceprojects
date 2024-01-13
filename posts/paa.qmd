@@ -1,0 +1,40 @@
+---
+title: "Hands on tutorials at the PAA"
+description: "Join us at Population Association of America Annual Meeting in Columbus, Ohio!"
+author: "Pedram Fard, Hossein Estiri, and Chirag Patel"
+date: "1/1/2024"
+date-modified: "1/11/2024"
+---
+
+![](img/grid_ohio.png){style="float: right;" fig-alt="PAA Ohio" fig-align="right" width="300"}
+
+Interested in the data we are creating? Come join us at PAA to get a hands-on overview!
+
+-   Dates: April 17-20, 2024
+-   Location: Columbus, Ohio
+-   Conference website: <https://www.populationassociation.org/paa2024/home>
+
+# Organizers:
+
+-   Pedram Fard, Department of Biomedical Informatics, Harvard Medical School, USA
+-   Risto Conte Keivabu, Max Planck Institute for Demographic Research (MPIDR), Germany
+-   Vy Kim Nguyen, Department of Biomedical Informatics, Harvard Medical School, USA
+-   Hossein Estiri, Department of Medicine, Harvard Medical School, USA
+-   Chirag J Patel, Department of Biomedical Informatics, Harvard Medical School, USA
+-   Contact person: Pedram Fard (Pedram_Fard<at>hms.harvard.edu)
+
+Extreme climate events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of climate events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities of extreme climate impacts, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.
+
+## Workshop objectives and outcomes:
+
+The objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme climate events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for climate related demographic research.
+
+## Workshop activities and schedule:
+
+The half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.
+
+1.  First, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).
+
+2.  Second, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).
+
+3.  Third, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes).

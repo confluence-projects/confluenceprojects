@@ -1,0 +1,15 @@
+---
+title: "Pedram Fard, PhD"
+subtitle: "Data Scientist"
+description: "Post-doctoral associate in data science"
+author: "Chirag"
+date: "1/11/2024"
+image: /img/pedram.jpg
+categories:
+  - geospatial analytics
+  - machine-learning
+  - data-science
+about:
+  template: trestles
+  image: /img/pedram.jpg
+---

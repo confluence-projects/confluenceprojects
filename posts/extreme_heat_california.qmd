@@ -1,0 +1,19 @@
+---
+title: "Estimating Extreme Heat Events in California"
+description: "Moving beyond nearest neighbors"
+author: "Pedram Fard"
+date: "1/1/2023"
+date-modified: "1/11/2023"
+---
+
+![A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).](img/california_dalle.png)
+
+## Summary
+
+Studying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.
+
+## 
+
+Citation:
+
+[Fard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, *Environmental Research* 2022](https://www.sciencedirect.com/science/article/pii/S0013935123017887)

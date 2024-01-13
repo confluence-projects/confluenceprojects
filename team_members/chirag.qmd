@@ -1,0 +1,18 @@
+---
+title: "Chirag J Patel, PhD"
+subtitle: "Principal Investigator"
+description: "Associate Professor of Biomedical Informatics"
+author: "Chirag"
+date: "12/11/2022"
+image: /img/chirag.jpg
+categories:
+  - exposome
+  - genome
+  - meta-research
+  - diabetes
+  - machine-learning
+  - data-science
+about:
+  template: trestles
+  image: /img/chirag.jpg
+---

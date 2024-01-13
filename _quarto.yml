@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "The Confluence Projects"
+  favicon: "img/confluence2.png"
+  #google-analytics: ""
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: data.qmd
+        text: Resources
+      - href: team.qmd
+        text: Team
+      - href: rn.qmd
+        text: News & Posts
+  search: true
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    mainfont: "Helvetica Neue"
+    fontsize: 1.1em
+
+editor: visual
+
+project:
+  type: website
+  output-dir: docs

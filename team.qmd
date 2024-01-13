@@ -1,0 +1,29 @@
+---
+title: "Confluence Team"
+listing:
+  id: members
+  contents: team_members
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, description]
+  categories: false
+  feed: true
+---
+
+## Team Members
+
+::: {#members}
+:::
+
+## Institutes
+
+|                                                   |                                |
+|---------------------------------------------------|--------------------------------|
+| ![](img/Blavatnikbioinformatics.png){width="300"} | ![](img/chan.png){width="500"} |
+| ![](img/mgb.png)                                  | ![](img/hdsi.png)              |
+
+## Support
+
+![](img/nia.png){width="200" height="56"}
+
+National Institutes of Health, National Institute on Aging [(NIA RF1: Patel, Estiri, and Dominici)](https://reporter.nih.gov/project-details/10448053)

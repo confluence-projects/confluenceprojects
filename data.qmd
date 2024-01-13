@@ -1,0 +1,19 @@
+---
+title: "Data, Code and Papers"
+---
+
+-   Fard et al., **GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022** (Submitted)
+
+    -   **Github**: <https://github.com/epedram/us_ehe_ece>
+
+    -   **Data (Dataverse)**: <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ>.
+
+    -   **Data (Figshare)**: <https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447>
+
+-   Fard et al., [**Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021**](https://www.sciencedirect.com/science/article/pii/S0013935123017887)**, *Environmental Research* 2022**
+
+    -   **Github: <https://github.com/epedram/ehmi>**
+
+-   Estiri et al., [**Temporal characterization of Alzheimer's Disease with sequences of clinical records**](https://doi.org/10.1016%2Fj.ebiom.2023.104629)**, *EBioMedicine*2023**
+
+    -   **Github:** <https://hestiri.github.io/mlho/>

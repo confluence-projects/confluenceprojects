@@ -4,6 +4,8 @@ description: "Join us at Population Association of America Annual Meeting in Col
 author: "Pedram Fard, Hossein Estiri, and Chirag Patel"
 date: "1/1/2024"
 date-modified: "1/11/2024"
+categories:
+  - news
 ---
 
 ![](img/grid_ohio.png){style="float: right;" fig-alt="PAA Ohio" fig-align="right" width="300"}

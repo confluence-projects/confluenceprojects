@@ -4,6 +4,9 @@ description: "Moving beyond nearest neighbors"
 author: "Pedram Fard"
 date: "1/1/2023"
 date-modified: "1/11/2023"
+categories:
+  - news
+  - california
 ---
 
 ![A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).](img/california_dalle.png)

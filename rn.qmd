@@ -5,5 +5,6 @@ listing:
   sort: "date desc"
   type: table
   categories: true
+  feed: true
   fields: [image, date, title, author, reading-time]
 ---

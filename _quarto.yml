@@ -4,8 +4,9 @@ project:
   
 website:
   title: "The Confluence Projects"
+  description: "A great sample blog"
   favicon: "img/confluence2.png"
-  #google-analytics: ""
+  site-url: http://www.confluence-project.org
   navbar:
     background: light
     left:

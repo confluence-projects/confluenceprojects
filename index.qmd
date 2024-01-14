@@ -8,13 +8,15 @@ We study the ***confluence*** of the geospatial exposome, such as extreme heat a
 
 ## A confluence of factors in aging and health outcomes
 
-Nearly ten percent of Americans over the age of 65 are grappling with challenges linked to aging. This demographic, which includes a substantial number of Medicare beneficiaries, is notably vulnerable to health issues. This concern is growing as the population of older Americans is projected to nearly double by 2050. Simultaneously, the severity and frequency of extreme environmental changes, such as intense heatwaves and cold spells, are hypothesizing to intensify. These extreme weather events can significantly impact the health of older adults, leading to increased mortality and a higher demand for healthcare services, including hospitalization.
+Nearly ten percent of Americans over the age of 65 are grappling with challenges linked to aging. This demographic, which includes a substantial number of Medicare beneficiaries, is notably vulnerable to health issues. This concern is growing as the population of older Americans is projected to nearly double by 2050. Simultaneously, the severity and frequency of extreme environmental changes, such as intense heatwaves and cold spells, are hypothesized to intensify.
 
-The situation poses unique risks for our aging population. As the climate continues to change, it's essential to understand and address the specific health challenges faced by these older adults in the face of confluence of exposome-related events. This understanding is crucial for ensuring that our healthcare system, including Medicare, is prepared to effectively support the growing number of senior citizens in the face of environmental challenges.
+[Extreme weather events can significantly impact the health of older adults, children, and those with co-morbid conditions](https://www.cdc.gov/disasters/extremeheat/specificgroups.html), leading to increased mortality and a higher demand for healthcare services, including hospitalization.
+
+It is essential to understand and address the specific health challenges faced by these older adults in the face of confluence of exposome-related events. This understanding is crucial for ensuring that our healthcare system, including Medicare, is prepared to effectively support the growing number of senior citizens in the face of environmental challenges.
 
 ## Geospatial linkages to assess extreme heat and cold
 
-We are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example [*GridEX*](posts/intro_gridex.html)*.*
+We are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example [*GridEX*](posts/intro_gridex.html)*.* These new data and pipelines provide higher resolution microscope to complement and enhance efforts by the [US Centers for Disease Control and Prevention (CDC](https://ephtracking.cdc.gov/Applications/heatTracker/)) and Environmental Protection Agency.
 
 |                  |                  |
 |------------------|------------------|

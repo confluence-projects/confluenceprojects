@@ -10,7 +10,38 @@
 <atom:link href="http://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
 <description>A great sample blog</description>
 <generator>quarto-1.2.313</generator>
-<lastBuildDate>Mon, 01 Jan 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 14 Jan 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>What is ‘Apparent Temperature’?</title>
+  <dc:creator>Pedram Fard and Chirag Patel</dc:creator>
+  <link>http://www.confluence-project.org/posts/what_is_at.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>In a <a href="./intro_gridex.html">few</a> <a href="./extreme_heat_california.html">of</a> our posts, we talk a lot about “<strong>apparent temperature</strong>”. What is it and how is it calculated?</p>
+<p>While different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.</p>
+<p>We used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.</p>
+<p>AT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:</p>
+<p><img src="https://latex.codecogs.com/png.latex?AT%20=%20%E2%88%922.7%20+%201.04T%20+%202.0P%20%E2%88%92%200.65u"></p>
+<p>AT: Apparent Temperature Index in °C<br>
+T: Temperature in °C<br>
+P: Vapor pressure in kPa<br>
+u: Wind speed in m/s</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><a href="http://paperpile.com/b/r994tT/XWgx">Spangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.</a></p>
+<p><a href="http://paperpile.com/b/r994tT/ZmjT">Steadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.</a></p>
+<p><a href="http://paperpile.com/b/r994tT/josx">Sheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:</a><a href="http://dx.doi.org/10.3390/ijerph16091493" class="uri">http://dx.doi.org/10.3390/ijerph16091493</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>apparent temperature</category>
+  <guid>http://www.confluence-project.org/posts/what_is_at.html</guid>
+  <pubDate>Sun, 14 Jan 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Hands on tutorials at the PAA</title>
   <dc:creator>Pedram Fard, Hossein Estiri, and Chirag Patel</dc:creator>
@@ -78,9 +109,44 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="http://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Pipeline to call EHE and ECE</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 1. Pipeline to call EHE and ECE</figcaption><p></p>
 </figure>
 </div>
+<p>We have developed our dataset in a sequential process illustrated in Fig 1:</p>
+<ol type="1">
+<li><p>Data Acquisition: We retrieved a substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations and provided by NOAA (Fig 1a).</p></li>
+<li><p>Daily meteorological parameters computation: We computed the daily average values for ambient temperature, vapor pressure, and wind speed by taking the mean of hourly and sub-hourly raw data at station locations (Fig 1b).</p></li>
+<li><p>Missing data imputation: We detected and imputed missing daily records of up to five days gap in the daily time series based on the historical data from the same location (Fig 1c).</p></li>
+<li><p>Apparent temperature computation: We calculated the average daily apparent temperature (AT) for each station using the method developed by Steadman (Fig 1c). What is AT? <a href="./what_is_at.html">Check out our post</a>!</p></li>
+<li><p>Excess heat and cold factor computation: We began the extreme event delineation by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Fig 1d). We identified anomalies by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location</p></li>
+<li><p>Station-based extreme events identification: Leveraging the EHF/ECF, we identified the instances of extreme heat and cold events at the station locations using relative thresholds according to Sheridan et al.&nbsp;(Fig 1e).</p></li>
+<li><p>Extreme events intensity measurement: Using the station-based EHE/ECE daily records, we quantified the intensity of these extreme events by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. As suggested by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) can be used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions. In contrast, values approaching +100 pinpoint the prolonged heat events, and those nearing -100 signify places affected by extended cold events (Fig 1f).</p></li>
+<li><p>Spatial interpolation: Based on the intensity values derived for station locations, we spatially interpolated EHMI/ECMI values across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Fig 1g). IDW was used to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell. The weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.</p></li>
+<li><p>Area-wide extreme events determination: Finally, by analyzing the interpolated grids of EHMI/ECMI, we outlined the geographic extent of extreme events daily (Fig 1h).</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="data-and-code-resources" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-code-resources">Data and Code Resources</h2>
+<ul>
+<li><p>Fard et al., <strong>GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022</strong> (Submitted)</p>
+<ul>
+<li><p><strong>Github</strong>: <a href="https://github.com/epedram/us_ehe_ece" class="uri">https://github.com/epedram/us_ehe_ece</a></p></li>
+<li><p><strong>Data (Dataverse)</strong>: <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ" class="uri">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ</a>.</p></li>
+<li><p><strong>Data (Figshare)</strong>: <a href="https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447" class="uri">https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447</a></p></li>
+</ul></li>
+</ul>
 
 
 </section>
@@ -111,9 +177,38 @@
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>Studying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.</p>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<p>Citation:</p>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<ul>
+<li><p>Our proposed method uses spatial interpolation to accurately estimate EHE boundaries.</p></li>
+<li><p>The conventional methods rely on absolute temperature and larger spatial scales.</p></li>
+<li><p>Our method accounts for antecedent climate conditions and composite heat measure.</p></li>
+<li><p>Our method significantly reduces misclassification of populations impacted by EHEs.</p></li>
+</ul>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation:</h2>
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0013935123017887">Fard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, <em>Environmental Research</em> 2022</a></p>
 
 

@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>The Confluence Projects</title>
-<link>https://chiragjp.github.io/confluenceprojects/team.html</link>
-<atom:link href="https://chiragjp.github.io/confluenceprojects/team.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.confluence-project.org/team.html</link>
+<atom:link href="https://www.confluence-project.org/team.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.313</generator>
 <lastBuildDate>Thu, 11 Jan 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Pedram Fard, PhD</title>
   <dc:creator>Chirag</dc:creator>
-  <link>https://chiragjp.github.io/confluenceprojects/team_members/pedram.html</link>
+  <link>https://www.confluence-project.org/team_members/pedram.html</link>
   <description><![CDATA[ 
 
 
@@ -22,14 +22,14 @@
   <category>geospatial analytics</category>
   <category>machine-learning</category>
   <category>data-science</category>
-  <guid>https://chiragjp.github.io/confluenceprojects/team_members/pedram.html</guid>
+  <guid>https://www.confluence-project.org/team_members/pedram.html</guid>
   <pubDate>Thu, 11 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://chiragjp.github.io/confluenceprojects/img/pedram.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.confluence-project.org/img/pedram.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Chirag J Patel, PhD</title>
   <dc:creator>Chirag</dc:creator>
-  <link>https://chiragjp.github.io/confluenceprojects/team_members/chirag.html</link>
+  <link>https://www.confluence-project.org/team_members/chirag.html</link>
   <description><![CDATA[ 
 
 
@@ -40,14 +40,14 @@
   <category>diabetes</category>
   <category>machine-learning</category>
   <category>data-science</category>
-  <guid>https://chiragjp.github.io/confluenceprojects/team_members/chirag.html</guid>
+  <guid>https://www.confluence-project.org/team_members/chirag.html</guid>
   <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://chiragjp.github.io/confluenceprojects/img/chirag.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.confluence-project.org/img/chirag.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Hossein Estiri, PhD</title>
   <dc:creator>Chirag</dc:creator>
-  <link>https://chiragjp.github.io/confluenceprojects/team_members/hossein.html</link>
+  <link>https://www.confluence-project.org/team_members/hossein.html</link>
   <description><![CDATA[ 
 
 
@@ -55,14 +55,14 @@
   <category>dementia</category>
   <category>machine-learning</category>
   <category>data-science</category>
-  <guid>https://chiragjp.github.io/confluenceprojects/team_members/hossein.html</guid>
+  <guid>https://www.confluence-project.org/team_members/hossein.html</guid>
   <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://chiragjp.github.io/confluenceprojects/img/hossein.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.confluence-project.org/img/hossein.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Francesca Dominici, PhD</title>
   <dc:creator>Chirag</dc:creator>
-  <link>https://chiragjp.github.io/confluenceprojects/team_members/francesca.html</link>
+  <link>https://www.confluence-project.org/team_members/francesca.html</link>
   <description><![CDATA[ 
 
 
@@ -72,9 +72,9 @@
   <category>climate change</category>
   <category>machine-learning</category>
   <category>data-science</category>
-  <guid>https://chiragjp.github.io/confluenceprojects/team_members/francesca.html</guid>
+  <guid>https://www.confluence-project.org/team_members/francesca.html</guid>
   <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://chiragjp.github.io/confluenceprojects/img/francesca.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.confluence-project.org/img/francesca.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

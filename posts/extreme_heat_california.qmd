@@ -15,8 +15,24 @@ categories:
 
 Studying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.
 
-## 
+## Highlights
 
-Citation:
+-   Our proposed method uses spatial interpolation to accurately estimate EHE boundaries.
+
+-   The conventional methods rely on absolute temperature and larger spatial scales.
+
+-   Our method accounts for antecedent climate conditions and composite heat measure.
+
+-   Our method significantly reduces misclassification of populations impacted by EHEs.
+
+### Overview
+
+![Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.](img/ca_fig2.jpeg){fig-align="center"}
+
+![Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.](img/ca_fig3.jpeg){fig-align="center"}
+
+![Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses](img/ca_fig4.jpeg){fig-align="center"}
+
+## Citation:
 
 [Fard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, *Environmental Research* 2022](https://www.sciencedirect.com/science/article/pii/S0013935123017887)

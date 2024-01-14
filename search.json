@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "posts/paa.html",
+    "href": "posts/paa.html",
+    "title": "Hands on tutorials at the PAA",
+    "section": "",
+    "text": "Interested in the data we are creating? Come join us at PAA to get a hands-on overview!"
+  },
+  {
+    "objectID": "posts/paa.html#workshop-objectives-and-outcomes",
+    "href": "posts/paa.html#workshop-objectives-and-outcomes",
+    "title": "Hands on tutorials at the PAA",
+    "section": "Workshop objectives and outcomes:",
+    "text": "Workshop objectives and outcomes:\nThe objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme climate events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for climate related demographic research."
+  },
+  {
+    "objectID": "posts/paa.html#workshop-activities-and-schedule",
+    "href": "posts/paa.html#workshop-activities-and-schedule",
+    "title": "Hands on tutorials at the PAA",
+    "section": "Workshop activities and schedule:",
+    "text": "Workshop activities and schedule:\nThe half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.\n\nFirst, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).\nSecond, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).\nThird, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes)."
+  },
+  {
+    "objectID": "posts/intro_gridex.html",
+    "href": "posts/intro_gridex.html",
+    "title": "Introducing GridEX for extreme events",
+    "section": "",
+    "text": "Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available."
+  },
+  {
+    "objectID": "posts/intro_gridex.html#pipeline-schematic",
+    "href": "posts/intro_gridex.html#pipeline-schematic",
+    "title": "Introducing GridEX for extreme events",
+    "section": "Pipeline schematic",
+    "text": "Pipeline schematic\n\n\n\nPipeline to call EHE and ECE"
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html",
+    "href": "posts/extreme_heat_california.html",
+    "title": "Estimating Extreme Heat Events in California",
+    "section": "",
+    "text": "A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24)."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#summary",
+    "href": "posts/extreme_heat_california.html#summary",
+    "title": "Estimating Extreme Heat Events in California",
+    "section": "Summary",
+    "text": "Summary\nStudying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#section",
+    "href": "posts/extreme_heat_california.html#section",
+    "title": "Estimating Extreme Heat Events in California",
+    "section": "",
+    "text": "Citation:\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Confluence Team",
+    "section": "",
+    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssistant Professor of Medicine and Director of Clinical AI at Mass General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "team.html#institutes",
+    "href": "team.html#institutes",
+    "title": "Confluence Team",
+    "section": "Institutes",
+    "text": "Institutes"
+  },
+  {
+    "objectID": "team.html#support",
+    "href": "team.html#support",
+    "title": "Confluence Team",
+    "section": "Support",
+    "text": "Support\n\nNational Institutes of Health, National Institute on Aging (NIA RF1: Patel, Estiri, and Dominici)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Confluence Projects",
+    "section": "",
+    "text": "We study the confluence of the geospatial exposome, such as extreme heat and cold, and their impact on health and demographic outcomes related to human aging, such as dementia."
+  },
+  {
+    "objectID": "index.html#a-confluence-of-factors-in-aging-and-health-outcomes",
+    "href": "index.html#a-confluence-of-factors-in-aging-and-health-outcomes",
+    "title": "The Confluence Projects",
+    "section": "A confluence of factors in aging and health outcomes",
+    "text": "A confluence of factors in aging and health outcomes\nNearly ten percent of Americans over the age of 65 are grappling with challenges linked to aging. This demographic, which includes a substantial number of Medicare beneficiaries, is notably vulnerable to health issues. This concern is growing as the population of older Americans is projected to nearly double by 2050. Simultaneously, the severity and frequency of extreme environmental changes, such as intense heatwaves and cold spells, are hypothesizing to intensify. These extreme weather events can significantly impact the health of older adults, leading to increased mortality and a higher demand for healthcare services, including hospitalization.\nThe situation poses unique risks for our aging population. As the climate continues to change, it’s essential to understand and address the specific health challenges faced by these older adults in the face of confluence of exposome-related events. This understanding is crucial for ensuring that our healthcare system, including Medicare, is prepared to effectively support the growing number of senior citizens in the face of environmental challenges."
+  },
+  {
+    "objectID": "index.html#geospatial-linkages-to-assess-extreme-heat-and-cold",
+    "href": "index.html#geospatial-linkages-to-assess-extreme-heat-and-cold",
+    "title": "The Confluence Projects",
+    "section": "Geospatial linkages to assess extreme heat and cold",
+    "text": "Geospatial linkages to assess extreme heat and cold\nWe are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example GridEX."
+  },
+  {
+    "objectID": "rn.html",
+    "href": "rn.html",
+    "title": "News and Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nReading Time\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\nPedram Fard, Hossein Estiri, and Chirag Patel\n\n\n2 min\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\nPedram Fard\n\n\n0 min\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nEstimating Extreme Heat Events in California\n\n\nPedram Fard\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data, Code and Papers",
+    "section": "",
+    "text": "Fard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447\n\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022\n\nGithub: https://github.com/epedram/ehmi\n\nEstiri et al., Temporal characterization of Alzheimer’s Disease with sequences of clinical records, EBioMedicine2023\n\nGithub: https://hestiri.github.io/mlho/"
+  }
+]

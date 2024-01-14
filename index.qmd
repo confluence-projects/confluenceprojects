@@ -21,3 +21,5 @@ We are developing compute-intensive approaches to accurately assess biological r
 |                  |                  |
 |------------------|------------------|
 | ![](img/ece.jpg) | ![](img/ehe.jpg) |
+
+: Drawing a surface of extreme cold (left) and heat (right) with GridEX.

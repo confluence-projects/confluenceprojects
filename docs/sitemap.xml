@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.myblogexample.io/index.html</loc>
-    <lastmod>2024-01-14T14:49:56.750Z</lastmod>
+    <loc>http://www.confluence-project.org/posts/paa.html</loc>
+    <lastmod>2024-01-14T14:52:13.659Z</lastmod>
   </url>
   <url>
-    <loc>http://www.myblogexample.io/index.html</loc>
-    <lastmod>2024-01-14T14:50:08.339Z</lastmod>
+    <loc>http://www.confluence-project.org/posts/intro_gridex.html</loc>
+    <lastmod>2024-01-14T14:52:13.992Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/posts/extreme_heat_california.html</loc>
+    <lastmod>2024-01-14T14:52:14.302Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/team_members/chirag.html</loc>
+    <lastmod>2024-01-14T14:52:14.601Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/team_members/hossein.html</loc>
+    <lastmod>2024-01-14T14:52:14.900Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/team_members/pedram.html</loc>
+    <lastmod>2024-01-14T14:52:15.201Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/team_members/francesca.html</loc>
+    <lastmod>2024-01-14T14:52:15.513Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/team.html</loc>
+    <lastmod>2024-01-14T14:52:15.867Z</lastmod>
   </url>
   <url>
     <loc>http://www.confluence-project.org/index.html</loc>
-    <lastmod>2024-01-14T14:50:22.252Z</lastmod>
+    <lastmod>2024-01-14T14:52:27.978Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/rn.html</loc>
+    <lastmod>2024-01-14T14:52:16.503Z</lastmod>
+  </url>
+  <url>
+    <loc>http://www.confluence-project.org/data.html</loc>
+    <lastmod>2024-01-14T14:52:16.792Z</lastmod>
   </url>
 </urlset>

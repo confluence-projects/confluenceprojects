@@ -1,1 +1,1 @@
-Sitemap: https://www.confluence-project.org/sitemap.xml
+Sitemap: http://www.confluence-project.org/sitemap.xml

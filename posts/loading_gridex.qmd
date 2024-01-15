@@ -1,8 +1,8 @@
 ---
-title: "US EHE/ECE Data Integration"
+title: "US EHE/ECE GridEX Data Loading"
 format: html
 editor: visual
-description: "What the heck is AT?"
+description: "How to load GridEx data?"
 author: "Pedram Fard"
 date: "1/15/2024"
 categories:
@@ -11,14 +11,6 @@ categories:
 ---
 
 # Quick tutorial on loading the EHE/ECE GridEX data
-
-## For more information, check out:
-
--   [An Introduction to GridEX](intro_gridex.html)
-
--   [Detecting extreme heat events in California](extreme_heat_california.html)
-
--   [Github](https://github.com/epedram/us_ehe_ece/)
 
 ## Recommended Package Setup
 
@@ -36,8 +28,6 @@ states_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_e
 
 states_geo <- readRDS(states_file_path)[[1]]
 
-#counties_file_path <- file.path(source_dir,
-#                                "us49_counties_geo_tigris.rds")
 
 counties_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')
 
@@ -96,3 +86,10 @@ total_ehe_plot
 ```
 
 
+## For more information, check out:
+
+-   [An Introduction to GridEX](intro_gridex.html)
+
+-   [Detecting extreme heat events in California](extreme_heat_california.html)
+
+-   [Github](https://github.com/epedram/us_ehe_ece/)

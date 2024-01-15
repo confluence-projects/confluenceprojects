@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -140,7 +140,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./rn.xml"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -197,9 +197,6 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
          <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
      </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -219,12 +216,6 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-<th>
-Reading Time
-</th>
 </tr>
 </thead>
 <tbody class="list">
@@ -240,12 +231,6 @@ Jan 15, 2024
 <td class="listing-title">
 <a href="./posts/loading_gridex.html" class="title">US EHE/ECE GridEX Data Loading</a>
 </td>
-<td class="listing-author">
-Pedram Fard
-</td>
-<td class="listing-reading-time">
-1 min
-</td>
 </tr>
 <tr data-index="1" data-categories="apparent temperature" data-listing-date-sort="1705208400000" data-listing-file-modified-sort="1705350370289" data-listing-reading-time-sort="0.98" data-listing-title-sort="What is 'Apparent Temperature'?" data-listing-filename-sort="what_is_at.qmd">
 <td class="listing-image">
@@ -259,12 +244,6 @@ Jan 14, 2024
 <td class="listing-title">
 <a href="./posts/what_is_at.html" class="title">What is ‘Apparent Temperature’?</a>
 </td>
-<td class="listing-author">
-Pedram Fard and Chirag Patel
-</td>
-<td class="listing-reading-time">
-0 min
-</td>
 </tr>
 <tr data-index="2" data-categories="news" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1705247312859" data-listing-reading-time-sort="2.68" data-listing-title-sort="Hands on tutorials at the PAA" data-listing-filename-sort="paa.qmd">
 <td class="listing-image">
@@ -275,12 +254,6 @@ Jan 1, 2024
 </td>
 <td class="listing-title">
 <a href="./posts/paa.html" class="title">Hands on tutorials at the PAA</a>
-</td>
-<td class="listing-author">
-Pedram Fard, Hossein Estiri, and Chirag Patel
-</td>
-<td class="listing-reading-time">
-2 min
 </td>
 </tr>
 <tr data-index="3" data-categories="news,gridex,extreme events" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1705249813347" data-listing-reading-time-sort="3.67" data-listing-title-sort="Introducing GridEX for extreme events" data-listing-filename-sort="intro_gridex.qmd">
@@ -293,12 +266,6 @@ Jan 1, 2024
 <td class="listing-title">
 <a href="./posts/intro_gridex.html" class="title">Introducing GridEX for extreme events</a>
 </td>
-<td class="listing-author">
-Pedram Fard
-</td>
-<td class="listing-reading-time">
-3 min
-</td>
 </tr>
 <tr data-index="4" data-categories="news,california" data-listing-date-sort="1672549200000" data-listing-file-modified-sort="1705248268718" data-listing-reading-time-sort="1.605" data-listing-title-sort="Estimating Extreme Heat Events in California" data-listing-filename-sort="extreme_heat_california.qmd">
 <td class="listing-image">
@@ -309,12 +276,6 @@ Jan 1, 2023
 </td>
 <td class="listing-title">
 <a href="./posts/extreme_heat_california.html" class="title">Estimating Extreme Heat Events in California</a>
-</td>
-<td class="listing-author">
-Pedram Fard
-</td>
-<td class="listing-reading-time">
-1 min
 </td>
 </tr>
 </tbody>

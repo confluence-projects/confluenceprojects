@@ -6,5 +6,5 @@ listing:
   type: table
   categories: true
   feed: true
-  fields: [image, date, title, author, reading-time]
+  fields: [image, date, title]
 ---

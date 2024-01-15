@@ -21,7 +21,7 @@ website:
         text: News & Posts
     right:
       - icon: rss
-        href: index.xml
+        href: rn.xml
   search: true
       
 format:

@@ -12,7 +12,7 @@
 <generator>quarto-1.2.313</generator>
 <lastBuildDate>Mon, 15 Jan 2024 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>US EHE/ECE Data Integration</title>
+  <title>US EHE/ECE GridEX Data Loading</title>
   <dc:creator>Pedram Fard</dc:creator>
   <link>http://www.confluence-project.org/posts/loading_gridex.html</link>
   <description><![CDATA[ 
@@ -21,14 +21,6 @@
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
 <h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
-<section id="for-more-information-check-out" class="level2">
-<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
-<ul>
-<li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
-<li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
-<li><p><a href="https://github.com/epedram/us_ehe_ece/">Github</a></p></li>
-</ul>
-</section>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -65,14 +57,12 @@ tidyverse 1.3.2 ──</code></pre>
 <span id="cb8-2"></span>
 <span id="cb8-3">states_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(states_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
 <span id="cb8-4"></span>
-<span id="cb8-5"><span class="co" style="color: #5E5E5E;">#counties_file_path &lt;- file.path(source_dir,</span></span>
-<span id="cb8-6"><span class="co" style="color: #5E5E5E;">#                                "us49_counties_geo_tigris.rds")</span></span>
+<span id="cb8-5"></span>
+<span id="cb8-6">counties_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
 <span id="cb8-7"></span>
-<span id="cb8-8">counties_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
+<span id="cb8-8">counties_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
 <span id="cb8-9"></span>
-<span id="cb8-10">counties_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
-<span id="cb8-11"></span>
-<span id="cb8-12"><span class="fu" style="color: #4758AB;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;">1</span>])</span></code></pre></div>
+<span id="cb8-10"><span class="fu" style="color: #4758AB;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;">1</span>])</span></code></pre></div>
 <div class="cell-output-display">
 <p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -166,6 +156,14 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+</section>
+<section id="for-more-information-check-out" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<ul>
+<li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
+<li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
+<li><p><a href="https://github.com/epedram/us_ehe_ece/">Github</a></p></li>
+</ul>
 
 
 </section>
@@ -198,7 +196,7 @@ u: Wind speed in m/s</p>
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p><a href="http://paperpile.com/b/r994tT/XWgx">Spangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.</a></p>
 <p><a href="http://paperpile.com/b/r994tT/ZmjT">Steadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.</a></p>
-<p><a href="http://paperpile.com/b/r994tT/josx">Sheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:</a><a href="http://dx.doi.org/10.3390/ijerph16091493" class="uri">http://dx.doi.org/10.3390/ijerph16091493</a></p>
+<p><a href="http://paperpile.com/b/r994tT/josx">Sheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:</a></p>
 
 
 </section>

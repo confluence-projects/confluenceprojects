@@ -8,9 +8,175 @@
 <title>The Confluence Projects</title>
 <link>http://www.confluence-project.org/rn.html</link>
 <atom:link href="http://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
-<description>A great sample blog</description>
+<description>Investigating the confluence of health risk</description>
 <generator>quarto-1.2.313</generator>
-<lastBuildDate>Sun, 14 Jan 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Jan 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>US EHE/ECE Data Integration</title>
+  <dc:creator>Pedram Fard</dc:creator>
+  <link>http://www.confluence-project.org/posts/loading_gridex.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
+<h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
+<section id="for-more-information-check-out" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<ul>
+<li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
+<li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
+<li><p><a href="https://github.com/epedram/us_ehe_ece/">Github</a></p></li>
+</ul>
+</section>
+<section id="recommended-package-setup" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(readr)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">library</span>(viridis)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: viridisLite</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages
+───────────────────────────────────────
+tidyverse 1.3.2 ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ ggplot2 3.3.6     ✔ dplyr   1.0.9
+✔ tibble  3.1.8     ✔ stringr 1.4.0
+✔ tidyr   1.2.0     ✔ forcats 0.5.1
+✔ purrr   0.3.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">library</span>(sf)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries" class="level2">
+<h2 class="anchored" data-anchor-id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries">Loading the base spatial data set including Counties and States boundaries</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">states_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
+<span id="cb8-2"></span>
+<span id="cb8-3">states_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(states_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
+<span id="cb8-4"></span>
+<span id="cb8-5"><span class="co" style="color: #5E5E5E;">#counties_file_path &lt;- file.path(source_dir,</span></span>
+<span id="cb8-6"><span class="co" style="color: #5E5E5E;">#                                "us49_counties_geo_tigris.rds")</span></span>
+<span id="cb8-7"></span>
+<span id="cb8-8">counties_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
+<span id="cb8-9"></span>
+<span id="cb8-10">counties_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
+<span id="cb8-11"></span>
+<span id="cb8-12"><span class="fu" style="color: #4758AB;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;">1</span>])</span></code></pre></div>
+<div class="cell-output-display">
+<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="loading-the-aggregate-extreme-events-data-set" class="level2">
+<h2 class="anchored" data-anchor-id="loading-the-aggregate-extreme-events-data-set">Loading the aggregate extreme events data set</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">events_catalog_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
+<span id="cb9-2"></span>
+<span id="cb9-3">events_catalog_sf <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(events_catalog_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]] <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb9-4">  dplyr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">filter</span>(event_type <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"Extreme Heat Event"</span>)</span>
+<span id="cb9-5"></span>
+<span id="cb9-6"><span class="fu" style="color: #4758AB;">glimpse</span>(events_catalog_sf)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 49
+Columns: 10
+$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
+$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even…
+$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…
+$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…
+$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…
+$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…
+$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…
+$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9802057 35…</code></pre>
+</div>
+</div>
+</section>
+<section id="example-of-merging-states-boundaries-with-summarized-ehe-data" class="level2">
+<h2 class="anchored" data-anchor-id="example-of-merging-states-boundaries-with-summarized-ehe-data">Example of merging States boundaries with summarized EHE data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">state_boundaris_ehe_catalog <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">merge</span>(states_geo,</span>
+<span id="cb11-2">          events_catalog_sf <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">st_drop_geometry</span>(),</span>
+<span id="cb11-3">          <span class="at" style="color: #657422;">by.x=</span><span class="st" style="color: #20794D;">"GEOID"</span>,</span>
+<span id="cb11-4">          <span class="at" style="color: #657422;">by.y=</span><span class="st" style="color: #20794D;">"GEOID"</span>,</span>
+<span id="cb11-5">          <span class="at" style="color: #657422;">all.x =</span> <span class="cn" style="color: #8f5902;">TRUE</span>,</span>
+<span id="cb11-6">          <span class="at" style="color: #657422;">all.y =</span> <span class="cn" style="color: #8f5902;">TRUE</span>,</span>
+<span id="cb11-7">          <span class="at" style="color: #657422;">suffix =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">""</span>,<span class="st" style="color: #20794D;">"_sp"</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">st_as_sf</span>() </span>
+<span id="cb11-8"></span>
+<span id="cb11-9"><span class="fu" style="color: #4758AB;">glimpse</span>(state_boundaris_ehe_catalog)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 49
+Columns: 20
+$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
+$ STATEFP                       &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
+$ STATENS                       &lt;chr&gt; "01779775", "01779777", "00068085", "017…
+$ AFFGEOID                      &lt;chr&gt; "0400000US01", "0400000US04", "0400000US…
+$ STUSPS                        &lt;chr&gt; "AL", "AZ", "AR", "CA", "CO", "CT", "DE"…
+$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ LSAD                          &lt;chr&gt; "00", "00", "00", "00", "00", "00", "00"…
+$ ALAND                         &lt;dbl&gt; 131185042550, 294365853885, 134660743067…
+$ AWATER                        &lt;dbl&gt; 4582333181, 853990728, 3121974727, 20291…
+$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ Climate_Region                &lt;chr&gt; "Southeast", "Southwest", "South", "West…
+$ STATE_NAME_sp                 &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ NAME_sp                       &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
+$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even…
+$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…
+$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…
+$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…
+$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…
+$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…
+$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9848795 37…</code></pre>
+</div>
+</div>
+</section>
+<section id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries">Mapping the summarized EHE data merged with the States boundaries</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">total_ehe_plot <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">ggplot</span>() <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb13-2">    <span class="fu" style="color: #4758AB;">geom_sf</span>(<span class="at" style="color: #657422;">data =</span> state_boundaris_ehe_catalog,</span>
+<span id="cb13-3">            <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">fill =</span> total_event_days),</span>
+<span id="cb13-4">            <span class="at" style="color: #657422;">lwd =</span> .<span class="dv" style="color: #AD0000;">1</span>) <span class="sc" style="color: #5E5E5E;">+</span> </span>
+<span id="cb13-5">    <span class="fu" style="color: #4758AB;">scale_fill_viridis</span>(<span class="at" style="color: #657422;">option=</span><span class="st" style="color: #20794D;">"inferno"</span>, </span>
+<span id="cb13-6">                       <span class="at" style="color: #657422;">direction =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb13-7">                       <span class="at" style="color: #657422;">na.value =</span> <span class="cn" style="color: #8f5902;">NA</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb13-8"></span>
+<span id="cb13-9">    <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">fill =</span> <span class="st" style="color: #20794D;">"Total Number of EHE Days (2008-2022)"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb13-10"></span>
+<span id="cb13-11">    <span class="fu" style="color: #4758AB;">theme_void</span>() <span class="sc" style="color: #5E5E5E;">+</span> </span>
+<span id="cb13-12">    <span class="fu" style="color: #4758AB;">theme</span>(<span class="at" style="color: #657422;">legend.position =</span> <span class="st" style="color: #20794D;">"bottom"</span>)</span>
+<span id="cb13-13"></span>
+<span id="cb13-14"><span class="fu" style="color: #4758AB;">ggsave</span>(<span class="st" style="color: #20794D;">"./data/Total_Number_of_EHE_Days_2008_2022.jpg"</span>,</span>
+<span id="cb13-15">         <span class="at" style="color: #657422;">plot =</span> total_ehe_plot, <span class="at" style="color: #657422;">dpi =</span> <span class="dv" style="color: #AD0000;">300</span>,</span>
+<span id="cb13-16">         <span class="at" style="color: #657422;">width =</span> <span class="dv" style="color: #AD0000;">22</span>, <span class="at" style="color: #657422;">height =</span> <span class="dv" style="color: #AD0000;">18</span>, <span class="at" style="color: #657422;">units =</span> <span class="st" style="color: #20794D;">"cm"</span>)</span>
+<span id="cb13-17"></span>
+<span id="cb13-18">total_ehe_plot</span></code></pre></div>
+<div class="cell-output-display">
+<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>GridEX</category>
+  <category>tutorial</category>
+  <guid>http://www.confluence-project.org/posts/loading_gridex.html</guid>
+  <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>What is ‘Apparent Temperature’?</title>
   <dc:creator>Pedram Fard and Chirag Patel</dc:creator>

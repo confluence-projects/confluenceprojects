@@ -1,0 +1,98 @@
+---
+title: "US EHE/ECE Data Integration"
+format: html
+editor: visual
+description: "What the heck is AT?"
+author: "Pedram Fard"
+date: "1/15/2024"
+categories:
+  - GridEX
+  - tutorial
+---
+
+# Quick tutorial on loading the EHE/ECE GridEX data
+
+## For more information, check out:
+
+-   [An Introduction to GridEX](intro_gridex.html)
+
+-   [Detecting extreme heat events in California](extreme_heat_california.html)
+
+-   [Github](https://github.com/epedram/us_ehe_ece/)
+
+## Recommended Package Setup
+
+```{r setup}
+library(readr)
+library(viridis)
+library(tidyverse)
+library(sf)
+```
+
+## Loading the base spatial data set including Counties and States boundaries
+
+```{r}
+states_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')
+
+states_geo <- readRDS(states_file_path)[[1]]
+
+#counties_file_path <- file.path(source_dir,
+#                                "us49_counties_geo_tigris.rds")
+
+counties_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')
+
+counties_geo <- readRDS(counties_file_path)[[1]]
+
+plot(counties_geo[1])
+```
+
+## Loading the aggregate extreme events data set
+
+```{r load the aggreagte events summaries at State level}
+
+events_catalog_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')
+
+events_catalog_sf <- readRDS(events_catalog_file_path)[[1]] %>% 
+  dplyr::filter(event_type == "Extreme Heat Event")
+
+glimpse(events_catalog_sf)
+```
+
+## Example of merging States boundaries with summarized EHE data
+
+```{r}
+state_boundaris_ehe_catalog <- merge(states_geo,
+          events_catalog_sf %>% st_drop_geometry(),
+          by.x="GEOID",
+          by.y="GEOID",
+          all.x = TRUE,
+          all.y = TRUE,
+          suffix = c("","_sp")) %>% st_as_sf() 
+
+glimpse(state_boundaris_ehe_catalog)
+```
+
+## Mapping the summarized EHE data merged with the States boundaries
+
+```{r}
+total_ehe_plot <- ggplot() +
+    geom_sf(data = state_boundaris_ehe_catalog,
+            aes(fill = total_event_days),
+            lwd = .1) + 
+    scale_fill_viridis(option="inferno", 
+                       direction = -1,
+                       na.value = NA) +
+
+    labs(fill = "Total Number of EHE Days (2008-2022)") +
+
+    theme_void() + 
+    theme(legend.position = "bottom")
+
+ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",
+         plot = total_ehe_plot, dpi = 300,
+         width = 22, height = 18, units = "cm")
+
+total_ehe_plot
+```
+
+

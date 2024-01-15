@@ -4,7 +4,8 @@ project:
   
 website:
   title: "The Confluence Projects"
-  description: "A great sample blog"
+  google-analytics: "G-X7TVYB1MH3"
+  description: "Investigating the confluence of health risk"
   favicon: "img/confluence2.png"
   site-url: http://www.confluence-project.org
   navbar:

@@ -53,14 +53,14 @@
     "href": "posts/what_is_at.html",
     "title": "What is ‘Apparent Temperature’?",
     "section": "",
-    "text": "In a few of our posts, we talk a lot about “apparent temperature”. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
+    "text": "In a few of our posts, we talk a lot about apparent temperature. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
   },
   {
     "objectID": "posts/what_is_at.html#references",
     "href": "posts/what_is_at.html#references",
     "title": "What is ‘Apparent Temperature’?",
     "section": "References",
-    "text": "References\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
+    "text": "References\n\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
   },
   {
     "objectID": "posts/extreme_heat_california.html",

@@ -21,14 +21,6 @@
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
 <h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
-<section id="for-more-information-check-out" class="level2">
-<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
-<ul>
-<li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
-<li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
-<li><p><a href="https://github.com/epedram/us_ehe_ece/">Github</a></p></li>
-</ul>
-</section>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -164,6 +156,14 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+</section>
+<section id="for-more-information-check-out" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<ul>
+<li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
+<li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
+<li><p><a href="https://github.com/epedram/us_ehe_ece/">Github</a></p></li>
+</ul>
 
 
 </section>
@@ -183,7 +183,7 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 
 
 
-<p>In a <a href="./intro_gridex.html">few</a> <a href="./extreme_heat_california.html">of</a> our posts, we talk a lot about “<strong>apparent temperature</strong>”. What is it and how is it calculated?</p>
+<p>In a <a href="./intro_gridex.html">few</a> <a href="./extreme_heat_california.html">of</a> our posts, we talk a lot about <a href="https://en.wikipedia.org/wiki/Apparent_temperature"><strong>apparent temperature</strong></a>. What is it and how is it calculated?</p>
 <p>While different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.</p>
 <p>We used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.</p>
 <p>AT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:</p>
@@ -194,9 +194,11 @@ P: Vapor pressure in kPa<br>
 u: Wind speed in m/s</p>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<p><a href="http://paperpile.com/b/r994tT/XWgx">Spangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.</a></p>
-<p><a href="http://paperpile.com/b/r994tT/ZmjT">Steadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.</a></p>
-<p><a href="http://paperpile.com/b/r994tT/josx">Sheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:</a><a href="http://dx.doi.org/10.3390/ijerph16091493" class="uri">http://dx.doi.org/10.3390/ijerph16091493</a></p>
+<ul>
+<li><p>Spangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. <a href="https://doi.org/10.1038/s41597-022-01405-3">Scientific Data. 2022 Jun 17;9(1):1–9.</a></p></li>
+<li><p>Steadman RG. A Universal Scale of Apparent Temperature. <a href="https://doi.org/10.1175/1520-0450(1984)023%3C1674:AUSOAT%3E2.0.CO;2">J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.</a></p></li>
+<li><p>Sheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. <a href="http://dx.doi.org/10.3390/ijerph16091493">Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:</a></p></li>
+</ul>
 
 
 </section>

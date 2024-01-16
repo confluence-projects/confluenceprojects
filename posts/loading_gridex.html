@@ -160,16 +160,16 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../rn.html">
+ <span class="menu-text">News &amp; Posts</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../data.html">
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../team.html">
  <span class="menu-text">Team</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../rn.html">
- <span class="menu-text">News &amp; Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -200,7 +200,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
   <li><a href="#loading-the-aggregate-extreme-events-data-set" id="toc-loading-the-aggregate-extreme-events-data-set" class="nav-link" data-scroll-target="#loading-the-aggregate-extreme-events-data-set">Loading the aggregate extreme events data set</a></li>
   <li><a href="#example-of-merging-states-boundaries-with-summarized-ehe-data" id="toc-example-of-merging-states-boundaries-with-summarized-ehe-data" class="nav-link" data-scroll-target="#example-of-merging-states-boundaries-with-summarized-ehe-data">Example of merging States boundaries with summarized EHE data</a></li>
   <li><a href="#mapping-the-summarized-ehe-data-merged-with-the-states-boundaries" id="toc-mapping-the-summarized-ehe-data-merged-with-the-states-boundaries" class="nav-link" data-scroll-target="#mapping-the-summarized-ehe-data-merged-with-the-states-boundaries">Mapping the summarized EHE data merged with the States boundaries</a></li>
-  <li><a href="#for-more-information-check-out" id="toc-for-more-information-check-out" class="nav-link" data-scroll-target="#for-more-information-check-out">For more information, check out:</a></li>
+  <li><a href="#for-more-information" id="toc-for-more-information" class="nav-link" data-scroll-target="#for-more-information">For more information:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -212,7 +212,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <div class="quarto-title">
 <h1 class="title">US EHE/ECE GridEX Data Loading</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">GridEX</div>
+    <div class="quarto-category">gridex</div>
     <div class="quarto-category">tutorial</div>
   </div>
   </div>
@@ -247,7 +247,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 </header>
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
-<h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
+<h1>Quick tutorial on loading the EHE/ECE <a href="intro_gridex.html">GridEX</a> data</h1>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -374,9 +374,9 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_void</span>() <span class="sc">+</span> </span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"./data/Total_Number_of_EHE_Days_2008_2022.jpg"</span>,</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">plot =</span> total_ehe_plot, <span class="at">dpi =</span> <span class="dv">300</span>,</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">width =</span> <span class="dv">22</span>, <span class="at">height =</span> <span class="dv">18</span>, <span class="at">units =</span> <span class="st">"cm"</span>)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co">#         plot = total_ehe_plot, dpi = 300,</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="co">#         width = 22, height = 18, units = "cm")</span></span>
 <span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>total_ehe_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -384,8 +384,8 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 </div>
 </div>
 </section>
-<section id="for-more-information-check-out" class="level2">
-<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<section id="for-more-information" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information">For more information:</h2>
 <ul>
 <li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
 <li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>

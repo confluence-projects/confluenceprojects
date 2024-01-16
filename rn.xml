@@ -20,7 +20,7 @@
 
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
-<h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
+<h1>Quick tutorial on loading the EHE/ECE <a href="intro_gridex.html">GridEX</a> data</h1>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -147,9 +147,9 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <span id="cb13-11">    <span class="fu" style="color: #4758AB;">theme_void</span>() <span class="sc" style="color: #5E5E5E;">+</span> </span>
 <span id="cb13-12">    <span class="fu" style="color: #4758AB;">theme</span>(<span class="at" style="color: #657422;">legend.position =</span> <span class="st" style="color: #20794D;">"bottom"</span>)</span>
 <span id="cb13-13"></span>
-<span id="cb13-14"><span class="fu" style="color: #4758AB;">ggsave</span>(<span class="st" style="color: #20794D;">"./data/Total_Number_of_EHE_Days_2008_2022.jpg"</span>,</span>
-<span id="cb13-15">         <span class="at" style="color: #657422;">plot =</span> total_ehe_plot, <span class="at" style="color: #657422;">dpi =</span> <span class="dv" style="color: #AD0000;">300</span>,</span>
-<span id="cb13-16">         <span class="at" style="color: #657422;">width =</span> <span class="dv" style="color: #AD0000;">22</span>, <span class="at" style="color: #657422;">height =</span> <span class="dv" style="color: #AD0000;">18</span>, <span class="at" style="color: #657422;">units =</span> <span class="st" style="color: #20794D;">"cm"</span>)</span>
+<span id="cb13-14"><span class="co" style="color: #5E5E5E;">#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",</span></span>
+<span id="cb13-15"><span class="co" style="color: #5E5E5E;">#         plot = total_ehe_plot, dpi = 300,</span></span>
+<span id="cb13-16"><span class="co" style="color: #5E5E5E;">#         width = 22, height = 18, units = "cm")</span></span>
 <span id="cb13-17"></span>
 <span id="cb13-18">total_ehe_plot</span></code></pre></div>
 <div class="cell-output-display">
@@ -157,8 +157,8 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 </div>
 </div>
 </section>
-<section id="for-more-information-check-out" class="level2">
-<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<section id="for-more-information" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information">For more information:</h2>
 <ul>
 <li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
 <li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
@@ -170,7 +170,7 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 </section>
 
  ]]></description>
-  <category>GridEX</category>
+  <category>gridex</category>
   <category>tutorial</category>
   <guid>http://www.confluence-project.org/posts/loading_gridex.html</guid>
   <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>

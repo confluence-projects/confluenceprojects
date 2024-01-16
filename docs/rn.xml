@@ -20,7 +20,7 @@
 
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
-<h1>Quick tutorial on loading the EHE/ECE GridEX data</h1>
+<h1>Quick tutorial on loading the EHE/ECE <a href="intro_gridex.html">GridEX</a> data</h1>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -157,8 +157,8 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 </div>
 </div>
 </section>
-<section id="for-more-information-check-out" class="level2">
-<h2 class="anchored" data-anchor-id="for-more-information-check-out">For more information, check out:</h2>
+<section id="for-more-information" class="level2">
+<h2 class="anchored" data-anchor-id="for-more-information">For more information:</h2>
 <ul>
 <li><p><a href="intro_gridex.html">An Introduction to GridEX</a></p></li>
 <li><p><a href="extreme_heat_california.html">Detecting extreme heat events in California</a></p></li>
@@ -170,7 +170,7 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 </section>
 
  ]]></description>
-  <category>GridEX</category>
+  <category>gridex</category>
   <category>tutorial</category>
   <guid>http://www.confluence-project.org/posts/loading_gridex.html</guid>
   <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>

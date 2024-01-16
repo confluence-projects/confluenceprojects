@@ -6,11 +6,11 @@ description: "How to load GridEx data?"
 author: "Pedram Fard"
 date: "1/15/2024"
 categories:
-  - GridEX
+  - gridex
   - tutorial
 ---
 
-# Quick tutorial on loading the EHE/ECE GridEX data
+# Quick tutorial on loading the EHE/ECE [GridEX](intro_gridex.html) data
 
 ## Recommended Package Setup
 
@@ -78,15 +78,15 @@ total_ehe_plot <- ggplot() +
     theme_void() + 
     theme(legend.position = "bottom")
 
-ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",
-         plot = total_ehe_plot, dpi = 300,
-         width = 22, height = 18, units = "cm")
+#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",
+#         plot = total_ehe_plot, dpi = 300,
+#         width = 22, height = 18, units = "cm")
 
 total_ehe_plot
 ```
 
 
-## For more information, check out:
+## For more information:
 
 -   [An Introduction to GridEX](intro_gridex.html)
 

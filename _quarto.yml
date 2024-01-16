@@ -13,12 +13,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: rn.qmd
+        text: News & Posts
       - href: data.qmd
         text: Resources
       - href: team.qmd
         text: Team
-      - href: rn.qmd
-        text: News & Posts
     right:
       - icon: rss
         href: rn.xml

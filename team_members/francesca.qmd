@@ -12,6 +12,10 @@ categories:
   - machine-learning
   - data-science
 about:
-  template: trestles
+  template: jolla
   image: /img/francesca.png
+  links:
+    - icon: body-text
+      text: About Me
+      href: https://www.hsph.harvard.edu/profile/francesca-dominici/
 ---

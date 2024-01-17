@@ -13,6 +13,13 @@ categories:
   - machine-learning
   - data-science
 about:
-  template: trestles
+  template: jolla
   image: /img/chirag.jpg
+  links:
+    - icon: twitter-x
+      text: X
+      href: https://twitter.com/chiragjp
+    - icon: body-text
+      text: About Me
+      href: https://dbmi.hms.harvard.edu/people/chirag-patel
 ---

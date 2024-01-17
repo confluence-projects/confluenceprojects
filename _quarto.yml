@@ -6,8 +6,8 @@ website:
   title: "The Confluence Projects"
   google-analytics: "G-X7TVYB1MH3"
   description: "Investigating the confluence of health risk"
-  favicon: "img/confluence2.png"
-  site-url: http://www.confluence-project.org
+  favicon: "img/confluence3.jpg"
+  site-url: https://www.confluence-project.org
   navbar:
     background: light
     left:

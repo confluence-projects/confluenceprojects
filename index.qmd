@@ -2,7 +2,7 @@
 title: ""
 ---
 
-![](img/confluence2.png){style="float: right;" fig-alt="" fig-align="right" width="150"}
+![](img/confluence3.jpg){style="float: right;" fig-alt="" fig-align="right" width="150"}
 
 [We study](./team.html) the ***confluence*** of the geospatial exposome, such as extreme heat and cold, and their impact on health and demographic outcomes related to human aging, such as dementia.
 

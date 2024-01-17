@@ -10,6 +10,10 @@ categories:
   - machine-learning
   - data-science
 about:
-  template: trestles
+  template: jolla
   image: /img/pedram.jpg
+  links:
+    - icon: body-text
+      text: About Me
+      href: https://dbmi.hms.harvard.edu/people/pedram-fard
 ---

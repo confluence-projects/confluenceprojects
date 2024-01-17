@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>The Confluence Projects</title>
-<link>http://www.confluence-project.org/rn.html</link>
-<atom:link href="http://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.confluence-project.org/rn.html</link>
+<atom:link href="https://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
 <description>Investigating the confluence of health risk</description>
 <generator>quarto-1.2.313</generator>
 <lastBuildDate>Mon, 15 Jan 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>US EHE/ECE GridEX Data Loading</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/loading_gridex.html</link>
+  <link>https://www.confluence-project.org/posts/loading_gridex.html</link>
   <description><![CDATA[ 
 
 
@@ -64,7 +64,7 @@ tidyverse 1.3.2 ──</code></pre>
 <span id="cb8-9"></span>
 <span id="cb8-10"><span class="fu" style="color: #4758AB;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;">1</span>])</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -153,7 +153,7 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <span id="cb13-17"></span>
 <span id="cb13-18">total_ehe_plot</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -172,13 +172,13 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
  ]]></description>
   <category>gridex</category>
   <category>tutorial</category>
-  <guid>http://www.confluence-project.org/posts/loading_gridex.html</guid>
+  <guid>https://www.confluence-project.org/posts/loading_gridex.html</guid>
   <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What is ‘Apparent Temperature’?</title>
   <dc:creator>Pedram Fard and Chirag Patel</dc:creator>
-  <link>http://www.confluence-project.org/posts/what_is_at.html</link>
+  <link>https://www.confluence-project.org/posts/what_is_at.html</link>
   <description><![CDATA[ 
 
 
@@ -205,20 +205,20 @@ u: Wind speed in m/s</p>
 
  ]]></description>
   <category>apparent temperature</category>
-  <guid>http://www.confluence-project.org/posts/what_is_at.html</guid>
+  <guid>https://www.confluence-project.org/posts/what_is_at.html</guid>
   <pubDate>Sun, 14 Jan 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hands on tutorials at the PAA</title>
   <dc:creator>Pedram Fard, Hossein Estiri, and Chirag Patel</dc:creator>
-  <link>http://www.confluence-project.org/posts/paa.html</link>
+  <link>https://www.confluence-project.org/posts/paa.html</link>
   <description><![CDATA[ 
 
 
 
 <div class="quarto-figure quarto-figure-right" style="float: right;">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid figure-img" alt="PAA Ohio" width="300"></p>
+<p><img src="https://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid figure-img" alt="PAA Ohio" width="300"></p>
 </figure>
 </div>
 <p>Interested in the data we are creating? Come join us at PAA to get a hands-on overview!</p>
@@ -257,24 +257,24 @@ u: Wind speed in m/s</p>
 
  ]]></description>
   <category>news</category>
-  <guid>http://www.confluence-project.org/posts/paa.html</guid>
+  <guid>https://www.confluence-project.org/posts/paa.html</guid>
   <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/grid_ohio.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.confluence-project.org/posts/img/grid_ohio.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Introducing GridEX for extreme events</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/intro_gridex.html</link>
+  <link>https://www.confluence-project.org/posts/intro_gridex.html</link>
   <description><![CDATA[ 
 
 
 
-<p><img src="http://www.confluence-project.org/posts/img/grid.png" class="img-fluid" style="float: right;" data-fig-align="right" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
+<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid" style="float: right;" data-fig-align="right" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
 <section id="pipeline-schematic" class="level2">
 <h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 1. Pipeline to call EHE and ECE</figcaption><p></p>
 </figure>
 </div>
@@ -292,13 +292,13 @@ u: Wind speed in m/s</p>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption><p></p>
 </figure>
 </div>
@@ -321,21 +321,21 @@ u: Wind speed in m/s</p>
   <category>news</category>
   <category>gridex</category>
   <category>extreme events</category>
-  <guid>http://www.confluence-project.org/posts/intro_gridex.html</guid>
+  <guid>https://www.confluence-project.org/posts/intro_gridex.html</guid>
   <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/grid.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.confluence-project.org/posts/img/grid.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Estimating Extreme Heat Events in California</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/extreme_heat_california.html</link>
+  <link>https://www.confluence-project.org/posts/extreme_heat_california.html</link>
   <description><![CDATA[ 
 
 
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/california_dalle.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/california_dalle.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).</figcaption><p></p>
 </figure>
 </div>
@@ -355,19 +355,19 @@ u: Wind speed in m/s</p>
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption><p></p>
 </figure>
 </div>
@@ -383,9 +383,9 @@ u: Wind speed in m/s</p>
  ]]></description>
   <category>news</category>
   <category>california</category>
-  <guid>http://www.confluence-project.org/posts/extreme_heat_california.html</guid>
+  <guid>https://www.confluence-project.org/posts/extreme_heat_california.html</guid>
   <pubDate>Sun, 01 Jan 2023 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/california_dalle.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.confluence-project.org/posts/img/california_dalle.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

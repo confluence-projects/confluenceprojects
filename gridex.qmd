@@ -4,7 +4,7 @@ title: GridEX, Gridded EXposures
 
 ## Grid-based measures of extreme heat and cold
 
-\![\](img/ehce.gif){fig-alt="Cumulative Annual Impacted Areas" fig-align="center"}
+![](img/ehce.gif){fig-alt="Cumulative Annual Impacted Areas" fig-align="center"}
 
 ## What is GridEX?
 
@@ -14,7 +14,7 @@ GridEX (short for "[Grid]{.underline}ded [EX]{.underline}posure") is a grid-base
 
 GridEX was developed through a sequential processes that involved compiling high-resolution spatio-temporal measures of extreme heat and cold factors. This method is depicted in the informatics diagram below and outlined as follows:
 
-\[\](img/SD_Paper_Informatics_Diagram.png){fig-alt="GridEX Informatics Diagram" fig-align="center" width="500"}
+![](img/SD_Paper_Informatics_Diagram.png){fig-alt="GridEX Informatics Diagram" fig-align="center" width="500"}
 
 1.  Data Acquisition: A substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations, was retrieved, as provided by NOAA (Step a).
 
@@ -34,9 +34,20 @@ GridEX was developed through a sequential processes that involved compiling high
 
 9.  Area-wide extreme events determination: By analyzing the interpolated grids of EHMI/ECMI, the geographic extent of extreme events was outlined and cataloged (Step h).
 
+## Accuracy
+The validation of GridEX surface estimates was performed using GridMET, as an externally validated reanalysis dataset. Both GridEX and GridMET share similar spatial and temporal characteristics, and comparison of ambient temperature readings at the station level with estimates from both grids showed that GridEX outperforms GridMET, by consistent improvements in R² values. Specifically, over the period from 2008 to 2022, during which the GridEX data is available, there was an increase in the median R² improvement from 1.5% to 3.5% in analyses conducted across nine separate state-level samples.
+
+## Limitations
+
+-   GridEX might not effectively represent temperature fluctuations at geographic scales smaller than 500x500 meters, such as the microclimates found in densely populated urban areas.
+
+-   GridMET's estimates were generated using inverse distance weighted (IDW) interpolation based on the assumption of flat planar terrains, and do not account for topographic variations.
+
+-   Uncertainties arising from measurement inaccuracies and IDW model specifications can be further addressed using additional data sources, such as satellite-derived land surface temperature.
+
 # Access the Datasets
 
-Users can load the curated catalog of extreme events as well as the spatial layers of impacted areas into their pipeline in multiple ways. The GridEX's raster layers are delivered as gridded data in GeoTiff format, and the vector layers of EHE/ECE boundaries are provided as GeoPackage files. This repository also includes the curated spatial dataset of daily mean TMP, DEW, WND, and AT offered in standard GeoPackage vector format.
+Users can load the curated catalog of extreme events as well as the spatial layers of impacted areas into their pipeline in multiple ways. The GridEX's raster layers are delivered as gridded data in GeoTiff format, and the vector layers of EHE/ECE boundaries are provided as GeoPackage files. This repository also includes the curated spatial dataset of daily mean TMP, DEW, WND, and AT offered in GeoPackage vector format.
 
 ## Spatial Catalog
 

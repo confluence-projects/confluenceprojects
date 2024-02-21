@@ -441,6 +441,7 @@ u: Wind speed in m/s</p>
 
 
 <p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
+<p>Check out the <a href="../gridex.html">GridEX</a> homepage for more information!</p>
 <section id="pipeline-schematic" class="level2">
 <h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
 <div class="quarto-figure quarto-figure-center">

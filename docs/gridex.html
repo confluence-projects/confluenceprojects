@@ -151,6 +151,8 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
   <li><a href="#grid-based-measures-of-extreme-heat-and-cold" id="toc-grid-based-measures-of-extreme-heat-and-cold" class="nav-link active" data-scroll-target="#grid-based-measures-of-extreme-heat-and-cold">Grid-based measures of extreme heat and cold</a></li>
   <li><a href="#what-is-gridex" id="toc-what-is-gridex" class="nav-link" data-scroll-target="#what-is-gridex">What is GridEX?</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#accuracy" id="toc-accuracy" class="nav-link" data-scroll-target="#accuracy">Accuracy</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   <li><a href="#access-the-datasets" id="toc-access-the-datasets" class="nav-link" data-scroll-target="#access-the-datasets">Access the Datasets</a>
   <ul class="collapse">
   <li><a href="#spatial-catalog" id="toc-spatial-catalog" class="nav-link" data-scroll-target="#spatial-catalog">Spatial Catalog</a></li>
@@ -188,7 +190,11 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 
 <section id="grid-based-measures-of-extreme-heat-and-cold" class="level2">
 <h2 class="anchored" data-anchor-id="grid-based-measures-of-extreme-heat-and-cold">Grid-based measures of extreme heat and cold</h2>
-<!-- ![](img/ehce.gif){fig-alt="Cumulative Annual Impacted Areas" fig-align="center"} -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ehce.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Cumulative Annual Impacted Areas"></p>
+</figure>
+</div>
 </section>
 <section id="what-is-gridex" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-gridex">What is GridEX?</h2>
@@ -197,7 +203,11 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p>GridEX was developed through a sequential processes that involved compiling high-resolution spatio-temporal measures of extreme heat and cold factors. This method is depicted in the informatics diagram below and outlined as follows:</p>
-<!-- ![](img/SD_Paper_Informatics_Diagram.png){fig-alt="GridEX Informatics Diagram" fig-align="center" width="500"} -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/SD_Paper_Informatics_Diagram.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="GridEX Informatics Diagram" width="500"></p>
+</figure>
+</div>
 <ol type="1">
 <li><p>Data Acquisition: A substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations, was retrieved, as provided by NOAA (Step a).</p></li>
 <li><p>Daily meteorological parameters computation: The daily average values for ambient temperature, vapor pressure, and wind speed were computed by taking the mean of hourly and sub-hourly raw data at station locations (Step b).</p></li>
@@ -210,9 +220,21 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <li><p>Area-wide extreme events determination: By analyzing the interpolated grids of EHMI/ECMI, the geographic extent of extreme events was outlined and cataloged (Step h).</p></li>
 </ol>
 </section>
+<section id="accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy">Accuracy</h2>
+<p>The validation of GridEX surface estimates was performed using GridMET, as an externally validated reanalysis dataset. Both GridEX and GridMET share similar spatial and temporal characteristics, and comparison of ambient temperature readings at the station level with estimates from both grids showed that GridEX outperforms GridMET, by consistent improvements in R² values. Specifically, over the period from 2008 to 2022, during which the GridEX data is available, there was an increase in the median R² improvement from 1.5% to 3.5% in analyses conducted across nine separate state-level samples.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<ul>
+<li><p>GridEX might not effectively represent temperature fluctuations at geographic scales smaller than 500x500 meters, such as the microclimates found in densely populated urban areas.</p></li>
+<li><p>GridMET’s estimates were generated using inverse distance weighted (IDW) interpolation based on the assumption of flat planar terrains, and do not account for topographic variations.</p></li>
+<li><p>Uncertainties arising from measurement inaccuracies and IDW model specifications can be further addressed using additional data sources, such as satellite-derived land surface temperature.</p></li>
+</ul>
+</section>
 <section id="access-the-datasets" class="level1">
 <h1>Access the Datasets</h1>
-<p>Users can load the curated catalog of extreme events as well as the spatial layers of impacted areas into their pipeline in multiple ways. The GridEX’s raster layers are delivered as gridded data in GeoTiff format, and the vector layers of EHE/ECE boundaries are provided as GeoPackage files. This repository also includes the curated spatial dataset of daily mean TMP, DEW, WND, and AT offered in standard GeoPackage vector format.</p>
+<p>Users can load the curated catalog of extreme events as well as the spatial layers of impacted areas into their pipeline in multiple ways. The GridEX’s raster layers are delivered as gridded data in GeoTiff format, and the vector layers of EHE/ECE boundaries are provided as GeoPackage files. This repository also includes the curated spatial dataset of daily mean TMP, DEW, WND, and AT offered in GeoPackage vector format.</p>
 <section id="spatial-catalog" class="level2">
 <h2 class="anchored" data-anchor-id="spatial-catalog">Spatial Catalog</h2>
 <p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ">Spatial Catalog of the Extreme Heat and Cold Events in the U.S.</a></p>
@@ -226,7 +248,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <section id="license-and-citation" class="level1">
 <h1>License and Citation</h1>
 <p>The GridEX data set and the binding software scripts are released under the open-source MIT license. The appropriate citation for the dataset is as follows</p>
-<p>Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, “Spatial Catalog of the Extreme Heat and Cold Events in the U.S.”, <a href="https://doi.org/10.7910/DVN/DJGKDJ">https://doi.org/10.7910/DVN/DJGKDJ</a>, Harvard Dataverse”</p>
+<p>Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, “Spatial Catalog of the Extreme Heat and Cold Events in the U.S.”, <a href="https://doi.org/10.7910/DVN/DJGKDJ" class="uri">https://doi.org/10.7910/DVN/DJGKDJ</a>, Harvard Dataverse”</p>
 <section id="data-processing-and-issue-tracker-on-github" class="level3">
 <h3 class="anchored" data-anchor-id="data-processing-and-issue-tracker-on-github">Data processing and issue tracker on Github</h3>
 <p><a href="https://github.com/epedram/us_ehe_ece">GitHub</a></p>

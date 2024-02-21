@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/team.html",
-    "items": [
-      "/team_members/pedram.html",
-      "/team_members/chirag.html",
-      "/team_members/hossein.html",
-      "/team_members/francesca.html"
-    ]
-  },
-  {
     "listing": "/rn.html",
     "items": [
       "/posts/loading_gridex.html",
@@ -16,6 +7,15 @@
       "/posts/paa.html",
       "/posts/intro_gridex.html",
       "/posts/extreme_heat_california.html"
+    ]
+  },
+  {
+    "listing": "/team.html",
+    "items": [
+      "/team_members/pedram.html",
+      "/team_members/chirag.html",
+      "/team_members/hossein.html",
+      "/team_members/francesca.html"
     ]
   }
 ]

@@ -1,5 +1,5 @@
 ---
-title: "Data, Code and Papers"
+title: "Publications and Data"
 ---
 
 -   Fard et al., **GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022** (Submitted)

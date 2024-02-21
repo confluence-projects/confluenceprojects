@@ -1,24 +1,59 @@
 [
   {
-    "objectID": "posts/paa.html",
-    "href": "posts/paa.html",
-    "title": "Hands on tutorials at the PAA",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Publications and Data",
     "section": "",
-    "text": "Interested in the data we are creating? Come join us at PAA to get a hands-on overview!"
+    "text": "Fard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447\n\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022\n\nGithub: https://github.com/epedram/ehmi\n\nEstiri et al., Temporal characterization of Alzheimer’s Disease with sequences of clinical records, EBioMedicine2023\n\nGithub: https://hestiri.github.io/mlho/"
   },
   {
-    "objectID": "posts/paa.html#workshop-objectives-and-outcomes",
-    "href": "posts/paa.html#workshop-objectives-and-outcomes",
-    "title": "Hands on tutorials at the PAA",
-    "section": "Workshop objectives and outcomes:",
-    "text": "Workshop objectives and outcomes:\nThe objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme climate events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for climate related demographic research."
+    "objectID": "rn.html",
+    "href": "rn.html",
+    "title": "News and Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nEstimating Extreme Heat Events in California\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/paa.html#workshop-activities-and-schedule",
-    "href": "posts/paa.html#workshop-activities-and-schedule",
-    "title": "Hands on tutorials at the PAA",
-    "section": "Workshop activities and schedule:",
-    "text": "Workshop activities and schedule:\nThe half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.\n\nFirst, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).\nSecond, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).\nThird, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes)."
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Confluence Team",
+    "section": "",
+    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssistant Professor of Medicine and Director of Clinical AI at Mass General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "team.html#team-members",
+    "href": "team.html#team-members",
+    "title": "Confluence Team",
+    "section": "",
+    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssistant Professor of Medicine and Director of Clinical AI at Mass General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "team.html#institutes",
+    "href": "team.html#institutes",
+    "title": "Confluence Team",
+    "section": "Institutes",
+    "text": "Institutes"
+  },
+  {
+    "objectID": "team.html#support",
+    "href": "team.html#support",
+    "title": "Confluence Team",
+    "section": "Support",
+    "text": "Support\n\nNational Institutes of Health, National Institute on Aging (NIA RF1: Patel, Estiri, and Dominici)"
+  },
+  {
+    "objectID": "posts/what_is_at.html",
+    "href": "posts/what_is_at.html",
+    "title": "What is ‘Apparent Temperature’?",
+    "section": "",
+    "text": "In a few of our posts, we talk a lot about apparent temperature. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
+  },
+  {
+    "objectID": "posts/what_is_at.html#references",
+    "href": "posts/what_is_at.html#references",
+    "title": "What is ‘Apparent Temperature’?",
+    "section": "References",
+    "text": "References\n\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
   },
   {
     "objectID": "posts/intro_gridex.html",
@@ -42,25 +77,74 @@
     "text": "Data and Code Resources\n\nFard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447"
   },
   {
+    "objectID": "posts/paa.html",
+    "href": "posts/paa.html",
+    "title": "Hands on tutorials at the PAA",
+    "section": "",
+    "text": "Interested in the data we are creating? Come join us at PAA to get a hands-on overview!"
+  },
+  {
+    "objectID": "posts/paa.html#workshop-objectives-and-outcomes",
+    "href": "posts/paa.html#workshop-objectives-and-outcomes",
+    "title": "Hands on tutorials at the PAA",
+    "section": "Workshop objectives and outcomes:",
+    "text": "Workshop objectives and outcomes:\nThe objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme climate events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for climate related demographic research."
+  },
+  {
+    "objectID": "posts/paa.html#workshop-activities-and-schedule",
+    "href": "posts/paa.html#workshop-activities-and-schedule",
+    "title": "Hands on tutorials at the PAA",
+    "section": "Workshop activities and schedule:",
+    "text": "Workshop activities and schedule:\nThe half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.\n\nFirst, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).\nSecond, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).\nThird, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes)."
+  },
+  {
     "objectID": "posts/loading_gridex.html",
     "href": "posts/loading_gridex.html",
     "title": "US EHE/ECE GridEX Data Loading",
     "section": "",
-    "text": "library(readr)\nlibrary(viridis)\n\nLoading required package: viridisLite\n\nlibrary(tidyverse)\n\n── Attaching packages\n───────────────────────────────────────\ntidyverse 1.3.2 ──\n\n\n✔ ggplot2 3.3.6     ✔ dplyr   1.0.9\n✔ tibble  3.1.8     ✔ stringr 1.4.0\n✔ tidyr   1.2.0     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(sf)\n\nLinking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE\n\n\n\n\n\n\nstates_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')\n\nstates_geo <- readRDS(states_file_path)[[1]]\n\n\ncounties_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')\n\ncounties_geo <- readRDS(counties_file_path)[[1]]\n\nplot(counties_geo[1])\n\n\n\n\n\n\n\n\nevents_catalog_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')\n\nevents_catalog_sf <- readRDS(events_catalog_file_path)[[1]] %>% \n  dplyr::filter(event_type == \"Extreme Heat Event\")\n\nglimpse(events_catalog_sf)\n\nRows: 49\nColumns: 10\n$ GEOID                         <chr> \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATE_NAME                    <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME                          <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    <chr> \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              <int> 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     <dbl> 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare <dbl> 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      <dbl> 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  <fct> US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      <MULTIPOLYGON [m]> MULTIPOLYGON (((-9802057 35…\n\n\n\n\n\n\nstate_boundaris_ehe_catalog <- merge(states_geo,\n          events_catalog_sf %>% st_drop_geometry(),\n          by.x=\"GEOID\",\n          by.y=\"GEOID\",\n          all.x = TRUE,\n          all.y = TRUE,\n          suffix = c(\"\",\"_sp\")) %>% st_as_sf() \n\nglimpse(state_boundaris_ehe_catalog)\n\nRows: 49\nColumns: 20\n$ GEOID                         <chr> \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATEFP                       <chr> \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATENS                       <chr> \"01779775\", \"01779777\", \"00068085\", \"017…\n$ AFFGEOID                      <chr> \"0400000US01\", \"0400000US04\", \"0400000US…\n$ STUSPS                        <chr> \"AL\", \"AZ\", \"AR\", \"CA\", \"CO\", \"CT\", \"DE\"…\n$ NAME                          <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ LSAD                          <chr> \"00\", \"00\", \"00\", \"00\", \"00\", \"00\", \"00\"…\n$ ALAND                         <dbl> 131185042550, 294365853885, 134660743067…\n$ AWATER                        <dbl> 4582333181, 853990728, 3121974727, 20291…\n$ STATE_NAME                    <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ Climate_Region                <chr> \"Southeast\", \"Southwest\", \"South\", \"West…\n$ STATE_NAME_sp                 <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME_sp                       <chr> \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    <chr> \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              <int> 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     <dbl> 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare <dbl> 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      <dbl> 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  <fct> US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      <MULTIPOLYGON [m]> MULTIPOLYGON (((-9848795 37…\n\n\n\n\n\n\ntotal_ehe_plot <- ggplot() +\n    geom_sf(data = state_boundaris_ehe_catalog,\n            aes(fill = total_event_days),\n            lwd = .1) + \n    scale_fill_viridis(option=\"inferno\", \n                       direction = -1,\n                       na.value = NA) +\n\n    labs(fill = \"Total Number of EHE Days (2008-2022)\") +\n\n    theme_void() + \n    theme(legend.position = \"bottom\")\n\n#ggsave(\"./data/Total_Number_of_EHE_Days_2008_2022.jpg\",\n#         plot = total_ehe_plot, dpi = 300,\n#         width = 22, height = 18, units = \"cm\")\n\ntotal_ehe_plot\n\n\n\n\n\n\n\n\nAn Introduction to GridEX\nDetecting extreme heat events in California\nGithub"
+    "text": "library(readr)\nlibrary(viridis)\n\nLoading required package: viridisLite\n\nlibrary(tidyverse)\n\n── Attaching packages\n───────────────────────────────────────\ntidyverse 1.3.2 ──\n\n\n✔ ggplot2 3.3.6     ✔ dplyr   1.0.9\n✔ tibble  3.1.8     ✔ stringr 1.4.0\n✔ tidyr   1.2.0     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(sf)\n\nLinking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE\n\n\n\n\n\n\nstates_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')\n\nstates_geo &lt;- readRDS(states_file_path)[[1]]\n\n\ncounties_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')\n\ncounties_geo &lt;- readRDS(counties_file_path)[[1]]\n\nplot(counties_geo[1])\n\n\n\n\n\n\n\n\n\n\n\n\nevents_catalog_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')\n\nevents_catalog_sf &lt;- readRDS(events_catalog_file_path)[[1]] %&gt;% \n  dplyr::filter(event_type == \"Extreme Heat Event\")\n\nglimpse(events_catalog_sf)\n\nRows: 49\nColumns: 10\n$ GEOID                         &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATE_NAME                    &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME                          &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    &lt;chr&gt; \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9802057 35…\n\n\n\n\n\n\nstate_boundaris_ehe_catalog &lt;- merge(states_geo,\n          events_catalog_sf %&gt;% st_drop_geometry(),\n          by.x=\"GEOID\",\n          by.y=\"GEOID\",\n          all.x = TRUE,\n          all.y = TRUE,\n          suffix = c(\"\",\"_sp\")) %&gt;% st_as_sf() \n\nglimpse(state_boundaris_ehe_catalog)\n\nRows: 49\nColumns: 20\n$ GEOID                         &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATEFP                       &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATENS                       &lt;chr&gt; \"01779775\", \"01779777\", \"00068085\", \"017…\n$ AFFGEOID                      &lt;chr&gt; \"0400000US01\", \"0400000US04\", \"0400000US…\n$ STUSPS                        &lt;chr&gt; \"AL\", \"AZ\", \"AR\", \"CA\", \"CO\", \"CT\", \"DE\"…\n$ NAME                          &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ LSAD                          &lt;chr&gt; \"00\", \"00\", \"00\", \"00\", \"00\", \"00\", \"00\"…\n$ ALAND                         &lt;dbl&gt; 131185042550, 294365853885, 134660743067…\n$ AWATER                        &lt;dbl&gt; 4582333181, 853990728, 3121974727, 20291…\n$ STATE_NAME                    &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ Climate_Region                &lt;chr&gt; \"Southeast\", \"Southwest\", \"South\", \"West…\n$ STATE_NAME_sp                 &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME_sp                       &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    &lt;chr&gt; \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9848795 37…\n\n\n\n\n\n\ntotal_ehe_plot &lt;- ggplot() +\n    geom_sf(data = state_boundaris_ehe_catalog,\n            aes(fill = total_event_days),\n            lwd = .1) + \n    scale_fill_viridis(option=\"inferno\", \n                       direction = -1,\n                       na.value = NA) +\n\n    labs(fill = \"Total Number of EHE Days (2008-2022)\") +\n\n    theme_void() + \n    theme(legend.position = \"bottom\")\n\n#ggsave(\"./data/Total_Number_of_EHE_Days_2008_2022.jpg\",\n#         plot = total_ehe_plot, dpi = 300,\n#         width = 22, height = 18, units = \"cm\")\n\ntotal_ehe_plot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Introduction to GridEX\nDetecting extreme heat events in California\nGithub"
   },
   {
-    "objectID": "posts/what_is_at.html",
-    "href": "posts/what_is_at.html",
-    "title": "What is ‘Apparent Temperature’?",
+    "objectID": "posts/loading_gridex.html#recommended-package-setup",
+    "href": "posts/loading_gridex.html#recommended-package-setup",
+    "title": "US EHE/ECE GridEX Data Loading",
     "section": "",
-    "text": "In a few of our posts, we talk a lot about apparent temperature. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
+    "text": "library(readr)\nlibrary(viridis)\n\nLoading required package: viridisLite\n\nlibrary(tidyverse)\n\n── Attaching packages\n───────────────────────────────────────\ntidyverse 1.3.2 ──\n\n\n✔ ggplot2 3.3.6     ✔ dplyr   1.0.9\n✔ tibble  3.1.8     ✔ stringr 1.4.0\n✔ tidyr   1.2.0     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(sf)\n\nLinking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE"
   },
   {
-    "objectID": "posts/what_is_at.html#references",
-    "href": "posts/what_is_at.html#references",
-    "title": "What is ‘Apparent Temperature’?",
-    "section": "References",
-    "text": "References\n\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
+    "objectID": "posts/loading_gridex.html#loading-the-base-spatial-data-set-including-counties-and-states-boundaries",
+    "href": "posts/loading_gridex.html#loading-the-base-spatial-data-set-including-counties-and-states-boundaries",
+    "title": "US EHE/ECE GridEX Data Loading",
+    "section": "",
+    "text": "states_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')\n\nstates_geo &lt;- readRDS(states_file_path)[[1]]\n\n\ncounties_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')\n\ncounties_geo &lt;- readRDS(counties_file_path)[[1]]\n\nplot(counties_geo[1])"
+  },
+  {
+    "objectID": "posts/loading_gridex.html#loading-the-aggregate-extreme-events-data-set",
+    "href": "posts/loading_gridex.html#loading-the-aggregate-extreme-events-data-set",
+    "title": "US EHE/ECE GridEX Data Loading",
+    "section": "",
+    "text": "events_catalog_file_path &lt;- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')\n\nevents_catalog_sf &lt;- readRDS(events_catalog_file_path)[[1]] %&gt;% \n  dplyr::filter(event_type == \"Extreme Heat Event\")\n\nglimpse(events_catalog_sf)\n\nRows: 49\nColumns: 10\n$ GEOID                         &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATE_NAME                    &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME                          &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    &lt;chr&gt; \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9802057 35…"
+  },
+  {
+    "objectID": "posts/loading_gridex.html#example-of-merging-states-boundaries-with-summarized-ehe-data",
+    "href": "posts/loading_gridex.html#example-of-merging-states-boundaries-with-summarized-ehe-data",
+    "title": "US EHE/ECE GridEX Data Loading",
+    "section": "",
+    "text": "state_boundaris_ehe_catalog &lt;- merge(states_geo,\n          events_catalog_sf %&gt;% st_drop_geometry(),\n          by.x=\"GEOID\",\n          by.y=\"GEOID\",\n          all.x = TRUE,\n          all.y = TRUE,\n          suffix = c(\"\",\"_sp\")) %&gt;% st_as_sf() \n\nglimpse(state_boundaris_ehe_catalog)\n\nRows: 49\nColumns: 20\n$ GEOID                         &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATEFP                       &lt;chr&gt; \"01\", \"04\", \"05\", \"06\", \"08\", \"09\", \"10\"…\n$ STATENS                       &lt;chr&gt; \"01779775\", \"01779777\", \"00068085\", \"017…\n$ AFFGEOID                      &lt;chr&gt; \"0400000US01\", \"0400000US04\", \"0400000US…\n$ STUSPS                        &lt;chr&gt; \"AL\", \"AZ\", \"AR\", \"CA\", \"CO\", \"CT\", \"DE\"…\n$ NAME                          &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ LSAD                          &lt;chr&gt; \"00\", \"00\", \"00\", \"00\", \"00\", \"00\", \"00\"…\n$ ALAND                         &lt;dbl&gt; 131185042550, 294365853885, 134660743067…\n$ AWATER                        &lt;dbl&gt; 4582333181, 853990728, 3121974727, 20291…\n$ STATE_NAME                    &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ Climate_Region                &lt;chr&gt; \"Southeast\", \"Southwest\", \"South\", \"West…\n$ STATE_NAME_sp                 &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ NAME_sp                       &lt;chr&gt; \"Alabama\", \"Arizona\", \"Arkansas\", \"Calif…\n$ event_type                    &lt;chr&gt; \"Extreme Heat Event\", \"Extreme Heat Even…\n$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…\n$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…\n$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…\n$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…\n$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…\n$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9848795 37…"
+  },
+  {
+    "objectID": "posts/loading_gridex.html#mapping-the-summarized-ehe-data-merged-with-the-states-boundaries",
+    "href": "posts/loading_gridex.html#mapping-the-summarized-ehe-data-merged-with-the-states-boundaries",
+    "title": "US EHE/ECE GridEX Data Loading",
+    "section": "",
+    "text": "total_ehe_plot &lt;- ggplot() +\n    geom_sf(data = state_boundaris_ehe_catalog,\n            aes(fill = total_event_days),\n            lwd = .1) + \n    scale_fill_viridis(option=\"inferno\", \n                       direction = -1,\n                       na.value = NA) +\n\n    labs(fill = \"Total Number of EHE Days (2008-2022)\") +\n\n    theme_void() + \n    theme(legend.position = \"bottom\")\n\n#ggsave(\"./data/Total_Number_of_EHE_Days_2008_2022.jpg\",\n#         plot = total_ehe_plot, dpi = 300,\n#         width = 22, height = 18, units = \"cm\")\n\ntotal_ehe_plot"
+  },
+  {
+    "objectID": "posts/loading_gridex.html#for-more-information",
+    "href": "posts/loading_gridex.html#for-more-information",
+    "title": "US EHE/ECE GridEX Data Loading",
+    "section": "",
+    "text": "An Introduction to GridEX\nDetecting extreme heat events in California\nGithub"
   },
   {
     "objectID": "posts/extreme_heat_california.html",
@@ -91,27 +175,6 @@
     "text": "Citation:\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022"
   },
   {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Confluence Team",
-    "section": "",
-    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssistant Professor of Medicine and Director of Clinical AI at Mass General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "team.html#institutes",
-    "href": "team.html#institutes",
-    "title": "Confluence Team",
-    "section": "Institutes",
-    "text": "Institutes"
-  },
-  {
-    "objectID": "team.html#support",
-    "href": "team.html#support",
-    "title": "Confluence Team",
-    "section": "Support",
-    "text": "Support\n\nNational Institutes of Health, National Institute on Aging (NIA RF1: Patel, Estiri, and Dominici)"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "The Confluence Projects",
@@ -133,17 +196,31 @@
     "text": "Geospatial linkages to assess extreme heat and cold\nWe are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example GridEX. These new data and pipelines provide higher resolution microscope to complement and enhance efforts by the US Centers for Disease Control and Prevention (CDC) and Environmental Protection Agency.\n\nDrawing a surface of extreme cold (left) and heat (right) with GridEX."
   },
   {
-    "objectID": "rn.html",
-    "href": "rn.html",
-    "title": "News and Posts",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n \n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n \n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nEstimating Extreme Heat Events in California\n\n\n\n\n\n\nNo matching items"
+    "objectID": "gridex.html#what-is-gridex",
+    "href": "gridex.html#what-is-gridex",
+    "title": "GridEX, Gridded EXposures",
+    "section": "What is GridEX?",
+    "text": "What is GridEX?\nGridEX (short for “Gridded EXposure”) is a grid-based measure of exposure to extreme heat and cold events with a high spatial resolution of 500x500 for the contiguous United States, spanning from 2008 to 2022. GridEx leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient temperature which takes into account humidity and wind in addition to the actual air temperature."
   },
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data, Code and Papers",
-    "section": "",
-    "text": "Fard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447\n\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022\n\nGithub: https://github.com/epedram/ehmi\n\nEstiri et al., Temporal characterization of Alzheimer’s Disease with sequences of clinical records, EBioMedicine2023\n\nGithub: https://hestiri.github.io/mlho/"
+    "objectID": "gridex.html#methods",
+    "href": "gridex.html#methods",
+    "title": "GridEX, Gridded EXposures",
+    "section": "Methods",
+    "text": "Methods\nGridEX was developed through a sequential processes that involved compiling high-resolution spatio-temporal measures of extreme heat and cold factors. This method is depicted in the informatics diagram below and outlined as follows:\n\n\n\n\n\n\nData Acquisition: A substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations, was retrieved, as provided by NOAA (Step a).\nDaily meteorological parameters computation: The daily average values for ambient temperature, vapor pressure, and wind speed were computed by taking the mean of hourly and sub-hourly raw data at station locations (Step b).\nMissing data imputation: Missing daily records of up to five days gap in the daily time series were detected and imputed based on the historical data from the same location (Step c).\nApparent temperature computation: The average daily apparent temperature (AT) for each station was calculated using the method developed by Steadman (Step c).\nExcess heat and cold factor computation: The delineation of extreme events began by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Step d). Anomalies were identified by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location.\nStation-based extreme events identification: Using the EHF/ECF, instances of extreme heat and cold events at the station locations were identified using relative thresholds according to Sheridan et al. (Step e).\nExtreme events intensity measurement: The intensity of these extreme events was quantified using the station-based EHE/ECE daily records by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. Following the suggestion by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) were used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions, whereas values approaching +100 pinpoint prolonged heat events, and those nearing -100 signify places affected by extended cold events (Step f).\nSpatial interpolation: Based on the intensity values derived for station locations, EHMI/ECMI values were spatially interpolated across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Step g). The IDW method was employed to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell, and the weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.\nArea-wide extreme events determination: By analyzing the interpolated grids of EHMI/ECMI, the geographic extent of extreme events was outlined and cataloged (Step h)."
+  },
+  {
+    "objectID": "gridex.html#spatial-catalog",
+    "href": "gridex.html#spatial-catalog",
+    "title": "GridEX, Gridded EXposures",
+    "section": "Spatial Catalog",
+    "text": "Spatial Catalog\nSpatial Catalog of the Extreme Heat and Cold Events in the U.S."
+  },
+  {
+    "objectID": "gridex.html#interactive-catalog",
+    "href": "gridex.html#interactive-catalog",
+    "title": "GridEX, Gridded EXposures",
+    "section": "Interactive Catalog",
+    "text": "Interactive Catalog\nWe have also developed an app to explore the catalog of daily events and to visualize the aggregate statistical summaries of the events. The app is publicly accessible at: Interactive Catalog of the Extreme Heat and Cold Events in the U.S.\nUsers can process these pre-computed EHE/ECE dataset using standard workstations equipped with 8 cores and 16 GB of memory."
   }
 ]

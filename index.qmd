@@ -16,7 +16,7 @@ It is essential to understand and address the specific health challenges faced b
 
 ## Geospatial linkages to assess extreme heat and cold
 
-We are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example [*GridEX*](posts/intro_gridex.html)*.* These new data and pipelines provide higher resolution microscope to complement and enhance efforts by the [US Centers for Disease Control and Prevention (CDC](https://ephtracking.cdc.gov/Applications/heatTracker/)) and Environmental Protection Agency.
+We are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example [*GridEX*](gridex.html)*.* These new data and pipelines provide higher resolution microscope to complement and enhance efforts by the [US Centers for Disease Control and Prevention (CDC](https://ephtracking.cdc.gov/Applications/heatTracker/)) and Environmental Protection Agency.
 
 |                  |                  |
 |------------------|------------------|

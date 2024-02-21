@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>The Confluence Projects</title>
-<link>http://www.confluence-project.org/rn.html</link>
-<atom:link href="http://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.confluence-project.org/rn.html</link>
+<atom:link href="https://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
 <description>Investigating the confluence of health risk</description>
-<generator>quarto-1.2.313</generator>
+<generator>quarto-1.4.550</generator>
 <lastBuildDate>Mon, 15 Jan 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>US EHE/ECE GridEX Data Loading</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/loading_gridex.html</link>
+  <link>https://www.confluence-project.org/posts/loading_gridex.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -24,12 +25,18 @@
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(readr)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">library</span>(viridis)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(readr)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(viridis)</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: viridisLite</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching packages
 ───────────────────────────────────────
@@ -44,7 +51,9 @@ tidyverse 1.3.2 ──</code></pre>
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">library</span>(sf)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(sf)</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE</code></pre>
 </div>
@@ -53,30 +62,86 @@ tidyverse 1.3.2 ──</code></pre>
 <section id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries">Loading the base spatial data set including Counties and States boundaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">states_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">states_file_path <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
 <span id="cb8-2"></span>
-<span id="cb8-3">states_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(states_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
+<span id="cb8-3">states_geo <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">readRDS</span>(states_file_path)[[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]]</span>
 <span id="cb8-4"></span>
 <span id="cb8-5"></span>
-<span id="cb8-6">counties_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
+<span id="cb8-6">counties_file_path <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
 <span id="cb8-7"></span>
-<span id="cb8-8">counties_geo <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]]</span>
+<span id="cb8-8">counties_geo <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]]</span>
 <span id="cb8-9"></span>
-<span id="cb8-10"><span class="fu" style="color: #4758AB;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;">1</span>])</span></code></pre></div>
+<span id="cb8-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>])</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="loading-the-aggregate-extreme-events-data-set" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-aggregate-extreme-events-data-set">Loading the aggregate extreme events data set</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">events_catalog_file_path <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">url</span>(<span class="st" style="color: #20794D;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">events_catalog_file_path <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
 <span id="cb9-2"></span>
-<span id="cb9-3">events_catalog_sf <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">readRDS</span>(events_catalog_file_path)[[<span class="dv" style="color: #AD0000;">1</span>]] <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
-<span id="cb9-4">  dplyr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">filter</span>(event_type <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"Extreme Heat Event"</span>)</span>
+<span id="cb9-3">events_catalog_sf <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">readRDS</span>(events_catalog_file_path)[[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]] <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb9-4">  dplyr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(event_type <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Extreme Heat Event"</span>)</span>
 <span id="cb9-5"></span>
-<span id="cb9-6"><span class="fu" style="color: #4758AB;">glimpse</span>(events_catalog_sf)</span></code></pre></div>
+<span id="cb9-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">glimpse</span>(events_catalog_sf)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 49
 Columns: 10
@@ -96,15 +161,53 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-980205
 <section id="example-of-merging-states-boundaries-with-summarized-ehe-data" class="level2">
 <h2 class="anchored" data-anchor-id="example-of-merging-states-boundaries-with-summarized-ehe-data">Example of merging States boundaries with summarized EHE data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">state_boundaris_ehe_catalog <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">merge</span>(states_geo,</span>
-<span id="cb11-2">          events_catalog_sf <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">st_drop_geometry</span>(),</span>
-<span id="cb11-3">          <span class="at" style="color: #657422;">by.x=</span><span class="st" style="color: #20794D;">"GEOID"</span>,</span>
-<span id="cb11-4">          <span class="at" style="color: #657422;">by.y=</span><span class="st" style="color: #20794D;">"GEOID"</span>,</span>
-<span id="cb11-5">          <span class="at" style="color: #657422;">all.x =</span> <span class="cn" style="color: #8f5902;">TRUE</span>,</span>
-<span id="cb11-6">          <span class="at" style="color: #657422;">all.y =</span> <span class="cn" style="color: #8f5902;">TRUE</span>,</span>
-<span id="cb11-7">          <span class="at" style="color: #657422;">suffix =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">""</span>,<span class="st" style="color: #20794D;">"_sp"</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">st_as_sf</span>() </span>
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">state_boundaris_ehe_catalog <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">merge</span>(states_geo,</span>
+<span id="cb11-2">          events_catalog_sf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">st_drop_geometry</span>(),</span>
+<span id="cb11-3">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by.x=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"GEOID"</span>,</span>
+<span id="cb11-4">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by.y=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"GEOID"</span>,</span>
+<span id="cb11-5">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">all.x =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>,</span>
+<span id="cb11-6">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">all.y =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>,</span>
+<span id="cb11-7">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">suffix =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"_sp"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">st_as_sf</span>() </span>
 <span id="cb11-8"></span>
-<span id="cb11-9"><span class="fu" style="color: #4758AB;">glimpse</span>(state_boundaris_ehe_catalog)</span></code></pre></div>
+<span id="cb11-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">glimpse</span>(state_boundaris_ehe_catalog)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 49
 Columns: 20
@@ -134,26 +237,92 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
 <section id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries" class="level2">
 <h2 class="anchored" data-anchor-id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries">Mapping the summarized EHE data merged with the States boundaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">total_ehe_plot <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">ggplot</span>() <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb13-2">    <span class="fu" style="color: #4758AB;">geom_sf</span>(<span class="at" style="color: #657422;">data =</span> state_boundaris_ehe_catalog,</span>
-<span id="cb13-3">            <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">fill =</span> total_event_days),</span>
-<span id="cb13-4">            <span class="at" style="color: #657422;">lwd =</span> .<span class="dv" style="color: #AD0000;">1</span>) <span class="sc" style="color: #5E5E5E;">+</span> </span>
-<span id="cb13-5">    <span class="fu" style="color: #4758AB;">scale_fill_viridis</span>(<span class="at" style="color: #657422;">option=</span><span class="st" style="color: #20794D;">"inferno"</span>, </span>
-<span id="cb13-6">                       <span class="at" style="color: #657422;">direction =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>,</span>
-<span id="cb13-7">                       <span class="at" style="color: #657422;">na.value =</span> <span class="cn" style="color: #8f5902;">NA</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">total_ehe_plot <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb13-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_sf</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> state_boundaris_ehe_catalog,</span>
+<span id="cb13-3">            <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> total_event_days),</span>
+<span id="cb13-4">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lwd =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb13-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_viridis</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">option=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"inferno"</span>, </span>
+<span id="cb13-6">                       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">direction =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb13-7">                       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">na.value =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NA</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
 <span id="cb13-8"></span>
-<span id="cb13-9">    <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">fill =</span> <span class="st" style="color: #20794D;">"Total Number of EHE Days (2008-2022)"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb13-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Total Number of EHE Days (2008-2022)"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
 <span id="cb13-10"></span>
-<span id="cb13-11">    <span class="fu" style="color: #4758AB;">theme_void</span>() <span class="sc" style="color: #5E5E5E;">+</span> </span>
-<span id="cb13-12">    <span class="fu" style="color: #4758AB;">theme</span>(<span class="at" style="color: #657422;">legend.position =</span> <span class="st" style="color: #20794D;">"bottom"</span>)</span>
+<span id="cb13-11">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_void</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb13-12">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">legend.position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottom"</span>)</span>
 <span id="cb13-13"></span>
-<span id="cb13-14"><span class="co" style="color: #5E5E5E;">#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",</span></span>
-<span id="cb13-15"><span class="co" style="color: #5E5E5E;">#         plot = total_ehe_plot, dpi = 300,</span></span>
-<span id="cb13-16"><span class="co" style="color: #5E5E5E;">#         width = 22, height = 18, units = "cm")</span></span>
+<span id="cb13-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",</span></span>
+<span id="cb13-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#         plot = total_ehe_plot, dpi = 300,</span></span>
+<span id="cb13-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#         width = 22, height = 18, units = "cm")</span></span>
 <span id="cb13-17"></span>
 <span id="cb13-18">total_ehe_plot</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="http://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/loading_gridex_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -172,14 +341,15 @@ $ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-984879
  ]]></description>
   <category>gridex</category>
   <category>tutorial</category>
-  <guid>http://www.confluence-project.org/posts/loading_gridex.html</guid>
+  <guid>https://www.confluence-project.org/posts/loading_gridex.html</guid>
   <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What is ‘Apparent Temperature’?</title>
   <dc:creator>Pedram Fard and Chirag Patel</dc:creator>
-  <link>http://www.confluence-project.org/posts/what_is_at.html</link>
+  <link>https://www.confluence-project.org/posts/what_is_at.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -205,20 +375,21 @@ u: Wind speed in m/s</p>
 
  ]]></description>
   <category>apparent temperature</category>
-  <guid>http://www.confluence-project.org/posts/what_is_at.html</guid>
+  <guid>https://www.confluence-project.org/posts/what_is_at.html</guid>
   <pubDate>Sun, 14 Jan 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hands on tutorials at the PAA</title>
   <dc:creator>Pedram Fard, Hossein Estiri, and Chirag Patel</dc:creator>
-  <link>http://www.confluence-project.org/posts/paa.html</link>
+  <link>https://www.confluence-project.org/posts/paa.html</link>
   <description><![CDATA[ 
 
 
 
-<div class="quarto-figure quarto-figure-right" style="float: right;">
+
+<div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid figure-img" alt="PAA Ohio" width="300"></p>
+<p><img src="https://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="float: right;" alt="PAA Ohio" width="300"></p>
 </figure>
 </div>
 <p>Interested in the data we are creating? Come join us at PAA to get a hands-on overview!</p>
@@ -257,25 +428,25 @@ u: Wind speed in m/s</p>
 
  ]]></description>
   <category>news</category>
-  <guid>http://www.confluence-project.org/posts/paa.html</guid>
+  <guid>https://www.confluence-project.org/posts/paa.html</guid>
   <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/grid_ohio.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Introducing GridEX for extreme events</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/intro_gridex.html</link>
+  <link>https://www.confluence-project.org/posts/intro_gridex.html</link>
   <description><![CDATA[ 
 
 
 
-<p><img src="http://www.confluence-project.org/posts/img/grid.png" class="img-fluid" style="float: right;" data-fig-align="right" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
+
+<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
 <section id="pipeline-schematic" class="level2">
 <h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 1. Pipeline to call EHE and ECE</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Pipeline to call EHE and ECE</figcaption>
 </figure>
 </div>
 <p>We have developed our dataset in a sequential process illustrated in Fig 1:</p>
@@ -292,14 +463,14 @@ u: Wind speed in m/s</p>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption>
 </figure>
 </div>
 </section>
@@ -321,22 +492,22 @@ u: Wind speed in m/s</p>
   <category>news</category>
   <category>gridex</category>
   <category>extreme events</category>
-  <guid>http://www.confluence-project.org/posts/intro_gridex.html</guid>
+  <guid>https://www.confluence-project.org/posts/intro_gridex.html</guid>
   <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/grid.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Estimating Extreme Heat Events in California</title>
   <dc:creator>Pedram Fard</dc:creator>
-  <link>http://www.confluence-project.org/posts/extreme_heat_california.html</link>
+  <link>https://www.confluence-project.org/posts/extreme_heat_california.html</link>
   <description><![CDATA[ 
+
 
 
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/california_dalle.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/california_dalle.png" class="img-fluid figure-img"></p>
+<figcaption>A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).</figcaption>
 </figure>
 </div>
 <section id="summary" class="level2">
@@ -355,20 +526,20 @@ u: Wind speed in m/s</p>
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption><p></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption>
 </figure>
 </div>
 </section>
@@ -383,9 +554,8 @@ u: Wind speed in m/s</p>
  ]]></description>
   <category>news</category>
   <category>california</category>
-  <guid>http://www.confluence-project.org/posts/extreme_heat_california.html</guid>
+  <guid>https://www.confluence-project.org/posts/extreme_heat_california.html</guid>
   <pubDate>Sun, 01 Jan 2023 05:00:00 GMT</pubDate>
-  <media:content url="http://www.confluence-project.org/posts/img/california_dalle.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

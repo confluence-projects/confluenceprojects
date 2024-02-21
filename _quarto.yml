@@ -15,8 +15,10 @@ website:
         text: Home
       - href: rn.qmd
         text: News & Posts
-      - href: data.qmd
-        text: Resources
+      - text: Resources
+        menu:
+        - gridex.qmd
+        - data.qmd
       - href: team.qmd
         text: Team
     right:

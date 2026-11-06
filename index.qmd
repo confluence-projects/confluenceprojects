@@ -113,7 +113,7 @@ listing:
     <p>Funded by the National Institute on Aging (RF1AG074372, continued as R01AG074372) and the National Institute on Minority Health and Health Disparities (P20MD019799).</p>
   </div>
   <div class="partners">
-    <span class="partner-name">Massachusetts General Hospital</span>
+    <img src="img/mgh.png" alt="Massachusetts General Hospital, founding member of Mass General Brigham">
     <img src="img/Blavatnikbioinformatics.png" alt="Department of Biomedical Informatics, Blavatnik Institute, Harvard Medical School">
     <img src="img/chan.png" alt="Harvard T.H. Chan School of Public Health">
     <img src="img/hdsi.png" alt="Harvard Data Science Initiative">

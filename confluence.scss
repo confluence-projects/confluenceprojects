@@ -410,3 +410,224 @@ div.quarto-about-jolla .quarto-title-meta { display: none !important; }
 // Publications page: citations are definition terms; keep them regular weight
 .page-publications dl dt { font-weight: 400; margin-top: 1.4rem; }
 .page-publications dl dd { margin-left: 0; color: $muted; font-size: 0.95rem; }
+
+/* ---------- AI roadmap post ---------- */
+
+.ai-fig {
+  margin: 2rem 0 2.2rem;
+}
+.ai-fig figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: $muted;
+  max-width: 68ch;
+}
+.ai-fig figcaption strong { color: $ink; font-weight: 600; }
+
+// Figure 1: question-to-answer flow
+.flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) 2rem minmax(0, 1fr) 2rem minmax(0, 1fr) 2rem minmax(0, 1fr);
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid $rule;
+  padding: 1.2rem;
+}
+.flow-node {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid $rule;
+  border-radius: 2px;
+  background: $paper;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.flow-k {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 20;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: $ink;
+}
+.flow-v { color: $muted; }
+.flow-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.flow-chips em {
+  font-style: normal;
+  font-size: 0.78rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba($cold, 0.35);
+  color: $cold;
+  background: #fff;
+  border-radius: 2px;
+}
+.flow-gridex { background: $ink; border-color: $ink; }
+.flow-gridex .flow-k { color: #fff; }
+.flow-gridex .flow-v { color: #c9d6dc; }
+.flow-link {
+  position: relative;
+  align-self: center;
+  height: 2px;
+  background: $rule;
+  overflow: hidden;
+}
+.flow-link span {
+  position: absolute;
+  top: 0; left: -40%;
+  width: 40%;
+  height: 100%;
+  background: $heat;
+  opacity: 0;
+}
+.flow.is-animated .flow-node {
+  animation: flow-node 6.4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 1.6s);
+}
+.flow.is-animated .flow-link span { animation: flow-pulse 6.4s linear infinite; }
+.flow.is-animated .flow-link:nth-of-type(2) span { animation-delay: 1s; }
+.flow.is-animated .flow-link:nth-of-type(4) span { animation-delay: 2.6s; }
+.flow.is-animated .flow-link:nth-of-type(6) span { animation-delay: 4.2s; }
+@keyframes flow-node {
+  0%, 30%, 100% { box-shadow: 0 0 0 0 rgba($heat, 0); }
+  8%, 20% { box-shadow: 0 0 0 3px rgba($heat, 0.35); }
+}
+@keyframes flow-pulse {
+  0% { left: -40%; opacity: 1; }
+  10% { left: 100%; opacity: 1; }
+  10.01%, 100% { left: 100%; opacity: 0; }
+}
+
+// Figure 2: Ask GridEX walkthrough
+.ask {
+  background: #fff;
+  border: 1px solid $rule;
+  padding: 1.2rem 1.3rem 1.3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  grid-template-areas: "q answer" "plan answer";
+  gap: 1rem 1.6rem;
+}
+.ask-q { grid-area: q; }
+.ask-plan { grid-area: plan; }
+.ask-answer { grid-area: answer; }
+.ask-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $muted;
+  margin-bottom: 0.35rem;
+}
+.ask-q p {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 24;
+  font-size: 1.12rem;
+  line-height: 1.4;
+  color: $ink;
+  margin: 0;
+  min-height: 4.2em;
+}
+.ask-chips { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
+.ask-chips li {
+  font-size: 0.88rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid $cold;
+  background: $paper;
+  max-width: none;
+  opacity: 0.25;
+  transition: opacity 0.35s ease;
+}
+.ask-chips li.on { opacity: 1; }
+.ask-chips b { font-weight: 600; color: $ink; margin-right: 0.35rem; }
+.ask-map { border: 1px solid $rule; }
+.ask-map img { display: block; width: 100%; height: auto; opacity: 0.35; transition: opacity 0.4s ease; }
+.ask.answered .ask-map img { opacity: 1; }
+.ask-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin-top: 0.6rem;
+}
+.ask-day {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 20;
+  font-weight: 600;
+  color: $ink;
+  min-width: 8.5rem;
+}
+.ask-steps { display: flex; gap: 0.25rem; }
+.ask-steps button {
+  font: inherit;
+  font-size: 0.82rem;
+  width: 2.1rem;
+  height: 1.9rem;
+  border: 1px solid rgba($ink, 0.3);
+  background: #fff;
+  color: $ink;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.ask-steps button[aria-pressed="true"] { background: $ink; color: #fff; border-color: $ink; }
+.ask-returned { font-size: 0.88rem; color: $muted; margin: 0.8rem 0 0; }
+.ask-returned .ask-label { display: inline; margin-right: 0.3rem; color: $ink; }
+
+// Figure 3: roadmap
+.roadmap {
+  list-style: none;
+  margin: 0;
+  padding: 2.2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  position: relative;
+  counter-reset: none;
+}
+.roadmap::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, $ink 0 33%, $cold 33% 66%, transparent 66%),
+              repeating-linear-gradient(90deg, rgba($ink, 0.35) 0 6px, transparent 6px 12px);
+}
+.roadmap::after {
+  content: "";
+  position: absolute;
+  top: calc(0.75rem - 7px);
+  left: calc(33.33% - 0.4rem);
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: $heat;
+  box-shadow: 0 0 0 0 rgba($heat, 0.5);
+  animation: rm-pulse 2.4s ease-out infinite;
+}
+@keyframes rm-pulse {
+  0% { box-shadow: 0 0 0 0 rgba($heat, 0.45); }
+  70%, 100% { box-shadow: 0 0 0 14px rgba($heat, 0); }
+}
+.rm-stage {
+  background: #fff;
+  border: 1px solid $rule;
+  padding: 1rem 1.05rem 1.1rem;
+  max-width: none;
+}
+.rm-stage h3 { margin: 0.2rem 0 0.5rem; font-size: 1.2rem; font-weight: 600; }
+.rm-stage p { margin: 0; font-size: 0.92rem; color: $muted; }
+.rm-when { font-size: 0.8rem; font-weight: 600; color: $muted; }
+.rm-now { border-top: 3px solid $ink; }
+.rm-next { border-top: 3px solid $cold; }
+.rm-later { border-top: 3px dashed rgba($ink, 0.45); background: rgba(#fff, 0.7); }
+
+@media (max-width: 767.98px) {
+  .flow { grid-template-columns: 1fr; }
+  .flow-link { width: 2px; height: 1.4rem; justify-self: center; }
+  .flow-link span { display: none; }
+  .ask { grid-template-columns: 1fr; grid-template-areas: "q" "plan" "answer"; }
+  .roadmap { grid-template-columns: 1fr; padding-top: 0; }
+  .roadmap::before, .roadmap::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .roadmap::after { animation: none; }
+  .ask-map img, .ask-chips li { transition: none; }
+}

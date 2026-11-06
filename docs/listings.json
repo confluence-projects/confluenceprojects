@@ -1,5 +1,19 @@
 [
   {
+    "listing": "/rn.html",
+    "items": [
+      "/posts/ai_gridex_roadmap.html",
+      "/posts/ochin_jama_netw_open_2026.html",
+      "/posts/gridex_est_2025.html",
+      "/posts/catalyst_p20_ochin.html",
+      "/posts/loading_gridex.html",
+      "/posts/what_is_at.html",
+      "/posts/intro_gridex.html",
+      "/posts/paa.html",
+      "/posts/extreme_heat_california.html"
+    ]
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/team_members/chirag.html",
@@ -9,28 +23,16 @@
     ]
   },
   {
-    "listing": "/rn.html",
-    "items": [
-      "/posts/ochin_jama_netw_open_2026.html",
-      "/posts/gridex_est_2025.html",
-      "/posts/catalyst_p20_ochin.html",
-      "/posts/loading_gridex.html",
-      "/posts/what_is_at.html",
-      "/posts/paa.html",
-      "/posts/intro_gridex.html",
-      "/posts/extreme_heat_california.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/posts/ai_gridex_roadmap.html",
       "/posts/ochin_jama_netw_open_2026.html",
       "/posts/gridex_est_2025.html",
       "/posts/catalyst_p20_ochin.html",
       "/posts/loading_gridex.html",
       "/posts/what_is_at.html",
-      "/posts/paa.html",
       "/posts/intro_gridex.html",
+      "/posts/paa.html",
       "/posts/extreme_heat_california.html"
     ]
   }

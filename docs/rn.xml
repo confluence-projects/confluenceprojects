@@ -9,8 +9,180 @@
 <link>https://www.confluence-project.org/rn.html</link>
 <atom:link href="https://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
 <description>GridEX and the health effects of extreme environmental events such as extreme heat and cold.</description>
-<generator>quarto-1.11.9</generator>
-<lastBuildDate>Thu, 10 Sep 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.12.0</generator>
+<lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Asking GridEX: a roadmap for AI-assisted querying and decision-making</title>
+  <dc:creator>The Confluence Projects</dc:creator>
+  <link>https://www.confluence-project.org/posts/ai_gridex_roadmap.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>GridEX gives each 500 m cell in the contiguous United States a daily record of apparent temperature and of extreme heat and cold events from 2008 to 2022. The repository is open, and studies in community health centers, aging research, and population science now build on it. Using GridEX still requires a geographic information system, a working knowledge of raster and polygon formats, and code that joins exposure surfaces to the places where people live and receive care.</p>
+<p>The questions that matter for health are compound. A network of community health centers may want to know which of its clinics sat inside an extreme heat event for three or more consecutive days, how often that happened over a decade, and which patients those clinics serve. Each part of that question is answerable from GridEX today, yet assembling the full answer takes an analyst days of work. This post describes where we are taking GridEX next: an AI layer that turns questions like these into transparent, reproducible queries and supports the decisions made on the answers.</p>
+<section id="from-a-question-to-a-query" class="level2">
+<h2 class="anchored" data-anchor-id="from-a-question-to-a-query">From a question to a query</h2>
+<figure class="ai-fig figure" aria-labelledby="fig1-cap">
+  <div class="flow" id="flow">
+    <div class="flow-node" style="--i:0">
+      <span class="flow-k">Question</span>
+      <span class="flow-v">Which clinics sat inside an extreme heat event for three or more days in July 2022?</span>
+    </div>
+    
+    <div class="flow-node" style="--i:1">
+      <span class="flow-k">Query plan</span>
+      <span class="flow-chips"><em>place</em><em>period</em><em>event definition</em><em>facilities</em></span>
+    </div>
+    
+    <div class="flow-node flow-gridex" style="--i:2">
+      <span class="flow-k">GridEX</span>
+      <span class="flow-v">Daily surfaces and event boundaries on a 500 m grid</span>
+    </div>
+    
+    <div class="flow-node" style="--i:3">
+      <span class="flow-k">Answer</span>
+      <span class="flow-v">Maps, tables, and the code that produced them</span>
+    </div>
+  </div>
+  <figcaption id="fig1-cap"><strong>Figure 1.</strong> The language model translates a question into a structured query plan. The computation runs on GridEX itself, and the answer returns with its code.</figcaption>
+</figure>
+<p>A large language model is well suited to one narrow task here: translating a question written in plain language into a structured query. The model identifies four components in each question, namely the place, the period, the definition of an extreme event, and the population or facilities of interest. It then composes a query against the GridEX surfaces and event boundaries and returns the result together with the code that produced it. Because the computation runs on GridEX, each number in an answer traces back to the repository and can be rerun outside the assistant.</p>
+</section>
+<section id="what-an-answer-looks-like" class="level2">
+<h2 class="anchored" data-anchor-id="what-an-answer-looks-like">What an answer looks like</h2>
+<figure class="ai-fig figure" aria-labelledby="fig2-cap">
+  <div class="ask" id="ask">
+    <div class="ask-q">
+      <span class="ask-label">Question</span>
+      <p id="ask-text" aria-live="off">Where did extreme heat persist across the West and Northern Plains in mid-July 2022, and how did the affected area change from day to day?</p>
+    </div>
+    <div class="ask-plan">
+      <span class="ask-label">Query plan</span>
+      <ul class="ask-chips" id="ask-chips">
+        <li><b>Place</b> Contiguous United States</li>
+        <li><b>Period</b> 15 to 19 July 2022, daily</li>
+        <li><b>Event</b> Extreme heat, EHMI above 0</li>
+        <li><b>Output</b> Daily event extent and affected area</li>
+      </ul>
+    </div>
+    <div class="ask-answer">
+      <div class="ask-map">
+        <img id="ask-img" src="https://www.confluence-project.org/posts/img/ask-gridex/day17.jpg" alt="GridEX map of extreme heat intensity across the contiguous United States on the selected day in July 2022." class="figure-img">
+      </div>
+      <div class="ask-meta">
+        <span class="ask-day" id="ask-day">17 July 2022</span>
+        <div class="ask-steps" id="ask-steps" aria-label="Choose a day">
+          <button type="button" data-day="15">15</button><button type="button" data-day="16">16</button><button type="button" data-day="17" aria-pressed="true">17</button><button type="button" data-day="18">18</button><button type="button" data-day="19">19</button>
+        </div>
+        <button type="button" class="map-toggle" id="ask-replay">Replay</button>
+      </div>
+      <p class="ask-returned"><span class="ask-label">Returned with</span> daily extent maps, a table of affected area by state, the event definition applied, and R code to reproduce each result.</p>
+    </div>
+  </div>
+  <figcaption id="fig2-cap"><strong>Figure 2.</strong> Illustration of the planned interface. The maps are GridEX output for 15 to 19 July 2022; select a day to step through the event.</figcaption>
+</figure>
+<p>Figure 2 walks through one question, from the plain-language request to the returned result. The assistant restates the question as a query plan, which the user can inspect and correct before anything runs. Its answer arrives as a daily sequence of event extents, a summary table, and the code needed to reproduce both. Extreme events are defined by thresholds, so the assistant also reports the definition it applied, and two users who ask similar questions receive comparable answers.</p>
+</section>
+<section id="from-answers-to-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="from-answers-to-decisions">From answers to decisions</h2>
+<p>Querying GridEX is the first step toward a larger goal, which is better decisions by the people who carry the burden of extreme environmental events. Community health centers plan staffing, outreach, and medication review around the days their patients are most exposed. Public health departments choose where to open cooling centers and whom to contact first, and investigators design studies around exposure contrasts that GridEX can quantify before any health data are requested.</p>
+<p>Our <a href="../posts/ochin_jama_netw_open_2026.html">study of 4.2 million ambulatory encounters</a> in community health centers shows why the details matter. Blood pressure fell slightly on extreme heat days, and the reductions were larger in adults 65 and older. Evidence of this kind informs planning once a clinic can ask how often its own patients faced those conditions. An AI layer over GridEX will shorten the path to that answer from weeks of analysis to one working session.</p>
+</section>
+<section id="the-roadmap" class="level2">
+<h2 class="anchored" data-anchor-id="the-roadmap">The roadmap</h2>
+<figure class="ai-fig figure" aria-labelledby="fig3-cap">
+  <ol class="roadmap">
+    <li class="rm-stage rm-now">
+      <span class="rm-when">Available now</span>
+      <h3 class="anchored">Open data</h3>
+      <p>GridEX surfaces and event boundaries on Harvard Dataverse, an interactive catalog of extreme heat and cold events, and tutorials in R.</p>
+    </li>
+    <li class="rm-stage rm-next">
+      <span class="rm-when">Next</span>
+      <h3 class="anchored">Conversational querying</h3>
+      <p>Plain-language questions translated into inspectable query plans, with maps, tables, and reproducible code returned together.</p>
+    </li>
+    <li class="rm-stage rm-later">
+      <span class="rm-when">Envisioned</span>
+      <h3 class="anchored">Decision support for planning</h3>
+      <p>Summaries of the historical burden of extreme environmental events by facility, neighborhood, and population, with added exposure domains such as air pollution and an uncertainty estimate attached to each result.</p>
+    </li>
+  </ol>
+  <figcaption id="fig3-cap"><strong>Figure 3.</strong> Three stages of GridEX development. The marker shows where the work stands today.</figcaption>
+</figure>
+<p>Three commitments will guide this work. (1) Each answer will carry the query and code that produced it, so results can be audited and reproduced. (2) Each estimate will state its event definition, spatial resolution, and uncertainty. (3) GridEX will remain open, and the query layer will build on the public repository so that other teams can extend it.</p>
+<p>We are looking for partners among health systems, community health center networks, and public health agencies who want to test these tools on their own questions. Members of the <a href="../team.html">team</a> welcome inquiries from groups that want to shape the first version of these tools.</p>
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var flow = document.getElementById('flow');
+  if (flow && !reduce) flow.classList.add('is-animated');
+
+  var img = document.getElementById('ask-img');
+  var dayLabel = document.getElementById('ask-day');
+  var steps = document.querySelectorAll('#ask-steps button');
+  var chips = document.querySelectorAll('#ask-chips li');
+  var text = document.getElementById('ask-text');
+  var replay = document.getElementById('ask-replay');
+  var box = document.getElementById('ask');
+  if (!img || !box) return;
+  var full = text.textContent;
+  var timers = [];
+  function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
+  function clear() { timers.forEach(clearTimeout); timers = []; }
+  function show(day) {
+    img.src = 'img/ask-gridex/day' + day + '.jpg';
+    dayLabel.textContent = day + ' July 2022';
+    steps.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.day === String(day) ? 'true' : 'false'); });
+  }
+  steps.forEach(function (b) { b.addEventListener('click', function () { clear(); finish(); show(b.dataset.day); }); });
+  function finish() {
+    text.textContent = full;
+    chips.forEach(function (c) { c.classList.add('on'); });
+    box.classList.add('answered');
+  }
+  function play() {
+    clear();
+    box.classList.remove('answered');
+    chips.forEach(function (c) { c.classList.remove('on'); });
+    text.textContent = '';
+    var i = 0;
+    (function type() {
+      text.textContent = full.slice(0, i);
+      if (i++ < full.length) later(type, 18);
+      else {
+        chips.forEach(function (c, k) { later(function () { c.classList.add('on'); }, 350 * (k + 1)); });
+        later(function () {
+          box.classList.add('answered');
+          [15, 16, 17, 18, 19].forEach(function (d, k) { later(function () { show(d); }, 1100 * k); });
+        }, 350 * (chips.length + 1));
+      }
+    })();
+  }
+  replay.addEventListener('click', function () { if (reduce) { finish(); show(15); } else play(); });
+  if (reduce) { finish(); return; }
+  var seen = false;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting && !seen) { seen = true; play(); } });
+  }, { threshold: 0.35 });
+  io.observe(box);
+  [15, 16, 18, 19].forEach(function (d) { var p = new Image(); p.src = 'img/ask-gridex/day' + d + '.jpg'; });
+})();
+</script>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>gridex</category>
+  <category>roadmap</category>
+  <guid>https://www.confluence-project.org/posts/ai_gridex_roadmap.html</guid>
+  <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/posts/img/ask-gridex/thumb.jpg" medium="image" type="image/jpeg" height="79" width="144"/>
+</item>
 <item>
   <title>Extreme heat and blood pressure in community health centers, in JAMA Network Open</title>
   <dc:creator>The Confluence Projects</dc:creator>
@@ -480,59 +652,6 @@ u: Wind speed in m/s</p>
   <pubDate>Sun, 14 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Hands on tutorials at the PAA</title>
-  <dc:creator>Pedram Fard, Hossein Estiri, and Chirag Patel</dc:creator>
-  <link>https://www.confluence-project.org/posts/paa.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="float: right;" alt="PAA Ohio" width="300"></p>
-</figure>
-</div>
-<p>Interested in the data we are creating? Come join us at PAA to get a hands-on overview!</p>
-<ul>
-<li>Dates: April 17-20, 2024</li>
-<li>Location: Columbus, Ohio</li>
-<li>Conference website: <a href="https://www.populationassociation.org/paa2024/home" class="uri">https://www.populationassociation.org/paa2024/home</a></li>
-</ul>
-<section id="organizers" class="level1">
-<h1>Organizers:</h1>
-<ul>
-<li>Pedram Fard, Department of Biomedical Informatics, Harvard Medical School, USA</li>
-<li>Risto Conte Keivabu, Max Planck Institute for Demographic Research (MPIDR), Germany</li>
-<li>Vy Kim Nguyen, Department of Biomedical Informatics, Harvard Medical School, USA</li>
-<li>Hossein Estiri, Department of Medicine, Harvard Medical School, USA</li>
-<li>Chirag J Patel, Department of Biomedical Informatics, Harvard Medical School, USA</li>
-<li>Contact person: Pedram Fard (Pedram_Fard<at>hms.harvard.edu)</at></li>
-</ul>
-<p>Extreme environmental events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of these events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities in the impacts of extreme environmental events, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.</p>
-<section id="workshop-objectives-and-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-objectives-and-outcomes">Workshop objectives and outcomes:</h2>
-<p>The objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme environmental events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for demographic research on extreme environmental events.</p>
-</section>
-<section id="workshop-activities-and-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-activities-and-schedule">Workshop activities and schedule:</h2>
-<p>The half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.</p>
-<ol type="1">
-<li><p>First, we offer an introduction to population-based epidemiology followed by an overview of research on extreme environmental events, and population dynamics analysis (45 minutes).</p></li>
-<li><p>Second, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).</p></li>
-<li><p>Third, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes).</p></li>
-</ol>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>news</category>
-  <guid>https://www.confluence-project.org/posts/paa.html</guid>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>Introducing GridEX for extreme events</title>
   <dc:creator>Pedram Fard</dc:creator>
   <link>https://www.confluence-project.org/posts/intro_gridex.html</link>
@@ -595,6 +714,59 @@ u: Wind speed in m/s</p>
   <category>gridex</category>
   <category>extreme events</category>
   <guid>https://www.confluence-project.org/posts/intro_gridex.html</guid>
+  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hands on tutorials at the PAA</title>
+  <dc:creator>Pedram Fard, Hossein Estiri, and Chirag Patel</dc:creator>
+  <link>https://www.confluence-project.org/posts/paa.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/img/grid_ohio.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="float: right;" alt="PAA Ohio" width="300"></p>
+</figure>
+</div>
+<p>Interested in the data we are creating? Come join us at PAA to get a hands-on overview!</p>
+<ul>
+<li>Dates: April 17-20, 2024</li>
+<li>Location: Columbus, Ohio</li>
+<li>Conference website: <a href="https://www.populationassociation.org/paa2024/home" class="uri">https://www.populationassociation.org/paa2024/home</a></li>
+</ul>
+<section id="organizers" class="level1">
+<h1>Organizers:</h1>
+<ul>
+<li>Pedram Fard, Department of Biomedical Informatics, Harvard Medical School, USA</li>
+<li>Risto Conte Keivabu, Max Planck Institute for Demographic Research (MPIDR), Germany</li>
+<li>Vy Kim Nguyen, Department of Biomedical Informatics, Harvard Medical School, USA</li>
+<li>Hossein Estiri, Department of Medicine, Harvard Medical School, USA</li>
+<li>Chirag J Patel, Department of Biomedical Informatics, Harvard Medical School, USA</li>
+<li>Contact person: Pedram Fard (Pedram_Fard<at>hms.harvard.edu)</at></li>
+</ul>
+<p>Extreme environmental events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of these events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities in the impacts of extreme environmental events, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.</p>
+<section id="workshop-objectives-and-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-objectives-and-outcomes">Workshop objectives and outcomes:</h2>
+<p>The objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme environmental events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for demographic research on extreme environmental events.</p>
+</section>
+<section id="workshop-activities-and-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-activities-and-schedule">Workshop activities and schedule:</h2>
+<p>The half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.</p>
+<ol type="1">
+<li><p>First, we offer an introduction to population-based epidemiology followed by an overview of research on extreme environmental events, and population dynamics analysis (45 minutes).</p></li>
+<li><p>Second, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).</p></li>
+<li><p>Third, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes).</p></li>
+</ol>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://www.confluence-project.org/posts/paa.html</guid>
   <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>

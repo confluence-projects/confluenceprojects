@@ -31,7 +31,7 @@ Technical University of Denmark
 |                                                   |                                |
 |---------------------------------------------------|--------------------------------|
 | ![](img/Blavatnikbioinformatics.png){width="300"} | ![](img/chan.png){width="500"} |
-| **Massachusetts General Hospital**                | ![](img/hdsi.png)              |
+| ![](img/mgh.png){fig-alt="Massachusetts General Hospital"} | ![](img/hdsi.png)              |
 
 ## Support
 

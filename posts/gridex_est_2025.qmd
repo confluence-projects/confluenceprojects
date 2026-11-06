@@ -1,0 +1,25 @@
+---
+title: "GridEX published in Environmental Science & Technology"
+description: "The method and data pipeline behind GridEX, our 500 m national catalog of extreme heat and cold events, is now peer reviewed and open access."
+author: "The Confluence Projects"
+date: "2025-09-08"
+image: ../media/gridex-heat-cold-2022-poster.jpg
+categories:
+  - news
+  - gridex
+  - publications
+---
+
+Our paper describing GridEX is now out in *Environmental Science & Technology*:
+
+Fard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. **Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research.** *Environ Sci Technol.* 2025;59(37):19872–19884. [doi:10.1021/acs.est.5c03658](https://doi.org/10.1021/acs.est.5c03658)
+
+Studies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.
+
+The data and code are open:
+
+- [GridEX on Harvard Dataverse](https://doi.org/10.7910/DVN/DJGKDJ)
+- [Processing code on GitHub](https://github.com/epedram/us_ehe_ece)
+- [Interactive catalog of extreme heat and cold events](https://ehce.connect.hms.harvard.edu/us_ehe_ece)
+
+See the [GridEX page](../gridex.qmd) for the full method.

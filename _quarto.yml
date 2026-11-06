@@ -1,38 +1,53 @@
 project:
   type: website
   output-dir: docs
-  
+  resources:
+    - fonts/
+    - media/
+
 website:
   title: "The Confluence Projects"
   google-analytics: "G-X7TVYB1MH3"
-  description: "Investigating the confluence of health risk"
+  description: "How extreme heat, cold, and other environmental exposures shape health and recovery as we age."
   favicon: "img/confluence3.jpg"
   site-url: https://www.confluence-project.org
+  open-graph:
+    image: media/gridex-heat-cold-2022-poster.jpg
   navbar:
     background: light
+    logo: img/confluence3.png
+    logo-alt: "The Confluence Projects logo"
     left:
-      - href: index.qmd
-        text: Home
+      - href: gridex.qmd
+        text: GridEX
+      - href: data.qmd
+        text: Publications & data
       - href: rn.qmd
-        text: News & Posts
-      - text: Resources
-        menu:
-        - gridex.qmd
-        - data.qmd
+        text: News
       - href: team.qmd
         text: Team
     right:
+      - icon: github
+        href: https://github.com/confluence-projects
+        aria-label: GitHub
       - icon: rss
         href: rn.xml
+        aria-label: RSS feed
     search: true
-      
+  page-footer:
+    left: "The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health"
+    right: "[Site source on GitHub](https://github.com/confluence-projects/confluenceprojects)"
+
 format:
   html:
-    theme: cosmo
+    theme: [default, confluence.scss]
     css: styles.css
     toc: true
-    mainfont: "Helvetica Neue"
-    fontsize: 1.1em
+    fontsize: 1.0625rem
+    linestretch: 1.6
+    smooth-scroll: false
+
+execute:
+  freeze: auto
 
 editor: visual
-

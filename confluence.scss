@@ -1,0 +1,377 @@
+/*-- scss:defaults --*/
+
+// Palette: drawn from the Confluence mark (deep navy ring) and the
+// GridEX extreme-event scale (deep blue for cold, ember for heat).
+$paper:  #f3f6f7;   // cool off-white page
+$ink:    #142d3b;   // navy text and solid surfaces
+$muted:  #4b606c;   // secondary text
+$rule:   #d3dde2;   // borders and dividers
+$cold:   #1c5f9e;   // links and interactive accents
+$heat:   #c2461c;   // used only where heat is meant
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $cold;
+$link-decoration: underline;
+$link-underline-offset: 0.18em;
+$primary: $ink;
+$secondary: $muted;
+$border-color: $rule;
+$text-muted: $muted;
+
+$font-family-sans-serif: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+$headings-font-weight: 600;
+$headings-color: $ink;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $cold;
+$footer-bg: $paper;
+$footer-fg: $muted;
+
+$code-color: #8a2f12;
+$table-border-color: $rule;
+$btn-border-radius: 2px;
+$border-radius: 3px;
+
+/*-- scss:rules --*/
+
+body {
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4,
+.title, .quarto-title .title {
+  font-variation-settings: "opsz" 48;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+
+h1.title { font-size: clamp(2.1rem, 3.6vw, 3rem); font-weight: 600; line-height: 1.1; }
+h2 { font-size: 1.85rem; margin-top: 2.6rem; border-bottom: none; }
+h3 { font-size: 1.3rem; margin-top: 1.8rem; }
+
+p, li { max-width: 72ch; }
+
+a { text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 3px solid $cold;
+  outline-offset: 3px;
+}
+
+// Navbar: quiet, typographic, one hairline under it.
+.navbar {
+  border-bottom: 1px solid $rule;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+.navbar-brand .navbar-title {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 32;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+.navbar-logo {
+  max-height: 34px;
+  border-radius: 50%;
+}
+.navbar-nav .nav-link {
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active {
+  color: $ink;
+  text-decoration: underline;
+  text-decoration-color: $heat;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
+}
+
+// Footer
+.nav-footer {
+  border-top: 1px solid $rule;
+  font-size: 0.86rem;
+  color: $muted;
+}
+
+// Buttons
+.btn {
+  font-weight: 600;
+  padding: 0.62rem 1.05rem;
+  text-decoration: none;
+}
+.btn-ink {
+  background: $ink;
+  color: $paper;
+  border: 1px solid $ink;
+  &:hover, &:focus-visible { background: darken($ink, 6%); color: #fff; }
+}
+.btn-line {
+  background: transparent;
+  color: $ink;
+  border: 1px solid rgba($ink, 0.45);
+  &:hover, &:focus-visible { border-color: $ink; background: rgba($ink, 0.04); color: $ink; }
+}
+
+// Tables (publication/data pages, figure tables)
+.table, table {
+  --bs-table-bg: transparent;
+}
+
+// Listings (News, Team)
+.quarto-listing-table th { font-weight: 600; }
+.quarto-grid-item.card {
+  background: #fff;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.quarto-grid-item .card-title { font-family: $headings-font-family; font-weight: 600; }
+.listing-description, .card-text { color: $muted; }
+
+// Figure captions
+.figure-caption, figcaption { color: $muted; font-size: 0.9rem; }
+
+/* ---------- Homepage ---------- */
+
+.home main.content { margin-top: 0; }
+.home #title-block-header { display: none; }
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  padding: clamp(2rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
+}
+
+.home-hero h1 {
+  font-size: clamp(2.1rem, 3.3vw, 3.05rem);
+  font-weight: 500;
+  font-variation-settings: "opsz" 60;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.4rem;
+  max-width: 19ch;
+}
+
+.home-hero .lede {
+  font-size: 1.1rem;
+  line-height: 1.62;
+  color: $muted;
+  max-width: 46ch;
+  margin-bottom: 1.8rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+// The map: GridEX output, multiplied onto the paper so its white drops away.
+.hero-map {
+  margin: 0;
+}
+.hero-map video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-map figcaption {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.4rem 1rem;
+  align-items: start;
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: $muted;
+}
+.hero-map .event-date {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 20;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $ink;
+  min-height: 1.5em;
+}
+.hero-map .event-note { grid-column: 1 / -1; max-width: 62ch; }
+
+.scale {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.6rem;
+  align-items: center;
+  max-width: 420px;
+  font-size: 0.8rem;
+}
+.scale-bar {
+  height: 8px;
+  border-radius: 1px;
+  background: linear-gradient(90deg,
+    #2b16a8 0%, #1f3fe0 18%, #39c4ef 36%, #edf3f2 50%,
+    #f6d27a 62%, #f39a26 76%, #d8431f 90%, #9e1b16 100%);
+}
+
+.map-toggle {
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $ink;
+  background: transparent;
+  border: 1px solid rgba($ink, 0.35);
+  border-radius: 2px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  &:hover { border-color: $ink; }
+}
+
+// Research threads: a two-column ledger, not cards.
+.home-section {
+  padding: clamp(2.2rem, 5vw, 3.6rem) 0;
+  border-top: 1px solid $rule;
+}
+.home-section.after-band { border-top: none; }
+.home-section > h2 {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.thread {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 0.6rem 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid $rule;
+}
+.thread:first-of-type { border-top: none; padding-top: 0; }
+.thread h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.thread p { margin: 0 0 0.6rem; }
+.thread p:last-child { margin-bottom: 0; }
+
+// GridEX band: the one dark surface on the page.
+.gridex-band {
+  background: $ink;
+  color: #e6edf0;
+  padding: clamp(2.4rem, 5vw, 3.8rem) clamp(1.4rem, 4vw, 3.2rem);
+  margin: 0.5rem 0 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: 2rem 3.5rem;
+}
+.gridex-band h2 {
+  color: #fff;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+.gridex-band p { color: #c9d6dc; }
+.gridex-band a:not(.btn) { color: #9fd0f2; }
+.gridex-band .btn-ink { background: $paper; color: $ink; border-color: $paper; }
+.gridex-band .btn-ink:hover { background: #fff; color: $ink; }
+.gridex-band .btn-line { color: #fff; border-color: rgba(255,255,255,.5); }
+.gridex-band .btn-line:hover { border-color: #fff; background: rgba(255,255,255,.06); color: #fff; }
+
+.facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem 1.4rem;
+  align-content: start;
+}
+.facts dt {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 40;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.facts dd {
+  margin: 0;
+  align-self: center;
+  color: #c9d6dc;
+  font-size: 0.95rem;
+}
+
+// Latest news list
+.latest { list-style: none; padding: 0; margin: 0; }
+.latest li {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0.3rem 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid $rule;
+  max-width: none;
+}
+.latest li:first-child { border-top: none; padding-top: 0; }
+.latest time { color: $muted; font-size: 0.92rem; padding-top: 0.2rem; }
+.latest a {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 24;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $ink;
+  text-decoration: none;
+}
+.latest a:hover { text-decoration: underline; }
+.latest p { grid-column: 2; margin: 0; color: $muted; font-size: 0.97rem; }
+.more-link { margin-top: 1.2rem; }
+
+// Support and partners
+.support {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 1.5rem 3rem;
+  align-items: center;
+}
+.support p { margin: 0; color: $muted; }
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.6rem 2.4rem;
+}
+.partners img {
+  height: 46px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0.85;
+}
+
+@media (max-width: 991.98px) {
+  .home-hero, .gridex-band, .support { grid-template-columns: 1fr; }
+  .home-hero h1 { max-width: 18ch; }
+}
+@media (max-width: 767.98px) {
+  .thread { grid-template-columns: 1fr; }
+  .latest li { grid-template-columns: 1fr; }
+  .latest p { grid-column: 1; }
+  .facts dt { font-size: 1.4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
+
+// Team page: even out partner logos in the Institutes table
+#institutes img, #support img {
+  max-height: 56px;
+  width: auto !important;
+  height: auto;
+  max-width: 100%;
+}
+#institutes table td { vertical-align: middle; padding: 1rem 0.5rem; }

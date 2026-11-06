@@ -8,9 +8,39 @@
 <title>The Confluence Projects</title>
 <link>https://www.confluence-project.org/rn.html</link>
 <atom:link href="https://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
-<description>Investigating the confluence of health risk</description>
-<generator>quarto-1.4.550</generator>
-<lastBuildDate>Mon, 15 Jan 2024 05:00:00 GMT</lastBuildDate>
+<description>How extreme heat, cold, and other environmental exposures shape health and recovery as we age.</description>
+<generator>quarto-1.12.0</generator>
+<lastBuildDate>Mon, 08 Sep 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>GridEX published in Environmental Science &amp; Technology</title>
+  <dc:creator>The Confluence Projects</dc:creator>
+  <link>https://www.confluence-project.org/posts/gridex_est_2025.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Our paper describing GridEX is now out in <em>Environmental Science &amp; Technology</em>:</p>
+<p>Fard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. <strong>Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research.</strong> <em>Environ Sci Technol.</em> 2025;59(37):19872–19884. <a href="https://doi.org/10.1021/acs.est.5c03658">doi:10.1021/acs.est.5c03658</a></p>
+<p>Studies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.</p>
+<p>The data and code are open:</p>
+<ul>
+<li><a href="https://doi.org/10.7910/DVN/DJGKDJ">GridEX on Harvard Dataverse</a></li>
+<li><a href="https://github.com/epedram/us_ehe_ece">Processing code on GitHub</a></li>
+<li><a href="https://ehce.connect.hms.harvard.edu/us_ehe_ece">Interactive catalog of extreme heat and cold events</a></li>
+</ul>
+<p>See the <a href="../gridex.html">GridEX page</a> for the full method.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>gridex</category>
+  <category>publications</category>
+  <guid>https://www.confluence-project.org/posts/gridex_est_2025.html</guid>
+  <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg" medium="image" type="image/jpeg" height="79" width="144"/>
+</item>
 <item>
   <title>US EHE/ECE GridEX Data Loading</title>
   <dc:creator>Pedram Fard</dc:creator>
@@ -25,44 +55,43 @@
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(readr)</span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(viridis)</span></code></pre></div>
+font-style: inherit;">library</span>(viridis)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: viridisLite</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
+font-style: inherit;">library</span>(tidyverse)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>── Attaching packages
-───────────────────────────────────────
-tidyverse 1.3.2 ──</code></pre>
+<pre><code>-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v purrr     1.0.2
+v forcats   1.0.0     v stringr   1.5.1
+v ggplot2   3.4.4     v tibble    3.2.1
+v lubridate 1.9.3     v tidyr     1.3.1</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>✔ ggplot2 3.3.6     ✔ dplyr   1.0.9
-✔ tibble  3.1.8     ✔ stringr 1.4.0
-✔ tidyr   1.2.0     ✔ forcats 0.5.1
-✔ purrr   0.3.4     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre><code>-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(sf)</span></code></pre></div>
+font-style: inherit;">library</span>(sf)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE</code></pre>
+<pre><code>Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE</code></pre>
 </div>
 </div>
 </section>
 <section id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries">Loading the base spatial data set including Counties and States boundaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">states_file_path <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">states_file_path <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -76,30 +105,35 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">readRDS</span>(states_file_path)[[<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>]]</span>
-<span id="cb8-4"></span>
-<span id="cb8-5"></span>
-<span id="cb8-6">counties_file_path <span class="ot" style="color: #003B4F;
+font-style: inherit;">1</span>]]</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readRDS(states_file_path): strings not representable in native
+encoding will be translated to UTF-8</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1">counties_file_path <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
-<span id="cb8-7"></span>
-<span id="cb8-8">counties_geo <span class="ot" style="color: #003B4F;
+<span id="cb10-2"></span>
+<span id="cb10-3">counties_geo <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">readRDS</span>(counties_file_path)[[<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>]]</span>
-<span id="cb8-9"></span>
-<span id="cb8-10"><span class="fu" style="color: #4758AB;
+font-style: inherit;">1</span>]]</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readRDS(counties_file_path): strings not representable in native
+encoding will be translated to UTF-8</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>(counties_geo[<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>])</span></code></pre></div>
+font-style: inherit;">1</span>])</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -112,15 +146,15 @@ font-style: inherit;">1</span>])</span></code></pre></div>
 <section id="loading-the-aggregate-extreme-events-data-set" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-aggregate-extreme-events-data-set">Loading the aggregate extreme events data set</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">events_catalog_file_path <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">events_catalog_file_path <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
-<span id="cb9-2"></span>
-<span id="cb9-3">events_catalog_sf <span class="ot" style="color: #003B4F;
+<span id="cb13-2"></span>
+<span id="cb13-3">events_catalog_sf <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -129,7 +163,7 @@ background-color: null;
 font-style: inherit;">1</span>]] <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span> </span>
-<span id="cb9-4">  dplyr<span class="sc" style="color: #5E5E5E;
+<span id="cb13-4">  dplyr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -137,61 +171,64 @@ font-style: inherit;">filter</span>(event_type <span class="sc" style="color: #5
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Extreme Heat Event"</span>)</span>
-<span id="cb9-5"></span>
-<span id="cb9-6"><span class="fu" style="color: #4758AB;
+font-style: inherit;">"Extreme Heat Event"</span>)</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readRDS(events_catalog_file_path): strings not representable in
+native encoding will be translated to UTF-8</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">glimpse</span>(events_catalog_sf)</span></code></pre></div>
+font-style: inherit;">glimpse</span>(events_catalog_sf)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 49
 Columns: 10
-$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
-$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even…
-$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…
-$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…
-$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…
-$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…
-$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…
-$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9802057 35…</code></pre>
+$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"~
+$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even~
+$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53~
+$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423~
+$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038~
+$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025~
+$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax~
+$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9802057 35~</code></pre>
 </div>
 </div>
 </section>
 <section id="example-of-merging-states-boundaries-with-summarized-ehe-data" class="level2">
 <h2 class="anchored" data-anchor-id="example-of-merging-states-boundaries-with-summarized-ehe-data">Example of merging States boundaries with summarized EHE data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">state_boundaris_ehe_catalog <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1">state_boundaris_ehe_catalog <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">merge</span>(states_geo,</span>
-<span id="cb11-2">          events_catalog_sf <span class="sc" style="color: #5E5E5E;
+<span id="cb17-2">          events_catalog_sf <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">st_drop_geometry</span>(),</span>
-<span id="cb11-3">          <span class="at" style="color: #657422;
+<span id="cb17-3">          <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">by.x=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"GEOID"</span>,</span>
-<span id="cb11-4">          <span class="at" style="color: #657422;
+<span id="cb17-4">          <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">by.y=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"GEOID"</span>,</span>
-<span id="cb11-5">          <span class="at" style="color: #657422;
+<span id="cb17-5">          <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">all.x =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span>,</span>
-<span id="cb11-6">          <span class="at" style="color: #657422;
+<span id="cb17-6">          <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">all.y =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span>,</span>
-<span id="cb11-7">          <span class="at" style="color: #657422;
+<span id="cb17-7">          <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">suffix =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -204,86 +241,86 @@ background-color: null;
 font-style: inherit;">%&gt;%</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">st_as_sf</span>() </span>
-<span id="cb11-8"></span>
-<span id="cb11-9"><span class="fu" style="color: #4758AB;
+<span id="cb17-8"></span>
+<span id="cb17-9"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">glimpse</span>(state_boundaris_ehe_catalog)</span></code></pre></div>
+font-style: inherit;">glimpse</span>(state_boundaris_ehe_catalog)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 49
 Columns: 20
-$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
-$ STATEFP                       &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"…
-$ STATENS                       &lt;chr&gt; "01779775", "01779777", "00068085", "017…
-$ AFFGEOID                      &lt;chr&gt; "0400000US01", "0400000US04", "0400000US…
-$ STUSPS                        &lt;chr&gt; "AL", "AZ", "AR", "CA", "CO", "CT", "DE"…
-$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ LSAD                          &lt;chr&gt; "00", "00", "00", "00", "00", "00", "00"…
-$ ALAND                         &lt;dbl&gt; 131185042550, 294365853885, 134660743067…
-$ AWATER                        &lt;dbl&gt; 4582333181, 853990728, 3121974727, 20291…
-$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ Climate_Region                &lt;chr&gt; "Southeast", "Southwest", "South", "West…
-$ STATE_NAME_sp                 &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ NAME_sp                       &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif…
-$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even…
-$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53…
-$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423…
-$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038…
-$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025…
-$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax…
-$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9848795 37…</code></pre>
+$ GEOID                         &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"~
+$ STATEFP                       &lt;chr&gt; "01", "04", "05", "06", "08", "09", "10"~
+$ STATENS                       &lt;chr&gt; "01779775", "01779777", "00068085", "017~
+$ AFFGEOID                      &lt;chr&gt; "0400000US01", "0400000US04", "0400000US~
+$ STUSPS                        &lt;chr&gt; "AL", "AZ", "AR", "CA", "CO", "CT", "DE"~
+$ NAME                          &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ LSAD                          &lt;chr&gt; "00", "00", "00", "00", "00", "00", "00"~
+$ ALAND                         &lt;dbl&gt; 131185042550, 294365853885, 134660743067~
+$ AWATER                        &lt;dbl&gt; 4582333181, 853990728, 3121974727, 20291~
+$ STATE_NAME                    &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ Climate_Region                &lt;chr&gt; "Southeast", "Southwest", "South", "West~
+$ STATE_NAME_sp                 &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ NAME_sp                       &lt;chr&gt; "Alabama", "Arizona", "Arkansas", "Calif~
+$ event_type                    &lt;chr&gt; "Extreme Heat Event", "Extreme Heat Even~
+$ total_event_days              &lt;int&gt; 357, 226, 281, 493, 291, 89, 108, 93, 53~
+$ max_impacted_area_hectare     &lt;dbl&gt; 14492793.2, 37304642.6, 19239879.7, 4423~
+$ average_impacted_area_hectare &lt;dbl&gt; 1314253.1, 7129026.6, 2458499.7, 3493038~
+$ sd_impacted_area_hectare      &lt;dbl&gt; 2123813.5, 9191985.2, 3579130.2, 5823025~
+$ model_params                  &lt;fct&gt; US_ehe_ece_65_counties_6_2_ehcmi__minmax~
+$ geometry                      &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((-9848795 37~</code></pre>
 </div>
 </div>
 </section>
 <section id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries" class="level2">
 <h2 class="anchored" data-anchor-id="mapping-the-summarized-ehe-data-merged-with-the-states-boundaries">Mapping the summarized EHE data merged with the States boundaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">total_ehe_plot <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">total_ehe_plot <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-2">    <span class="fu" style="color: #4758AB;
+<span id="cb19-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_sf</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">data =</span> state_boundaris_ehe_catalog,</span>
-<span id="cb13-3">            <span class="fu" style="color: #4758AB;
+<span id="cb19-3">            <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">fill =</span> total_event_days),</span>
-<span id="cb13-4">            <span class="at" style="color: #657422;
+<span id="cb19-4">            <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">lwd =</span> .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb13-5">    <span class="fu" style="color: #4758AB;
+<span id="cb19-5">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">scale_fill_viridis</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">option=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"inferno"</span>, </span>
-<span id="cb13-6">                       <span class="at" style="color: #657422;
+<span id="cb19-6">                       <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">direction =</span> <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>,</span>
-<span id="cb13-7">                       <span class="at" style="color: #657422;
+<span id="cb19-7">                       <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">na.value =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">NA</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-8"></span>
-<span id="cb13-9">    <span class="fu" style="color: #4758AB;
+<span id="cb19-8"></span>
+<span id="cb19-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -292,31 +329,31 @@ background-color: null;
 font-style: inherit;">"Total Number of EHE Days (2008-2022)"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-10"></span>
-<span id="cb13-11">    <span class="fu" style="color: #4758AB;
+<span id="cb19-10"></span>
+<span id="cb19-11">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_void</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb13-12">    <span class="fu" style="color: #4758AB;
+<span id="cb19-12">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">legend.position =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bottom"</span>)</span>
-<span id="cb13-13"></span>
-<span id="cb13-14"><span class="co" style="color: #5E5E5E;
+<span id="cb19-13"></span>
+<span id="cb19-14"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#ggsave("./data/Total_Number_of_EHE_Days_2008_2022.jpg",</span></span>
-<span id="cb13-15"><span class="co" style="color: #5E5E5E;
+<span id="cb19-15"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#         plot = total_ehe_plot, dpi = 300,</span></span>
-<span id="cb13-16"><span class="co" style="color: #5E5E5E;
+<span id="cb19-16"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#         width = 22, height = 18, units = "cm")</span></span>
-<span id="cb13-17"></span>
-<span id="cb13-18">total_ehe_plot</span></code></pre></div>
+<span id="cb19-17"></span>
+<span id="cb19-18">total_ehe_plot</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -342,7 +379,7 @@ font-style: inherit;">#         width = 22, height = 18, units = "cm")</span></s
   <category>gridex</category>
   <category>tutorial</category>
   <guid>https://www.confluence-project.org/posts/loading_gridex.html</guid>
-  <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What is ‘Apparent Temperature’?</title>
@@ -376,7 +413,72 @@ u: Wind speed in m/s</p>
  ]]></description>
   <category>apparent temperature</category>
   <guid>https://www.confluence-project.org/posts/what_is_at.html</guid>
-  <pubDate>Sun, 14 Jan 2024 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 14 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Introducing GridEX for extreme events</title>
+  <dc:creator>Pedram Fard</dc:creator>
+  <link>https://www.confluence-project.org/posts/intro_gridex.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
+<p>Check out the <a href="../gridex.html">GridEX</a> homepage for more information!</p>
+<section id="pipeline-schematic" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Pipeline to call EHE and ECE</figcaption>
+</figure>
+</div>
+<p>We have developed our dataset in a sequential process illustrated in Fig 1:</p>
+<ol type="1">
+<li><p>Data Acquisition: We retrieved a substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations and provided by NOAA (Fig 1a).</p></li>
+<li><p>Daily meteorological parameters computation: We computed the daily average values for ambient temperature, vapor pressure, and wind speed by taking the mean of hourly and sub-hourly raw data at station locations (Fig 1b).</p></li>
+<li><p>Missing data imputation: We detected and imputed missing daily records of up to five days gap in the daily time series based on the historical data from the same location (Fig 1c).</p></li>
+<li><p>Apparent temperature computation: We calculated the average daily apparent temperature (AT) for each station using the method developed by Steadman (Fig 1c). What is AT? <a href="./what_is_at.html">Check out our post</a>!</p></li>
+<li><p>Excess heat and cold factor computation: We began the extreme event delineation by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Fig 1d). We identified anomalies by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location</p></li>
+<li><p>Station-based extreme events identification: Leveraging the EHF/ECF, we identified the instances of extreme heat and cold events at the station locations using relative thresholds according to Sheridan et al.&nbsp;(Fig 1e).</p></li>
+<li><p>Extreme events intensity measurement: Using the station-based EHE/ECE daily records, we quantified the intensity of these extreme events by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. As suggested by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) can be used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions. In contrast, values approaching +100 pinpoint the prolonged heat events, and those nearing -100 signify places affected by extended cold events (Fig 1f).</p></li>
+<li><p>Spatial interpolation: Based on the intensity values derived for station locations, we spatially interpolated EHMI/ECMI values across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Fig 1g). IDW was used to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell. The weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.</p></li>
+<li><p>Area-wide extreme events determination: Finally, by analyzing the interpolated grids of EHMI/ECMI, we outlined the geographic extent of extreme events daily (Fig 1h).</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-and-code-resources" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-code-resources">Data and Code Resources</h2>
+<ul>
+<li><p>Fard et al., <strong>GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022</strong> (Submitted)</p>
+<ul>
+<li><p><strong>Github</strong>: <a href="https://github.com/epedram/us_ehe_ece" class="uri">https://github.com/epedram/us_ehe_ece</a></p></li>
+<li><p><strong>Data (Dataverse)</strong>: <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ" class="uri">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ</a>.</p></li>
+<li><p><strong>Data (Figshare)</strong>: <a href="https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447" class="uri">https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447</a></p></li>
+</ul></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>gridex</category>
+  <category>extreme events</category>
+  <guid>https://www.confluence-project.org/posts/intro_gridex.html</guid>
+  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hands on tutorials at the PAA</title>
@@ -429,72 +531,7 @@ u: Wind speed in m/s</p>
  ]]></description>
   <category>news</category>
   <guid>https://www.confluence-project.org/posts/paa.html</guid>
-  <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Introducing GridEX for extreme events</title>
-  <dc:creator>Pedram Fard</dc:creator>
-  <link>https://www.confluence-project.org/posts/intro_gridex.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
-<p>Check out the <a href="../gridex.html">GridEX</a> homepage for more information!</p>
-<section id="pipeline-schematic" class="level2">
-<h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/pipeline.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 1. Pipeline to call EHE and ECE</figcaption>
-</figure>
-</div>
-<p>We have developed our dataset in a sequential process illustrated in Fig 1:</p>
-<ol type="1">
-<li><p>Data Acquisition: We retrieved a substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations and provided by NOAA (Fig 1a).</p></li>
-<li><p>Daily meteorological parameters computation: We computed the daily average values for ambient temperature, vapor pressure, and wind speed by taking the mean of hourly and sub-hourly raw data at station locations (Fig 1b).</p></li>
-<li><p>Missing data imputation: We detected and imputed missing daily records of up to five days gap in the daily time series based on the historical data from the same location (Fig 1c).</p></li>
-<li><p>Apparent temperature computation: We calculated the average daily apparent temperature (AT) for each station using the method developed by Steadman (Fig 1c). What is AT? <a href="./what_is_at.html">Check out our post</a>!</p></li>
-<li><p>Excess heat and cold factor computation: We began the extreme event delineation by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Fig 1d). We identified anomalies by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location</p></li>
-<li><p>Station-based extreme events identification: Leveraging the EHF/ECF, we identified the instances of extreme heat and cold events at the station locations using relative thresholds according to Sheridan et al.&nbsp;(Fig 1e).</p></li>
-<li><p>Extreme events intensity measurement: Using the station-based EHE/ECE daily records, we quantified the intensity of these extreme events by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. As suggested by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) can be used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions. In contrast, values approaching +100 pinpoint the prolonged heat events, and those nearing -100 signify places affected by extended cold events (Fig 1f).</p></li>
-<li><p>Spatial interpolation: Based on the intensity values derived for station locations, we spatially interpolated EHMI/ECMI values across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Fig 1g). IDW was used to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell. The weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.</p></li>
-<li><p>Area-wide extreme events determination: Finally, by analyzing the interpolated grids of EHMI/ECMI, we outlined the geographic extent of extreme events daily (Fig 1h).</p></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/gridex_fig2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-<figcaption>Figure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/gridex_fig3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-<figcaption>Figure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries</figcaption>
-</figure>
-</div>
-</section>
-<section id="data-and-code-resources" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-code-resources">Data and Code Resources</h2>
-<ul>
-<li><p>Fard et al., <strong>GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022</strong> (Submitted)</p>
-<ul>
-<li><p><strong>Github</strong>: <a href="https://github.com/epedram/us_ehe_ece" class="uri">https://github.com/epedram/us_ehe_ece</a></p></li>
-<li><p><strong>Data (Dataverse)</strong>: <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ" class="uri">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ</a>.</p></li>
-<li><p><strong>Data (Figshare)</strong>: <a href="https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447" class="uri">https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447</a></p></li>
-</ul></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <category>gridex</category>
-  <category>extreme events</category>
-  <guid>https://www.confluence-project.org/posts/intro_gridex.html</guid>
-  <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Estimating Extreme Heat Events in California</title>
@@ -527,19 +564,19 @@ u: Wind speed in m/s</p>
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig2.jpeg" class="img-fluid figure-img"></p>
 <figcaption>Integrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig3.jpeg" class="img-fluid figure-img"></p>
 <figcaption>Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="https://www.confluence-project.org/posts/img/ca_fig4.jpeg" class="img-fluid figure-img"></p>
 <figcaption>Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption>
 </figure>
 </div>
@@ -556,7 +593,7 @@ u: Wind speed in m/s</p>
   <category>news</category>
   <category>california</category>
   <guid>https://www.confluence-project.org/posts/extreme_heat_california.html</guid>
-  <pubDate>Sun, 01 Jan 2023 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

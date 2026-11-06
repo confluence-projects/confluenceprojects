@@ -1,0 +1,9 @@
+<ul class="latest">
+<% for (const item of items) { %>
+  <li <%= metadataAttrs(item) %>>
+    <time><%= item.date %></time>
+    <a href="<%- item.path %>"><%= item.title %></a>
+    <% if (item.description) { %><p><%= item.description %></p><% } %>
+  </li>
+<% } %>
+</ul>

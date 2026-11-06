@@ -4,7 +4,14 @@ title: GridEX, Gridded EXposures
 
 ## Grid-based measures of extreme heat and cold
 
-![](img/ehce.gif){fig-alt="Cumulative Annual Impacted Areas" fig-align="center"}
+```{=html}
+<figure>
+<video autoplay muted loop playsinline controls poster="media/gridex-impacted-areas-poster.jpg" style="width:100%;height:auto" aria-label="Animated maps of areas affected by extreme heat and cold events in the contiguous United States, by year, 2008 to 2022">
+<source src="media/gridex-impacted-areas.mp4" type="video/mp4">
+</video>
+<figcaption>Cumulative annual areas affected by extreme heat and cold, 2008–2022.</figcaption>
+</figure>
+```
 
 ## What is GridEX?
 

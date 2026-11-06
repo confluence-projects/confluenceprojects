@@ -2,7 +2,7 @@
 title: "Publications and Data"
 ---
 
--   Fard et al., **GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022** (Submitted)
+-   Fard et al., [**Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research**](https://doi.org/10.1021/acs.est.5c03658), ***Environmental Science & Technology* 2025** (the GridEX paper)
 
     -   **Github**: <https://github.com/epedram/us_ehe_ece>
 

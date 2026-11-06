@@ -1,7 +1,7 @@
 ---
 title: "Hossein Estiri, PhD"
 subtitle: "Principal Investigator"
-description: "Assistant Professor of Medicine and Director of Clinical AI at Mass General Hospital"
+description: "Associate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Mass General Hospital"
 author: "Chirag"
 date: "12/11/2022"
 image: /img/hossein.jpg

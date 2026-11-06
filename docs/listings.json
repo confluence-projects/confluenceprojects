@@ -2,10 +2,11 @@
   {
     "listing": "/rn.html",
     "items": [
+      "/posts/gridex_est_2025.html",
       "/posts/loading_gridex.html",
       "/posts/what_is_at.html",
-      "/posts/paa.html",
       "/posts/intro_gridex.html",
+      "/posts/paa.html",
       "/posts/extreme_heat_california.html"
     ]
   },
@@ -14,8 +15,19 @@
     "items": [
       "/team_members/pedram.html",
       "/team_members/chirag.html",
-      "/team_members/hossein.html",
-      "/team_members/francesca.html"
+      "/team_members/francesca.html",
+      "/team_members/hossein.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/gridex_est_2025.html",
+      "/posts/loading_gridex.html",
+      "/posts/what_is_at.html",
+      "/posts/intro_gridex.html",
+      "/posts/paa.html",
+      "/posts/extreme_heat_california.html"
     ]
   }
 ]

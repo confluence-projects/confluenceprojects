@@ -8,9 +8,9 @@
 <title>The Confluence Projects</title>
 <link>https://www.confluence-project.org/team.html</link>
 <atom:link href="https://www.confluence-project.org/team.xml" rel="self" type="application/rss+xml"/>
-<description>Investigating the confluence of health risk</description>
-<generator>quarto-1.4.550</generator>
-<lastBuildDate>Thu, 11 Jan 2024 05:00:00 GMT</lastBuildDate>
+<description>How extreme heat, cold, and other environmental exposures shape health and recovery as we age.</description>
+<generator>quarto-1.12.0</generator>
+<lastBuildDate>Thu, 11 Jan 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Pedram Fard, PhD</title>
   <dc:creator>Chirag </dc:creator>
@@ -23,8 +23,8 @@
   <category>machine-learning</category>
   <category>data-science</category>
   <guid>https://www.confluence-project.org/team_members/pedram.html</guid>
-  <pubDate>Thu, 11 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://www.confluence-project.org/img/pedram.jpg" medium="image" type="image/jpeg"/>
+  <pubDate>Thu, 11 Jan 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/img/pedram.jpg" medium="image" type="image/jpeg" height="131" width="144"/>
 </item>
 <item>
   <title>Chirag J Patel, PhD</title>
@@ -41,23 +41,8 @@
   <category>machine-learning</category>
   <category>data-science</category>
   <guid>https://www.confluence-project.org/team_members/chirag.html</guid>
-  <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.confluence-project.org/img/chirag.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Hossein Estiri, PhD</title>
-  <dc:creator>Chirag </dc:creator>
-  <link>https://www.confluence-project.org/team_members/hossein.html</link>
-  <description><![CDATA[ 
-
-
- ]]></description>
-  <category>dementia</category>
-  <category>machine-learning</category>
-  <category>data-science</category>
-  <guid>https://www.confluence-project.org/team_members/hossein.html</guid>
-  <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.confluence-project.org/img/hossein.jpg" medium="image" type="image/jpeg"/>
+  <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/img/chirag.jpg" medium="image" type="image/jpeg" height="168" width="144"/>
 </item>
 <item>
   <title>Francesca Dominici, PhD</title>
@@ -73,8 +58,23 @@
   <category>machine-learning</category>
   <category>data-science</category>
   <guid>https://www.confluence-project.org/team_members/francesca.html</guid>
-  <pubDate>Sun, 11 Dec 2022 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
   <media:content url="https://www.confluence-project.org/img/francesca.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Hossein Estiri, PhD</title>
+  <dc:creator>Chirag </dc:creator>
+  <link>https://www.confluence-project.org/team_members/hossein.html</link>
+  <description><![CDATA[ 
+
+
+ ]]></description>
+  <category>dementia</category>
+  <category>machine-learning</category>
+  <category>data-science</category>
+  <guid>https://www.confluence-project.org/team_members/hossein.html</guid>
+  <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/img/hossein.jpg" medium="image" type="image/jpeg" height="144" width="144"/>
 </item>
 </channel>
 </rss>

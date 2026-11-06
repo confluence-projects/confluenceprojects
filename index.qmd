@@ -1,25 +1,143 @@
 ---
-title: ""
+title: "The Confluence Projects"
+pagetitle: "The Confluence Projects: environmental exposure, aging, and recovery"
+page-layout: full
+toc: false
+body-classes: home
+listing:
+  id: latest
+  contents: posts
+  sort: "date desc"
+  max-items: 3
+  type: custom
+  template: _latest.ejs
+  date-format: "D MMMM YYYY"
+  feed: false
 ---
 
-![](img/confluence3.jpg){style="float: right;" fig-alt="" fig-align="right" width="150"}
+```{=html}
+<section class="home-hero">
+  <div>
+    <h1>We measure extreme heat and cold where people live, and study how it shapes health as we age.</h1>
+    <p class="lede">The Confluence Projects bring clinical informatics, environmental data science, and biostatistics together across Mass General Brigham, Harvard Medical School, and the Harvard T.H. Chan School of Public Health. We build high-resolution exposure data, link it to health records, and ask how heat, cold, and air pollution affect dementia and the body's capacity to recover from illness.</p>
+    <div class="home-actions">
+      <a class="btn btn-ink" href="gridex.html">Explore GridEX</a>
+      <a class="btn btn-line" href="data.html">Publications and data</a>
+    </div>
+  </div>
 
-[We study](./team.html) the ***confluence*** of the geospatial exposome, such as extreme heat and cold, and their impact on health and demographic outcomes related to human aging, such as dementia.
+  <figure class="hero-map">
+    <video id="hero-video" autoplay muted loop playsinline preload="auto"
+           poster="media/gridex-heat-cold-2022-poster.jpg"
+           aria-label="Animated GridEX map of the contiguous United States showing a July 2022 heat event across the West and Northern Plains, then the December 2022 cold outbreak across the central states.">
+      <source src="media/gridex-heat-cold-2022.mp4" type="video/mp4">
+    </video>
+    <figcaption>
+      <span class="event-date" id="hero-date" aria-live="off">Extreme heat, 17 July 2022</span>
+      <button class="map-toggle" id="hero-toggle" type="button" aria-controls="hero-video">Pause</button>
+      <div class="scale" aria-hidden="true">
+        <span>Cold</span><span class="scale-bar"></span><span>Heat</span>
+      </div>
+      <span class="event-note">GridEX extreme-event intensity on a 500&nbsp;m grid: five days of a July 2022 heat event, then five days of the December 2022 cold outbreak. Source data: NOAA Integrated Surface Database.</span>
+    </figcaption>
+  </figure>
+</section>
 
-## A confluence of factors in aging and health outcomes
+<section class="home-section" aria-labelledby="what-we-study">
+  <h2 id="what-we-study">What we study</h2>
 
-Nearly ten percent of Americans over the age of 65 are grappling with challenges linked to aging. This demographic, which includes a substantial number of Medicare beneficiaries, is notably vulnerable to health issues. This concern is growing as the population of older Americans is projected to nearly double by 2050. Simultaneously, the severity and frequency of extreme environmental changes, such as intense heatwaves and cold spells, are hypothesized to intensify.
+  <div class="thread">
+    <h3>Exposure where people live</h3>
+    <div>
+      <p>Assigning each person the reading from the nearest weather station misclassifies who was exposed. GridEX estimates daily apparent temperature and extreme heat and cold events on a 500&nbsp;m grid, so exposure can be linked to health data at any geographic scale. Other NIH-funded studies now build on it.</p>
+      <p><a href="gridex.html">How GridEX works</a></p>
+    </div>
+  </div>
 
-[Extreme weather events can significantly impact the health of older adults, children, and those with co-morbid conditions](https://www.cdc.gov/disasters/extremeheat/specificgroups.html), leading to increased mortality and a higher demand for healthcare services, including hospitalization.
+  <div class="thread">
+    <h3>Recovery and resilience in aging</h3>
+    <div>
+      <p>Older adults differ in how fully and how quickly they recover after an acute illness. Using longitudinal health records, we measure recovery capacity across organ systems and test whether environmental exposure and inflammation wear it down over time.</p>
+    </div>
+  </div>
 
-It is essential to understand and address the specific health challenges faced by these older adults in the face of confluence of exposome-related events. This understanding is crucial for ensuring that our healthcare system, including Medicare, is prepared to effectively support the growing number of senior citizens in the face of environmental challenges.
+  <div class="thread">
+    <h3>Dementia and the exposome</h3>
+    <div>
+      <p>With support from the National Institute on Aging, we identify dementia and its precursors in clinical records with AI and examine how long-term environmental exposures relate to its onset and course.</p>
+      <p><a href="data.html">Related publications</a></p>
+    </div>
+  </div>
+</section>
 
-## Geospatial linkages to assess extreme heat and cold
+<section class="gridex-band" aria-labelledby="gridex-data">
+  <div>
+    <h2 id="gridex-data">GridEX is open data</h2>
+    <p>A national catalog of extreme heat and cold events for the contiguous United States, with daily temperature, dew point, wind, and apparent temperature surfaces. Raster layers come as GeoTIFF and event boundaries as GeoPackage, under the MIT license.</p>
+    <p>Described in <a href="https://doi.org/10.1021/acs.est.5c03658"><em>Environmental Science &amp; Technology</em> (2025)</a>.</p>
+    <div class="home-actions" style="margin-top:1.6rem">
+      <a class="btn btn-ink" href="https://doi.org/10.7910/DVN/DJGKDJ">Download from Dataverse</a>
+      <a class="btn btn-line" href="https://ehce.connect.hms.harvard.edu/us_ehe_ece">Open the interactive catalog</a>
+    </div>
+  </div>
+  <dl class="facts">
+    <dt>500 m</dt><dd>grid resolution, nationwide</dd>
+    <dt>2008–2022</dt><dd>daily coverage</dd>
+    <dt>~2,250</dt><dd>NOAA weather stations</dd>
+    <dt>800M+</dt><dd>hourly and sub-hourly station records</dd>
+  </dl>
+</section>
+```
 
-We are developing compute-intensive approaches to accurately assess biological relevant exposure to extreme heat and cold, for example [*GridEX*](gridex.html)*.* These new data and pipelines provide higher resolution microscope to complement and enhance efforts by the [US Centers for Disease Control and Prevention (CDC](https://ephtracking.cdc.gov/Applications/heatTracker/)) and Environmental Protection Agency.
+::: {.home-section .after-band}
+## Latest
 
-|                  |                  |
-|------------------|------------------|
-| ![](img/ece.jpg) | ![](img/ehe.jpg) |
+::: {#latest}
+:::
 
-: Drawing a surface of extreme cold (left) and heat (right) with GridEX.
+[All news and posts](rn.html){.more-link}
+:::
+
+```{=html}
+<section class="home-section support" aria-labelledby="support">
+  <div>
+    <h2 id="support" style="font-size:1.35rem;margin:0 0 .5rem">Support and partners</h2>
+    <p>Funded by the National Institute on Aging (RF1AG074372, R01AG096492).</p>
+  </div>
+  <div class="partners">
+    <img src="img/mgb.png" alt="Mass General Brigham">
+    <img src="img/Blavatnikbioinformatics.png" alt="Department of Biomedical Informatics, Blavatnik Institute, Harvard Medical School">
+    <img src="img/chan.png" alt="Harvard T.H. Chan School of Public Health">
+    <img src="img/hdsi.png" alt="Harvard Data Science Initiative">
+    <img src="img/nia-transparent.png" alt="National Institute on Aging">
+  </div>
+</section>
+
+<script>
+(function () {
+  var v = document.getElementById('hero-video');
+  var label = document.getElementById('hero-date');
+  var btn = document.getElementById('hero-toggle');
+  if (!v || !label || !btn) return;
+  var frames = [
+    'Extreme heat, 15 July 2022', 'Extreme heat, 16 July 2022', 'Extreme heat, 17 July 2022',
+    'Extreme heat, 18 July 2022', 'Extreme heat, 19 July 2022',
+    'Extreme cold, 21 December 2022', 'Extreme cold, 22 December 2022', 'Extreme cold, 23 December 2022',
+    'Extreme cold, 24 December 2022', 'Extreme cold, 25 December 2022'
+  ];
+  var step = 1.4;
+  function sync() {
+    var i = Math.min(frames.length - 1, Math.floor(v.currentTime / step));
+    if (label.textContent !== frames[i]) label.textContent = frames[i];
+  }
+  v.addEventListener('timeupdate', sync);
+  function setPaused(p) {
+    if (p) { v.pause(); btn.textContent = 'Play'; }
+    else { var r = v.play(); if (r && r.catch) r.catch(function(){}); btn.textContent = 'Pause'; }
+  }
+  btn.addEventListener('click', function () { setPaused(!v.paused); });
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (rm && rm.matches) { v.removeAttribute('autoplay'); setPaused(true); }
+})();
+</script>
+```

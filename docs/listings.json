@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/team.html",
+    "items": [
+      "/team_members/chirag.html",
+      "/team_members/francesca.html",
+      "/team_members/hossein.html",
+      "/team_members/pedram.html"
+    ]
+  },
+  {
     "listing": "/rn.html",
     "items": [
       "/posts/ai_gridex_roadmap.html",
@@ -8,18 +17,9 @@
       "/posts/catalyst_p20_ochin.html",
       "/posts/loading_gridex.html",
       "/posts/what_is_at.html",
-      "/posts/intro_gridex.html",
       "/posts/paa.html",
+      "/posts/intro_gridex.html",
       "/posts/extreme_heat_california.html"
-    ]
-  },
-  {
-    "listing": "/team.html",
-    "items": [
-      "/team_members/chirag.html",
-      "/team_members/francesca.html",
-      "/team_members/hossein.html",
-      "/team_members/pedram.html"
     ]
   },
   {
@@ -31,8 +31,8 @@
       "/posts/catalyst_p20_ochin.html",
       "/posts/loading_gridex.html",
       "/posts/what_is_at.html",
-      "/posts/intro_gridex.html",
       "/posts/paa.html",
+      "/posts/intro_gridex.html",
       "/posts/extreme_heat_california.html"
     ]
   }

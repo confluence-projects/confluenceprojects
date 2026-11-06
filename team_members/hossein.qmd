@@ -6,9 +6,9 @@ author: "Chirag"
 date: "12/11/2022"
 image: /img/hossein-estiri.jpg
 categories:
-  - dementia
   - environmental-health-informatics
-  - clinical-ai
+  - gridex
+  - extreme-environmental-events
 about:
   template: jolla
   image: /img/hossein-estiri.jpg
@@ -18,8 +18,8 @@ about:
       href: https://clai.mgh.harvard.edu/
 ---
 
-Hossein Estiri's research spans computational phenomics, environmental health informatics, temporal machine learning, and agentic AI for clinical decision support.
+Hossein Estiri works on environmental health informatics and on temporal machine learning for electronic health records. His group at Massachusetts General Hospital builds methods that link measures of the environment to longitudinal clinical data at the scale of national networks.
 
-In the Confluence Projects, he co-developed GridEX with Chirag Patel and leads the work that links environmental exposure to longitudinal health records: identifying dementia and its precursors in clinical data, and measuring how fully and how quickly older adults recover after illness. He is contact principal investigator of the NIA-funded R01AG096492 on dementia and the environmental exposome, and a principal investigator of the NIMHD-funded Community CATALYST Center with OCHIN.
+In the Confluence Projects, he co-developed GridEX with Chirag Patel and Pedram Fard. He leads the linkage of GridEX to clinical records, including the shared electronic health record of OCHIN's national network of community health centers. His roles as principal investigator include the National Institute on Aging award on extreme heat and cold in aging (RF1AG074372, continued as R01AG074372) and the Community CATALYST Center with OCHIN (P20MD019799).
 
-He has led multi-site AI studies in the ENACT and PCORnet networks, and his work has twice been selected as a best paper in clinical research informatics by the IMIA Yearbook of Medical Informatics.
+He has led multisite studies in the ENACT and PCORnet networks. The IMIA Yearbook of Medical Informatics has twice selected his work as a best paper in clinical research informatics.

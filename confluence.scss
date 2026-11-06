@@ -159,13 +159,13 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .home-hero h1 {
-  font-size: clamp(2.1rem, 3.3vw, 3.05rem);
+  font-size: clamp(2rem, 2.9vw, 2.65rem);
   font-weight: 500;
   font-variation-settings: "opsz" 60;
   line-height: 1.08;
   letter-spacing: -0.02em;
   margin: 0 0 1.4rem;
-  max-width: 19ch;
+  max-width: 22ch;
 }
 
 .home-hero .lede {
@@ -279,8 +279,9 @@ a:hover { text-decoration-thickness: 2px; }
   padding: clamp(2.4rem, 5vw, 3.8rem) clamp(1.4rem, 4vw, 3.2rem);
   margin: 0.5rem 0 1rem;
   display: grid;
-  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-  gap: 2rem 3.5rem;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 2rem 3rem;
+  align-items: center;
 }
 .gridex-band h2 {
   color: #fff;
@@ -295,27 +296,32 @@ a:hover { text-decoration-thickness: 2px; }
 .gridex-band .btn-line:hover { border-color: #fff; background: rgba(255,255,255,.06); color: #fff; }
 
 .facts {
-  margin: 0;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.85rem 1.4rem;
-  align-content: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 1.4rem 0 1.6rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(255,255,255,.18);
+  border-bottom: 1px solid rgba(255,255,255,.18);
 }
-.facts dt {
+.facts > div { display: flex; flex-direction: column; gap: 0.15rem; }
+.fact-n {
   font-family: $headings-font-family;
   font-variation-settings: "opsz" 40;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
   line-height: 1.1;
-  white-space: nowrap;
 }
-.facts dd {
+.fact-l { color: #c9d6dc; font-size: 0.9rem; }
+
+.band-map {
   margin: 0;
-  align-self: center;
-  color: #c9d6dc;
-  font-size: 0.95rem;
+  background: #fff;
+  padding: 0.6rem 0.6rem 0.8rem;
 }
+.band-map video { display: block; width: 100%; height: auto; }
+.band-map figcaption { color: $muted; font-size: 0.85rem; margin: 0.5rem 0.3rem 0; }
 
 // Latest news list
 .latest { list-style: none; padding: 0; margin: 0; }
@@ -354,6 +360,15 @@ a:hover { text-decoration-thickness: 2px; }
   flex-wrap: wrap;
   align-items: center;
   gap: 1.6rem 2.4rem;
+}
+.partner-name {
+  font-family: $headings-font-family;
+  font-variation-settings: "opsz" 24;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: $ink;
+  line-height: 1.15;
+  max-width: 12ch;
 }
 .partners img {
   height: 46px;

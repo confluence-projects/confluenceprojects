@@ -29,10 +29,25 @@
 }
 
 /* Contour backgrounds (isotherm-style lines). Kept here so the
-   url() paths resolve from the site root. */
+   url() paths resolve from the site root. _contours.html adds a fixed,
+   site-wide layer and updates the custom properties on scroll; with
+   reduced motion preferred, everything stays still. */
+.contour-field {
+  position: fixed;
+  inset: -10vh -6vw;
+  z-index: -1;
+  pointer-events: none;
+  background: url("media/contours-field.svg") center / cover no-repeat;
+  transform: translate3d(var(--contour-x, 0px), var(--contour-y, 0px), 0) rotate(var(--contour-r, 0deg));
+  will-change: transform;
+}
 .hero-band {
-  background: #f3f6f7 url("media/contours-light.svg") center / cover no-repeat;
+  background: #f3f6f7 url("media/contours-light.svg") no-repeat;
+  background-size: cover;
+  background-position: center calc(50% - var(--band-shift, 0px));
 }
 .gridex-band {
-  background: #142d3b url("media/contours-dark.svg") center / cover no-repeat;
+  background: #142d3b url("media/contours-dark.svg") no-repeat;
+  background-size: cover;
+  background-position: center calc(50% + var(--band-shift, 0px));
 }

@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-f0688f390a76b21125ecd060a3d0a4db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-02991c25f1634eda47502b77a2878db7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3070d0562ab32e11e17bdc76cf61202c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +88,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="GridEX, Gridded EXposures – The Confluence Projects">
-<meta property="og:description" content="How extreme heat, cold, and other environmental exposures shape health and recovery as we age.">
+<meta property="og:description" content="GridEX and the health effects of extreme environmental events such as extreme heat and cold.">
 <meta property="og:image" content="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg">
 <meta property="og:site_name" content="The Confluence Projects">
 <meta property="og:image:height" content="612">
@@ -211,7 +211,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 </section>
 <section id="what-is-gridex" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-gridex">What is GridEX?</h2>
-<p>GridEX (short for “<u>Grid</u>ded <u>EX</u>posure”) is a grid-based measure of exposure to extreme heat and cold events with a high spatial resolution of 500 × 500 m for the contiguous United States, spanning from 2008 to 2022. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient temperature which takes into account humidity and wind in addition to the actual air temperature.</p>
+<p>GridEX (short for “<u>Grid</u>ded <u>EX</u>posure”) is a grid-based measure of exposure to extreme environmental events, specifically extreme heat and cold events, with a high spatial resolution of 500 × 500 m for the contiguous United States, spanning from 2008 to 2022. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient temperature which takes into account humidity and wind in addition to the actual air temperature.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
@@ -277,6 +277,25 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 </section>
 
 </main> <!-- /main -->
+<div class="contour-field" aria-hidden="true"></div>
+<script>
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var root = document.documentElement, queued = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    root.style.setProperty('--contour-y', (-y * 0.05).toFixed(1) + 'px');
+    root.style.setProperty('--contour-x', (Math.sin(y / 700) * 12).toFixed(1) + 'px');
+    root.style.setProperty('--contour-r', (Math.sin(y / 1600) * 1.2).toFixed(3) + 'deg');
+    root.style.setProperty('--band-shift', (y * 0.12).toFixed(1) + 'px');
+    queued = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!queued) { queued = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -757,7 +776,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health.</p>
+<p>The Confluence Projects, Massachusetts General Hospital, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

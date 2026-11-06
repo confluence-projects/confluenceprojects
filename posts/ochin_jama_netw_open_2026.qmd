@@ -1,0 +1,24 @@
+---
+title: "Extreme heat and blood pressure in community health centers, in JAMA Network Open"
+description: "The first study to link GridEX to the OCHIN network analyzed 4.2 million ambulatory encounters at 2,554 community health centers in 40 states."
+author: "The Confluence Projects"
+date: "2026-09-10"
+image: ../media/gridex-heat-cold-2022-poster.jpg
+categories:
+  - news
+  - publications
+  - gridex
+  - ochin
+---
+
+Our first study linking GridEX to the OCHIN network of community health centers is now published in *JAMA Network Open*.
+
+McGrath BM, Georgescu J, Fard P, Gold R, Heintzman J, Patel CJ, Tandon R, Albright K, Estiri H. **Extreme heat exposure and blood pressure in community health center patients.** *JAMA Network Open.* 2026;9(9). [doi:10.1001/jamanetworkopen.2026.33066](https://doi.org/10.1001/jamanetworkopen.2026.33066)
+
+Community health centers measure blood pressure at nearly each ambulatory visit, and their patients have received little attention in research on extreme environmental events. We assigned GridEX extreme heat exposure to the location of each clinic, on the day of the visit and over the preceding week, and analyzed 4,221,866 summer ambulatory encounters at 2,554 centers in 40 states from 2019 through 2023. Extreme heat occurred during 2% of these encounters.
+
+Extreme heat on the day of the visit was associated with a 0.7 mm Hg lower systolic and a 0.3 mm Hg lower diastolic blood pressure. In adults 65 years and older, the differences grew to 1.1 and 0.8 mm Hg. Across an 8-day exposure window, the largest differences appeared on the day of the visit and the day before, and they faded by the third day. Hypertension status modified the systolic association (P = .003), whereas the diastolic association showed no modification (P = .84).
+
+For most individuals, reductions of this size carry little clinical consequence. The findings therefore suggest that acute changes in blood pressure are unlikely to be the main pathway from extreme heat to cardiovascular risk. The authors identify age, temporal scale, and clinical and community context as factors to weigh when assessing cardiovascular risk from extreme heat.
+
+The study is the first in a series built on the linkage of GridEX to the OCHIN shared electronic health record, which the Community CATALYST Center ([P20MD019799](https://reporter.nih.gov/project-details/10977025)) established. Read more about [GridEX](../gridex.qmd).

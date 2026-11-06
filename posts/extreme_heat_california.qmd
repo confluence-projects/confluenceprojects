@@ -26,7 +26,7 @@ Studying how extreme heat affects health requires accurately identifying the are
 
 -   The conventional methods rely on absolute temperature and larger spatial scales.
 
--   Our method accounts for antecedent climate conditions and composite heat measure.
+-   Our method accounts for antecedent temperature conditions and composite heat measure.
 
 -   Our method significantly reduces misclassification of populations impacted by EHEs.
 

@@ -25,7 +25,7 @@ Interested in the data we are creating? Come join us at PAA to get a hands-on ov
 -   Chirag J Patel, Department of Biomedical Informatics, Harvard Medical School, USA
 -   Contact person: Pedram Fard (Pedram_Fard<at>hms.harvard.edu)
 
-Extreme climate events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of climate events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities of extreme climate impacts, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.
+Extreme environmental events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of climate events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities of extreme climate impacts, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.
 
 ## Workshop objectives and outcomes:
 
@@ -35,7 +35,7 @@ The objective of this workshop is to equip researchers with theoretical concepts
 
 The half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.
 
-1.  First, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).
+1.  First, we offer an introduction to population-based epidemiology followed by an overview of research on extreme environmental events, and population dynamics analysis (45 minutes).
 
 2.  Second, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).
 

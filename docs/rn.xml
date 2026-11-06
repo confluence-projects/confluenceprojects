@@ -8,9 +8,36 @@
 <title>The Confluence Projects</title>
 <link>https://www.confluence-project.org/rn.html</link>
 <atom:link href="https://www.confluence-project.org/rn.xml" rel="self" type="application/rss+xml"/>
-<description>How extreme heat, cold, and other environmental exposures shape health and recovery as we age.</description>
+<description>GridEX and the health effects of extreme environmental events such as extreme heat and cold.</description>
 <generator>quarto-1.12.0</generator>
-<lastBuildDate>Mon, 08 Sep 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Extreme heat and blood pressure in community health centers, in JAMA Network Open</title>
+  <dc:creator>The Confluence Projects</dc:creator>
+  <link>https://www.confluence-project.org/posts/ochin_jama_netw_open_2026.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Our first study linking GridEX to the OCHIN network of community health centers is now published in <em>JAMA Network Open</em>.</p>
+<p>McGrath BM, Georgescu J, Fard P, Gold R, Heintzman J, Patel CJ, Tandon R, Albright K, Estiri H. <strong>Extreme heat exposure and blood pressure in community health center patients.</strong> <em>JAMA Network Open.</em> 2026;9(9). <a href="https://doi.org/10.1001/jamanetworkopen.2026.33066">doi:10.1001/jamanetworkopen.2026.33066</a></p>
+<p>Community health centers measure blood pressure at nearly each ambulatory visit, and their patients have received little attention in research on extreme environmental events. We assigned GridEX extreme heat exposure to the location of each clinic, on the day of the visit and over the preceding week, and analyzed 4,221,866 summer ambulatory encounters at 2,554 centers in 40 states from 2019 through 2023. Extreme heat occurred during 2% of these encounters.</p>
+<p>Extreme heat on the day of the visit was associated with a 0.7 mm Hg lower systolic and a 0.3 mm Hg lower diastolic blood pressure. In adults 65 years and older, the differences grew to 1.1 and 0.8 mm Hg. Across an 8-day exposure window, the largest differences appeared on the day of the visit and the day before, and they faded by the third day. Hypertension status modified the systolic association (P = .003), whereas the diastolic association showed no modification (P = .84).</p>
+<p>For most individuals, reductions of this size carry little clinical consequence. The findings therefore suggest that acute changes in blood pressure are unlikely to be the main pathway from extreme heat to cardiovascular risk. The authors identify age, temporal scale, and clinical and community context as factors to weigh when assessing cardiovascular risk from extreme heat.</p>
+<p>The study is the first in a series built on the linkage of GridEX to the OCHIN shared electronic health record, which the Community CATALYST Center (<a href="https://reporter.nih.gov/project-details/10977025">P20MD019799</a>) established. Read more about <a href="../gridex.html">GridEX</a>.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>publications</category>
+  <category>gridex</category>
+  <category>ochin</category>
+  <guid>https://www.confluence-project.org/posts/ochin_jama_netw_open_2026.html</guid>
+  <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg" medium="image" type="image/jpeg" height="79" width="144"/>
+</item>
 <item>
   <title>GridEX published in Environmental Science &amp; Technology</title>
   <dc:creator>The Confluence Projects</dc:creator>
@@ -461,7 +488,7 @@ u: Wind speed in m/s</p>
 
 
 
-<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
+<p><img src="https://www.confluence-project.org/posts/img/grid.png" class="img-fluid quarto-figure quarto-figure-right" style="float: right;" alt="PAA Ohio" width="300"> Accurate attribution of the areas and populations affected by extreme environmental events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and reanalysis meteorological data provided by GridMET. All the derivative data and the associated source code are publicly available.</p>
 <p>Check out the <a href="../gridex.html">GridEX</a> homepage for more information!</p>
 <section id="pipeline-schematic" class="level2">
 <h2 class="anchored" data-anchor-id="pipeline-schematic">Pipeline schematic</h2>
@@ -547,7 +574,7 @@ u: Wind speed in m/s</p>
 <li>Chirag J Patel, Department of Biomedical Informatics, Harvard Medical School, USA</li>
 <li>Contact person: Pedram Fard (Pedram_Fard<at>hms.harvard.edu)</at></li>
 </ul>
-<p>Extreme climate events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of climate events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities of extreme climate impacts, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.</p>
+<p>Extreme environmental events are increasingly recognized as associated with adverse health outcomes as well as broad range social and economic impacts. While impacts on health is a major area of investigation within the scientific community, demographic repercussions of climate events remain elusive. To facilitate evaluating the spatio-temporal patterns and assess disparities of extreme climate impacts, we have developed a geoinformatics pipeline and curated a longitudinal dataset of precise extreme heat and cold events (EHEs/ECEs) in the United States, at a very fine spatial and temporal resolution (500×500-meter grids). We will present this data source, which is publicly available to the scientific community, and provide tutorials on how to access and address different demographic and epidemiological research questions.</p>
 <section id="workshop-objectives-and-outcomes" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-objectives-and-outcomes">Workshop objectives and outcomes:</h2>
 <p>The objective of this workshop is to equip researchers with theoretical concepts and analytical instruments for evaluating the impact of EHE/ECE on demographic outcomes including morbidity, mortality and migration. The workshop helps participants to get started with querying and retrieving the national dataset of EHE/ECE covering the continental United States over the past 15 years. They will also gain experience in linking this catalog with other data sources such as Census ACS. By participating in this workshop, the attendees would be better able to: Learn about opportunities, challenges and possible solutions in leveraging large scale spatio-temporal data for population-based epidemiological health research. Understand the considerations in integrating, maintaining and retrieval of climatological and socio-demographic data from dispersed and heterogeneous data sources. Learn the sources of uncertainty in identifying extreme climate events and the exposed population in such incidents, and understand strategies to minimize the errors in the impacted population classifications. Formulate their personalized approach to adoption of geoinformatics technology and open source softwares for climate related demographic research.</p>
@@ -556,7 +583,7 @@ u: Wind speed in m/s</p>
 <h2 class="anchored" data-anchor-id="workshop-activities-and-schedule">Workshop activities and schedule:</h2>
 <p>The half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.</p>
 <ol type="1">
-<li><p>First, we offer an introduction to population-based epidemiology followed by an overview of extreme climate events research, and population dynamics analysis (45 minutes).</p></li>
+<li><p>First, we offer an introduction to population-based epidemiology followed by an overview of research on extreme environmental events, and population dynamics analysis (45 minutes).</p></li>
 <li><p>Second, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).</p></li>
 <li><p>Third, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes).</p></li>
 </ol>
@@ -591,7 +618,7 @@ u: Wind speed in m/s</p>
 <ul>
 <li><p>Our proposed method uses spatial interpolation to accurately estimate EHE boundaries.</p></li>
 <li><p>The conventional methods rely on absolute temperature and larger spatial scales.</p></li>
-<li><p>Our method accounts for antecedent climate conditions and composite heat measure.</p></li>
+<li><p>Our method accounts for antecedent temperature conditions and composite heat measure.</p></li>
 <li><p>Our method significantly reduces misclassification of populations impacted by EHEs.</p></li>
 </ul>
 <section id="overview" class="level3">

@@ -1,0 +1,19 @@
+<div class="contour-field" aria-hidden="true"></div>
+<script>
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var root = document.documentElement, queued = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    root.style.setProperty('--contour-y', (-y * 0.05).toFixed(1) + 'px');
+    root.style.setProperty('--contour-x', (Math.sin(y / 700) * 12).toFixed(1) + 'px');
+    root.style.setProperty('--contour-r', (Math.sin(y / 1600) * 1.2).toFixed(3) + 'deg');
+    root.style.setProperty('--band-shift', (y * 0.12).toFixed(1) + 'px');
+    queued = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!queued) { queued = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+</script>

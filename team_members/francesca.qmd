@@ -8,7 +8,7 @@ image: /img/francesca.png
 categories:
   - geospatial analytics
   - air pollution
-  - climate change
+  - extreme-environmental-events
   - machine-learning
   - data-science
 about:

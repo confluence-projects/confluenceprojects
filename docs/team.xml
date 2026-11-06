@@ -8,7 +8,7 @@
 <title>The Confluence Projects</title>
 <link>https://www.confluence-project.org/team.html</link>
 <atom:link href="https://www.confluence-project.org/team.xml" rel="self" type="application/rss+xml"/>
-<description>How extreme heat, cold, and other environmental exposures shape health and recovery as we age.</description>
+<description>GridEX and the health effects of extreme environmental events such as extreme heat and cold.</description>
 <generator>quarto-1.12.0</generator>
 <lastBuildDate>Thu, 11 Jan 2024 00:00:00 GMT</lastBuildDate>
 <item>
@@ -54,7 +54,7 @@
  ]]></description>
   <category>geospatial analytics</category>
   <category>air pollution</category>
-  <category>climate change</category>
+  <category>extreme-environmental-events</category>
   <category>machine-learning</category>
   <category>data-science</category>
   <guid>https://www.confluence-project.org/team_members/francesca.html</guid>
@@ -66,15 +66,15 @@
   <dc:creator>Chirag </dc:creator>
   <link>https://www.confluence-project.org/team_members/hossein.html</link>
   <description><![CDATA[ 
-<p>Hossein Estiri’s research spans computational phenomics, environmental health informatics, temporal machine learning, and agentic AI for clinical decision support.</p>
-<p>In the Confluence Projects, he co-developed GridEX with Chirag Patel and leads the work that links environmental exposure to longitudinal health records: identifying dementia and its precursors in clinical data, and measuring how fully and how quickly older adults recover after illness. He is contact principal investigator of the NIA-funded R01AG096492 on dementia and the environmental exposome, and a principal investigator of the NIMHD-funded Community CATALYST Center with OCHIN.</p>
-<p>He has led multi-site AI studies in the ENACT and PCORnet networks, and his work has twice been selected as a best paper in clinical research informatics by the IMIA Yearbook of Medical Informatics.</p>
+<p>Hossein Estiri works on environmental health informatics and on temporal machine learning for electronic health records. His group at Massachusetts General Hospital builds methods that link measures of the environment to longitudinal clinical data at the scale of national networks.</p>
+<p>In the Confluence Projects, he co-developed GridEX with Chirag Patel and Pedram Fard. He leads the linkage of GridEX to clinical records, including the shared electronic health record of OCHIN’s national network of community health centers. His roles as principal investigator include the National Institute on Aging award on extreme heat and cold in aging (RF1AG074372, continued as R01AG074372) and the Community CATALYST Center with OCHIN (P20MD019799).</p>
+<p>He has led multisite studies in the ENACT and PCORnet networks. The IMIA Yearbook of Medical Informatics has twice selected his work as a best paper in clinical research informatics.</p>
 
 
  ]]></description>
-  <category>dementia</category>
   <category>environmental-health-informatics</category>
-  <category>clinical-ai</category>
+  <category>gridex</category>
+  <category>extreme-environmental-events</category>
   <guid>https://www.confluence-project.org/team_members/hossein.html</guid>
   <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
   <media:content url="https://www.confluence-project.org/img/hossein-estiri.jpg" medium="image" type="image/jpeg" height="144" width="144"/>

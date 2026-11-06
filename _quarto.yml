@@ -8,7 +8,7 @@ project:
 website:
   title: "The Confluence Projects"
   google-analytics: "G-X7TVYB1MH3"
-  description: "How extreme heat, cold, and other environmental exposures shape health and recovery as we age."
+  description: "GridEX and the health effects of extreme environmental events such as extreme heat and cold."
   favicon: "img/confluence3.jpg"
   site-url: https://www.confluence-project.org
   open-graph:
@@ -35,13 +35,14 @@ website:
         aria-label: RSS feed
     search: true
   page-footer:
-    left: "The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health."
+    left: "The Confluence Projects, Massachusetts General Hospital, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health."
     right: "[Site source on GitHub](https://github.com/confluence-projects/confluenceprojects)"
 
 format:
   html:
     theme: [default, confluence.scss]
     css: styles.css
+    include-after-body: _contours.html
     toc: true
     fontsize: 1.0625rem
     linestretch: 1.6

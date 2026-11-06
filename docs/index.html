@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Confluence Projects: environmental exposure, aging, and recovery – The Confluence Projects</title>
+<title>The Confluence Projects: GridEX and extreme environmental events – The Confluence Projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-f0688f390a76b21125ecd060a3d0a4db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-02991c25f1634eda47502b77a2878db7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3070d0562ab32e11e17bdc76cf61202c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,9 +87,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-editor','listing-engines','listing-language','listing-title','listing-description','listing-author','listing-date','listing-date-modified','listing-categories','listing-path','listing-outputHref','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-editor','listing-engines','listing-language','listing-title','listing-description','listing-author','listing-date','listing-image','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-editor","listing-engines","listing-language","listing-title","listing-description","listing-author","listing-date","listing-date-modified","listing-categories","listing-path","listing-outputHref","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-image"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-editor","listing-engines","listing-language","listing-title","listing-description","listing-author","listing-date","listing-image","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -141,8 +141,8 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="The Confluence Projects: environmental exposure, aging, and recovery">
-<meta property="og:description" content="How extreme heat, cold, and other environmental exposures shape health and recovery as we age.">
+<meta property="og:title" content="The Confluence Projects: GridEX and extreme environmental events">
+<meta property="og:description" content="GridEX and the health effects of extreme environmental events such as extreme heat and cold.">
 <meta property="og:image" content="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg">
 <meta property="og:site_name" content="The Confluence Projects">
 <meta property="og:image:height" content="612">
@@ -235,8 +235,8 @@ window.Quarto = {
 <div class="hero-band column-screen">
 <section class="home-hero">
   <div>
-    <h1>We measure extreme heat and cold where people live, and study how it shapes health as we age.</h1>
-    <p class="lede">The Confluence Projects bring clinical informatics, environmental data science, and biostatistics together across Mass General Brigham, Harvard Medical School, and the Harvard T.H. Chan School of Public Health. We build high-resolution exposure data, link it to health records, and ask how heat, cold, and air pollution affect dementia and the body's capacity to recover from illness.</p>
+    <h1>We measure extreme environmental events where people live and link them to health records at scale.</h1>
+    <p class="lede">The Confluence Projects bring environmental data science together with clinical informatics and biostatistics at Massachusetts General Hospital, Harvard Medical School, and the Harvard T.H. Chan School of Public Health. Our core resource, GridEX, delineates extreme heat and cold events on a 500&nbsp;m grid across the contiguous United States from 2008 to 2022.</p>
     <div class="home-actions">
       <a class="btn btn-ink" href="gridex.html">Explore GridEX</a>
       <a class="btn btn-line" href="data.html">Publications and data</a>
@@ -244,7 +244,7 @@ window.Quarto = {
   </div>
 
   <figure class="hero-map figure">
-    <video id="hero-video" autoplay="" muted="" loop="" playsinline="" preload="auto" poster="media/gridex-heat-cold-2022-poster.jpg" aria-label="Animated GridEX map of the contiguous United States showing a July 2022 heat event across the West and Northern Plains, then the December 2022 cold outbreak across the central states.">
+    <video id="hero-video" autoplay="" muted="" loop="" playsinline="" preload="auto" poster="media/gridex-heat-cold-2022-poster.jpg" aria-label="Animated GridEX map of the contiguous United States showing a July 2022 heat event across the West and Northern Plains, followed by the December 2022 cold outbreak across the central states.">
       <source src="media/gridex-heat-cold-2022.mp4" type="video/mp4">
     </video>
     <figcaption>
@@ -253,7 +253,7 @@ window.Quarto = {
       <div class="scale" aria-hidden="true">
         <span>Cold</span><span class="scale-bar"></span><span>Heat</span>
       </div>
-      <span class="event-note">GridEX extreme-event intensity on a 500&nbsp;m grid: five days of a July 2022 heat event, then five days of the December 2022 cold outbreak. Source data: NOAA Integrated Surface Database.</span>
+      <span class="event-note">GridEX intensity of extreme environmental events on a 500&nbsp;m grid, shown for five days of a July 2022 heat event and five days of the December 2022 cold outbreak. Station data come from the NOAA Integrated Surface Database.</span>
     </figcaption>
   </figure>
 </section>
@@ -265,64 +265,69 @@ window.Quarto = {
   <div class="thread">
     <h3 class="anchored">Exposure where people live</h3>
     <div>
-      <p>Assigning each person the reading from the nearest weather station misclassifies who was exposed. GridEX estimates daily apparent temperature and extreme heat and cold events on a 500&nbsp;m grid, so exposure can be linked to health data at any geographic scale. Other NIH-funded studies now build on it.</p>
+      <p>Studies of extreme heat and cold have long assigned each person the reading from the nearest weather station, which misclassifies who was exposed during an event. GridEX estimates daily apparent temperature, which accounts for humidity and wind, and traces the boundary of each extreme event as it moves. Because the output is gridded, it links to health data at any geographic scale.</p>
       <p><a href="gridex.html">How GridEX works</a></p>
     </div>
   </div>
 
   <div class="thread">
-    <h3 class="anchored">Recovery and resilience in aging</h3>
+    <h3 class="anchored">Extreme events in community health centers</h3>
     <div>
-      <p>Older adults differ in how fully and how quickly they recover after an acute illness. Using longitudinal health records, we measure recovery capacity across organ systems and test whether environmental exposure and inflammation wear it down over time.</p>
+      <p>Through the Community CATALYST Center, we link GridEX to the shared electronic health record of OCHIN, a national network of community health centers. The first study from this linkage analyzed 4.2 million ambulatory encounters at 2,554 centers in 40 states and appeared in <em>JAMA Network Open</em> in September 2026.</p>
+      <p><a href="posts/ochin_jama_netw_open_2026.html">Read about the study</a></p>
     </div>
   </div>
 
   <div class="thread">
-    <h3 class="anchored">Dementia and the exposome</h3>
+    <h3 class="anchored">Extreme events and aging</h3>
     <div>
-      <p>With support from the National Institute on Aging, we identify dementia and its precursors in clinical records with AI and examine how long-term environmental exposures relate to its onset and course.</p>
-      <p><a href="data.html">Related publications</a></p>
+      <p>Older adults carry a disproportionate share of the health burden from extreme heat and cold. With support from the National Institute on Aging, we use GridEX to study how these events relate to health and health care use in later life. In the community health center study, blood pressure fell further on extreme heat days in adults 65 and older than in younger adults.</p>
     </div>
   </div>
 </section>
 
 <section class="gridex-band column-page" aria-labelledby="gridex-data">
-  <div>
+  <div class="band-text">
     <h2 id="gridex-data" class="anchored">GridEX is open data</h2>
-    <p>A national catalog of extreme heat and cold events for the contiguous United States, with daily temperature, dew point, wind, and apparent temperature surfaces. Raster layers come as GeoTIFF and event boundaries as GeoPackage, under the MIT license.</p>
-    <p>Described in <a href="https://doi.org/10.1021/acs.est.5c03658"><em>Environmental Science &amp; Technology</em> (2025)</a>.</p>
-    <div class="home-actions" style="margin-top:1.6rem">
+    <p>GridEX catalogs extreme heat and cold events for the contiguous United States, with daily surfaces of temperature, dew point, wind speed, and apparent temperature. Raster layers come as GeoTIFF and event boundaries as GeoPackage, released under the MIT license. The method is described in <a href="https://doi.org/10.1021/acs.est.5c03658"><em>Environmental Science &amp; Technology</em> (2025)</a>.</p>
+    <div class="facts">
+      <div><span class="fact-n">500 m</span><span class="fact-l">grid resolution</span></div>
+      <div><span class="fact-n">2008–2022</span><span class="fact-l">daily coverage</span></div>
+      <div><span class="fact-n">~2,250</span><span class="fact-l">NOAA weather stations</span></div>
+      <div><span class="fact-n">800M+</span><span class="fact-l">station records</span></div>
+    </div>
+    <div class="home-actions">
       <a class="btn btn-ink" href="https://doi.org/10.7910/DVN/DJGKDJ">Download from Dataverse</a>
       <a class="btn btn-line" href="https://ehce.connect.hms.harvard.edu/us_ehe_ece">Open the interactive catalog</a>
     </div>
   </div>
-  <dl class="facts">
-    <dt>500 m</dt><dd>grid resolution, nationwide</dd>
-    <dt>2008–2022</dt><dd>daily coverage</dd>
-    <dt>~2,250</dt><dd>NOAA weather stations</dd>
-    <dt>800M+</dt><dd>hourly and sub-hourly station records</dd>
-  </dl>
+  <figure class="band-map figure">
+    <video autoplay="" muted="" loop="" playsinline="" preload="metadata" poster="media/gridex-impacted-areas-poster.jpg" aria-label="Animated maps of the contiguous United States showing the number of days each area was affected by extreme heat and cold events in each year from 2008 to 2022.">
+      <source src="media/gridex-impacted-areas.mp4" type="video/mp4">
+    </video>
+    <figcaption>Number of days each area was affected by extreme heat and cold events, by year, 2008 to 2022.</figcaption>
+  </figure>
 </section>
 <section id="latest" class="level2 home-section after-band column-page">
 <h2 class="anchored" data-anchor-id="latest">Latest</h2>
 <div id="listing-latest" class="quarto-listing quarto-listing-container-custom">
 <ul class="latest">
-<li data-index="0" data-categories="bmV3cyUyQ2dyaWRleCUyQ3B1YmxpY2F0aW9ucw==" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1793923780027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
+<li data-index="0" data-categories="bmV3cyUyQ3B1YmxpY2F0aW9ucyUyQ2dyaWRleCUyQ29jaGlu" data-listing-date-sort="1788998400000" data-listing-file-modified-sort="1793926685472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
+<time>10 September 2026</time> <a href="./posts/ochin_jama_netw_open_2026.html">Extreme heat and blood pressure in community health centers, in JAMA Network Open</a>
+<p>
+The first study to link GridEX to the OCHIN network analyzed 4.2 million ambulatory encounters at 2,554 community health centers in 40 states.
+</p>
+</li>
+<li data-index="1" data-categories="bmV3cyUyQ2dyaWRleCUyQ3B1YmxpY2F0aW9ucw==" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1793923780027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
 <time>8 September 2025</time> <a href="./posts/gridex_est_2025.html">GridEX published in Environmental Science &amp; Technology</a>
 <p>
 The method and data pipeline behind GridEX, our 500 m national catalog of extreme heat and cold events, is now peer reviewed and open access.
 </p>
 </li>
-<li data-index="1" data-categories="bmV3cyUyQ2dyaWRleCUyQ2Z1bmRpbmc=" data-listing-date-sort="1726876800000" data-listing-file-modified-sort="1793924748971" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<li data-index="2" data-categories="bmV3cyUyQ2dyaWRleCUyQ2Z1bmRpbmc=" data-listing-date-sort="1726876800000" data-listing-file-modified-sort="1793924748971" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
 <time>21 September 2024</time> <a href="./posts/catalyst_p20_ochin.html">GridEX supplies the exposure data for the OCHIN Community CATALYST Center</a>
 <p>
 A new NIMHD-funded center (P20MD019799) links GridEX extreme heat and cold estimates to health records from OCHIN’s national network of community health centers.
-</p>
-</li>
-<li data-index="2" data-categories="Z3JpZGV4JTJDdHV0b3JpYWw=" data-listing-date-sort="1705276800000" data-listing-file-modified-sort="1793925347995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350">
-<time>15 January 2024</time> <a href="./posts/loading_gridex.html">US EHE/ECE GridEX Data Loading</a>
-<p>
-How to load GridEx data?
 </p>
 </li>
 </ul>
@@ -333,10 +338,10 @@ How to load GridEx data?
 <section class="home-section support column-page" aria-labelledby="support">
   <div>
     <h2 id="support" style="font-size:1.35rem;margin:0 0 .5rem" class="anchored">Support and partners</h2>
-    <p>Funded by the National Institute on Aging (RF1AG074372, continued as R01AG074372; R01AG096492) and the National Institute on Minority Health and Health Disparities (P20MD019799).</p>
+    <p>Funded by the National Institute on Aging (RF1AG074372, continued as R01AG074372) and the National Institute on Minority Health and Health Disparities (P20MD019799).</p>
   </div>
   <div class="partners">
-    <img src="img/mgb.png" alt="Mass General Brigham">
+    <span class="partner-name">Massachusetts General Hospital</span>
     <img src="img/Blavatnikbioinformatics.png" alt="Department of Biomedical Informatics, Blavatnik Institute, Harvard Medical School">
     <img src="img/chan.png" alt="Harvard T.H. Chan School of Public Health">
     <img src="img/hdsi.png" alt="Harvard Data Science Initiative">
@@ -368,7 +373,11 @@ How to load GridEx data?
   }
   btn.addEventListener('click', function () { setPaused(!v.paused); });
   var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (rm && rm.matches) { v.removeAttribute('autoplay'); setPaused(true); }
+  if (rm && rm.matches) {
+    v.removeAttribute('autoplay'); setPaused(true);
+    var others = document.querySelectorAll('.band-map video');
+    for (var k = 0; k < others.length; k++) { others[k].removeAttribute('autoplay'); others[k].pause(); others[k].setAttribute('controls', ''); }
+  }
 })();
 </script>
 
@@ -376,6 +385,25 @@ How to load GridEx data?
 
 
 </main> <!-- /main -->
+<div class="contour-field" aria-hidden="true"></div>
+<script>
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var root = document.documentElement, queued = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    root.style.setProperty('--contour-y', (-y * 0.05).toFixed(1) + 'px');
+    root.style.setProperty('--contour-x', (Math.sin(y / 700) * 12).toFixed(1) + 'px');
+    root.style.setProperty('--contour-r', (Math.sin(y / 1600) * 1.2).toFixed(3) + 'deg');
+    root.style.setProperty('--band-shift', (y * 0.12).toFixed(1) + 'px');
+    queued = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!queued) { queued = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -856,7 +884,7 @@ How to load GridEx data?
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health.</p>
+<p>The Confluence Projects, Massachusetts General Hospital, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

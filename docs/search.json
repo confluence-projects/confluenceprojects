@@ -1,10 +1,38 @@
 [
   {
-    "objectID": "rn.html",
-    "href": "rn.html",
-    "title": "News and Posts",
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nExtreme heat and blood pressure in community health centers, in JAMA Network Open\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nGridEX published in Environmental Science & Technology\n\n\n\n\n\n\n\n\n\nSep 21, 2024\n\n\nGridEX supplies the exposure data for the OCHIN Community CATALYST Center\n\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n\n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\n\n\nNov 15, 2023\n\n\nCalifornia extreme heat paper published in Environmental Research\n\n\n\n\n\n\nNo matching items"
+    "text": "Principal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "team.html#investigators-and-staff",
+    "href": "team.html#investigators-and-staff",
+    "title": "Team",
+    "section": "",
+    "text": "Principal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "team.html#collaborators",
+    "href": "team.html#collaborators",
+    "title": "Team",
+    "section": "Collaborators",
+    "text": "Collaborators\n\nOCHIN\n\nRachel Gold, Karen Albright, and Brenda McGrath, Community CATALYST Center\n\nMax Planck Institute for Demographic Research\n\nRiccardo Conte Keivabu and Emilio Zagheni\n\nTechnical University of Denmark\n\nJonas Hügel"
+  },
+  {
+    "objectID": "team.html#institutes",
+    "href": "team.html#institutes",
+    "title": "Team",
+    "section": "Institutes",
+    "text": "Institutes\n\n\n\n\n\n\n\n\n\n\n\nMassachusetts General Hospital"
+  },
+  {
+    "objectID": "team.html#support",
+    "href": "team.html#support",
+    "title": "Team",
+    "section": "Support",
+    "text": "Support\n\n\nNational Institute on Aging: RF1AG074372 (2022–2025), continued as R01AG074372 (Patel, Estiri, and Dominici)\nNational Institute on Minority Health and Health Disparities: P20MD019799, Community CATALYST Center with OCHIN (Gold, Albright, and Estiri)"
   },
   {
     "objectID": "gridex.html",
@@ -63,88 +91,11 @@
     "text": "Interactive Catalog\nWe have also developed an app to explore the catalog of daily events and to visualize the aggregate statistical summaries of the events. The app is publicly accessible at: Interactive Catalog of the Extreme Heat and Cold Events in the U.S.\nUsers can process these pre-computed EHE/ECE dataset using standard workstations equipped with 8 cores and 16 GB of memory."
   },
   {
-    "objectID": "team_members/hossein.html",
-    "href": "team_members/hossein.html",
-    "title": "Hossein Estiri, PhD",
+    "objectID": "rn.html",
+    "href": "rn.html",
+    "title": "News and Posts",
     "section": "",
-    "text": "Hossein Estiri works on environmental health informatics and on temporal machine learning for electronic health records. His group at Massachusetts General Hospital builds methods that link measures of the environment to longitudinal clinical data at the scale of national networks.\nIn the Confluence Projects, he co-developed GridEX with Chirag Patel and Pedram Fard. He leads the linkage of GridEX to clinical records, including the shared electronic health record of OCHIN’s national network of community health centers. His roles as principal investigator include the National Institute on Aging award on extreme heat and cold in aging (RF1AG074372, continued as R01AG074372) and the Community CATALYST Center with OCHIN (P20MD019799).\nHe has led multisite studies in the ENACT and PCORnet networks. The IMIA Yearbook of Medical Informatics has twice selected his work as a best paper in clinical research informatics."
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Team",
-    "section": "",
-    "text": "Principal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "team.html#investigators-and-staff",
-    "href": "team.html#investigators-and-staff",
-    "title": "Team",
-    "section": "",
-    "text": "Principal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "team.html#collaborators",
-    "href": "team.html#collaborators",
-    "title": "Team",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nOCHIN\n\nRachel Gold, Karen Albright, and Brenda McGrath, Community CATALYST Center\n\nMax Planck Institute for Demographic Research\n\nRiccardo Conte Keivabu and Emilio Zagheni\n\nTechnical University of Denmark\n\nJonas Hügel"
-  },
-  {
-    "objectID": "team.html#institutes",
-    "href": "team.html#institutes",
-    "title": "Team",
-    "section": "Institutes",
-    "text": "Institutes\n\n\n\n\n\n\n\n\n\n\n\nMassachusetts General Hospital"
-  },
-  {
-    "objectID": "team.html#support",
-    "href": "team.html#support",
-    "title": "Team",
-    "section": "Support",
-    "text": "Support\n\n\nNational Institute on Aging: RF1AG074372 (2022–2025), continued as R01AG074372 (Patel, Estiri, and Dominici)\nNational Institute on Minority Health and Health Disparities: P20MD019799, Community CATALYST Center with OCHIN (Gold, Albright, and Estiri)"
-  },
-  {
-    "objectID": "posts/catalyst_p20_ochin.html",
-    "href": "posts/catalyst_p20_ochin.html",
-    "title": "GridEX supplies the exposure data for the OCHIN Community CATALYST Center",
-    "section": "",
-    "text": "The National Institute on Minority Health and Health Disparities has funded the Community CATALYST Center (P20MD019799), led by OCHIN with Rachel Gold, Karen Albright, and Hossein Estiri as principal investigators.\nGridEX is the environmental data behind the center. OCHIN supports community health centers across the country on a shared electronic health record. Linking GridEX to that record lets the center study how extreme temperature events relate to health care use and outcomes in safety-net populations, at the 500 m resolution where exposure actually differs between neighborhoods.\nThe linkage is also a test of what GridEX was built for: a gridded exposure resource that joins to health data regardless of the geographic units those data use.\nRead more about GridEX or download the data."
-  },
-  {
-    "objectID": "posts/gridex_est_2025.html",
-    "href": "posts/gridex_est_2025.html",
-    "title": "GridEX published in Environmental Science & Technology",
-    "section": "",
-    "text": "Our paper describing GridEX is now out in Environmental Science & Technology:\nFard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. Environ Sci Technol. 2025;59(37):19872–19884. doi:10.1021/acs.est.5c03658\nStudies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.\nThe data and code are open:\n\nGridEX on Harvard Dataverse\nProcessing code on GitHub\nInteractive catalog of extreme heat and cold events\n\nSee the GridEX page for the full method."
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html",
-    "href": "posts/extreme_heat_california.html",
-    "title": "California extreme heat paper published in Environmental Research",
-    "section": "",
-    "text": "Fard P, Chung MKJ, Estiri H, Patel CJ. Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021. Environ Res. 2023;237(Pt 2):116984. doi:10.1016/j.envres.2023.116984\nCode: github.com/epedram/ehmi\nThis paper laid the groundwork for GridEX, which extends the same approach to the contiguous United States."
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html#summary",
-    "href": "posts/extreme_heat_california.html#summary",
-    "title": "California extreme heat paper published in Environmental Research",
-    "section": "Summary",
-    "text": "Summary\nStudying how extreme heat affects health requires accurately identifying the areas and people it reaches. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way."
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html#highlights",
-    "href": "posts/extreme_heat_california.html#highlights",
-    "title": "California extreme heat paper published in Environmental Research",
-    "section": "Highlights",
-    "text": "Highlights\n\nOur proposed method uses spatial interpolation to accurately estimate EHE boundaries.\nThe conventional methods rely on absolute temperature and larger spatial scales.\nOur method accounts for antecedent temperature conditions and composite heat measure.\nOur method significantly reduces misclassification of populations impacted by EHEs.\n\n\nOverview\n\n\n\nIntegrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.\n\n\n\n\n\nApparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.\n\n\n\n\n\nNumber of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses"
-  },
-  {
-    "objectID": "posts/ochin_jama_netw_open_2026.html",
-    "href": "posts/ochin_jama_netw_open_2026.html",
-    "title": "Extreme heat and blood pressure in community health centers, in JAMA Network Open",
-    "section": "",
-    "text": "Our first study linking GridEX to the OCHIN network of community health centers is now published in JAMA Network Open.\nMcGrath BM, Georgescu J, Fard P, Gold R, Heintzman J, Patel CJ, Tandon R, Albright K, Estiri H. Extreme heat exposure and blood pressure in community health center patients. JAMA Network Open. 2026;9(9). doi:10.1001/jamanetworkopen.2026.33066\nCommunity health centers measure blood pressure at nearly each ambulatory visit, and their patients have received little attention in research on extreme environmental events. We assigned GridEX extreme heat exposure to the location of each clinic, on the day of the visit and over the preceding week, and analyzed 4,221,866 summer ambulatory encounters at 2,554 centers in 40 states from 2019 through 2023. Extreme heat occurred during 2% of these encounters.\nExtreme heat on the day of the visit was associated with a 0.7 mm Hg lower systolic and a 0.3 mm Hg lower diastolic blood pressure. In adults 65 years and older, the differences grew to 1.1 and 0.8 mm Hg. Across an 8-day exposure window, the largest differences appeared on the day of the visit and the day before, and they faded by the third day. Hypertension status modified the systolic association (P = .003), whereas the diastolic association showed no modification (P = .84).\nFor most individuals, reductions of this size carry little clinical consequence. The findings therefore suggest that acute changes in blood pressure are unlikely to be the main pathway from extreme heat to cardiovascular risk. The authors identify age, temporal scale, and clinical and community context as factors to weigh when assessing cardiovascular risk from extreme heat.\nThe study is the first in a series built on the linkage of GridEX to the OCHIN shared electronic health record, which the Community CATALYST Center (P20MD019799) established. Read more about GridEX."
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nExtreme heat and blood pressure in community health centers, in JAMA Network Open\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nGridEX published in Environmental Science & Technology\n\n\n\n\n\n\n\n\n\nSep 21, 2024\n\n\nGridEX supplies the exposure data for the OCHIN Community CATALYST Center\n\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n\n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\n\n\nNov 15, 2023\n\n\nCalifornia extreme heat paper published in Environmental Research\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/intro_gridex.html",
@@ -250,6 +201,55 @@
     "title": "Hands on tutorials at the PAA",
     "section": "Workshop activities and schedule:",
     "text": "Workshop activities and schedule:\nThe half-day workshop is divided into four sections that provide both theoretical approaches and hands-on activities.\n\nFirst, we offer an introduction to population-based epidemiology followed by an overview of research on extreme environmental events, and population dynamics analysis (45 minutes).\nSecond, we review the climatological and demographic data sources and present the geo-informatics pipeline and dataset we have developed for augmented mapping of the extreme heat and cold exposure assessment using historical weather data provided by NOAA ISD (45 minutes).\nThird, we illustrate the process of connecting the catalog of EHEs/ECEs with ACS, and examining the demographic characteristics of the affected population at the census tract level (45 minutes). Lastly, the workshop concludes with a hands-on tutorial on identifying geographic regions and populations affected by extreme heat and cold events using the R programming suite (75 minutes)."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html",
+    "href": "posts/extreme_heat_california.html",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "",
+    "text": "Fard P, Chung MKJ, Estiri H, Patel CJ. Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021. Environ Res. 2023;237(Pt 2):116984. doi:10.1016/j.envres.2023.116984\nCode: github.com/epedram/ehmi\nThis paper laid the groundwork for GridEX, which extends the same approach to the contiguous United States."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#summary",
+    "href": "posts/extreme_heat_california.html#summary",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "Summary",
+    "text": "Summary\nStudying how extreme heat affects health requires accurately identifying the areas and people it reaches. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#highlights",
+    "href": "posts/extreme_heat_california.html#highlights",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "Highlights",
+    "text": "Highlights\n\nOur proposed method uses spatial interpolation to accurately estimate EHE boundaries.\nThe conventional methods rely on absolute temperature and larger spatial scales.\nOur method accounts for antecedent temperature conditions and composite heat measure.\nOur method significantly reduces misclassification of populations impacted by EHEs.\n\n\nOverview\n\n\n\nIntegrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.\n\n\n\n\n\nApparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.\n\n\n\n\n\nNumber of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses"
+  },
+  {
+    "objectID": "posts/ochin_jama_netw_open_2026.html",
+    "href": "posts/ochin_jama_netw_open_2026.html",
+    "title": "Extreme heat and blood pressure in community health centers, in JAMA Network Open",
+    "section": "",
+    "text": "Our first study linking GridEX to the OCHIN network of community health centers is now published in JAMA Network Open.\nMcGrath BM, Georgescu J, Fard P, Gold R, Heintzman J, Patel CJ, Tandon R, Albright K, Estiri H. Extreme heat exposure and blood pressure in community health center patients. JAMA Network Open. 2026;9(9). doi:10.1001/jamanetworkopen.2026.33066\nCommunity health centers measure blood pressure at nearly each ambulatory visit, and their patients have received little attention in research on extreme environmental events. We assigned GridEX extreme heat exposure to the location of each clinic, on the day of the visit and over the preceding week, and analyzed 4,221,866 summer ambulatory encounters at 2,554 centers in 40 states from 2019 through 2023. Extreme heat occurred during 2% of these encounters.\nExtreme heat on the day of the visit was associated with a 0.7 mm Hg lower systolic and a 0.3 mm Hg lower diastolic blood pressure. In adults 65 years and older, the differences grew to 1.1 and 0.8 mm Hg. Across an 8-day exposure window, the largest differences appeared on the day of the visit and the day before, and they faded by the third day. Hypertension status modified the systolic association (P = .003), whereas the diastolic association showed no modification (P = .84).\nFor most individuals, reductions of this size carry little clinical consequence. The findings therefore suggest that acute changes in blood pressure are unlikely to be the main pathway from extreme heat to cardiovascular risk. The authors identify age, temporal scale, and clinical and community context as factors to weigh when assessing cardiovascular risk from extreme heat.\nThe study is the first in a series built on the linkage of GridEX to the OCHIN shared electronic health record, which the Community CATALYST Center (P20MD019799) established. Read more about GridEX."
+  },
+  {
+    "objectID": "posts/catalyst_p20_ochin.html",
+    "href": "posts/catalyst_p20_ochin.html",
+    "title": "GridEX supplies the exposure data for the OCHIN Community CATALYST Center",
+    "section": "",
+    "text": "The National Institute on Minority Health and Health Disparities has funded the Community CATALYST Center (P20MD019799), led by OCHIN with Rachel Gold, Karen Albright, and Hossein Estiri as principal investigators.\nGridEX is the environmental data behind the center. OCHIN supports community health centers across the country on a shared electronic health record. Linking GridEX to that record lets the center study how extreme temperature events relate to health care use and outcomes in safety-net populations, at the 500 m resolution where exposure actually differs between neighborhoods.\nThe linkage is also a test of what GridEX was built for: a gridded exposure resource that joins to health data regardless of the geographic units those data use.\nRead more about GridEX or download the data."
+  },
+  {
+    "objectID": "posts/gridex_est_2025.html",
+    "href": "posts/gridex_est_2025.html",
+    "title": "GridEX published in Environmental Science & Technology",
+    "section": "",
+    "text": "Our paper describing GridEX is now out in Environmental Science & Technology:\nFard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. Environ Sci Technol. 2025;59(37):19872–19884. doi:10.1021/acs.est.5c03658\nStudies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.\nThe data and code are open:\n\nGridEX on Harvard Dataverse\nProcessing code on GitHub\nInteractive catalog of extreme heat and cold events\n\nSee the GridEX page for the full method."
+  },
+  {
+    "objectID": "team_members/hossein.html",
+    "href": "team_members/hossein.html",
+    "title": "Hossein Estiri, PhD",
+    "section": "",
+    "text": "Hossein Estiri works on environmental health informatics and on temporal machine learning for electronic health records. His group at Massachusetts General Hospital builds methods that link measures of the environment to longitudinal clinical data at the scale of national networks.\nIn the Confluence Projects, he co-developed GridEX with Chirag Patel and Pedram Fard. He leads the linkage of GridEX to clinical records, including the shared electronic health record of OCHIN’s national network of community health centers. His roles as principal investigator include the National Institute on Aging award on extreme heat and cold in aging (RF1AG074372, continued as R01AG074372) and the Community CATALYST Center with OCHIN (P20MD019799).\nHe has led multisite studies in the ENACT and PCORnet networks. The IMIA Yearbook of Medical Informatics has twice selected his work as a best paper in clinical research informatics."
   },
   {
     "objectID": "index.html",

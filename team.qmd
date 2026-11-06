@@ -8,6 +8,7 @@ listing:
   fields: [image, title, subtitle, description]
   categories: false
   feed: true
+description-meta: "Investigators, collaborators, and institutions behind the Confluence Projects and the GridEX extreme heat and cold dataset."
 ---
 
 ## Investigators and staff

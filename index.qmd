@@ -13,6 +13,54 @@ listing:
   template: _latest.ejs
   date-format: "D MMMM YYYY"
   feed: false
+description-meta: "The Confluence Projects measure extreme environmental events, such as extreme heat and cold, where people live and link them to health records. Home of GridEX, an open 500 m dataset of extreme heat and cold events in the United States."
+include-in-header:
+  - text: |
+      <script type="application/ld+json">
+      {
+       "@context": "https://schema.org",
+       "@graph": [
+        {
+         "@type": "WebSite",
+         "name": "The Confluence Projects",
+         "url": "https://www.confluence-project.org/"
+        },
+        {
+         "@type": "ResearchProject",
+         "name": "The Confluence Projects",
+         "url": "https://www.confluence-project.org/",
+         "description": "A research program at Massachusetts General Hospital, Harvard Medical School, and the Harvard T.H. Chan School of Public Health that measures extreme environmental events, such as extreme heat and cold, where people live and links them to health records. Home of GridEX, an open 500 m dataset of extreme heat and cold events in the contiguous United States.",
+         "parentOrganization": [
+          {
+           "@type": "Organization",
+           "name": "Massachusetts General Hospital"
+          },
+          {
+           "@type": "Organization",
+           "name": "Harvard Medical School"
+          },
+          {
+           "@type": "Organization",
+           "name": "Harvard T.H. Chan School of Public Health"
+          }
+         ],
+         "funder": [
+          {
+           "@type": "Organization",
+           "name": "National Institute on Aging"
+          },
+          {
+           "@type": "Organization",
+           "name": "National Institute on Minority Health and Health Disparities"
+          }
+         ],
+         "sameAs": [
+          "https://github.com/confluence-projects"
+         ]
+        }
+       ]
+      }
+      </script>
 ---
 
 ```{=html}

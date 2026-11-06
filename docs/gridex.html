@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.11.9">
+<meta name="generator" content="quarto-1.12.0">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="GridEX (Gridded EXposures) is an open dataset of extreme heat and cold events for the contiguous United States, with daily apparent temperature and event boundaries on a 500 m grid from 2008 to 2022.">
 
-<title>GridEX, Gridded EXposures – The Confluence Projects</title>
+<title>GridEX: 500 m extreme heat and cold exposure data for the United States – The Confluence Projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -44,10 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f0688f390a76b21125ecd060a3d0a4db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b7b0a1c1c0bb59b4a8ee987e81c6b3b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d2b2c512239bad6bc1effdd4f070f6eb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,11 +85,134 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "GridEX (Gridded EXposures): extreme heat and cold events in the contiguous United States, 2008–2022",
+ "alternateName": [
+  "GridEX",
+  "Gridded EXposures",
+  "Spatial Catalog of the Extreme Heat and Cold Events in the U.S."
+ ],
+ "description": "GridEX is an open dataset of extreme heat and cold events for the contiguous United States. It provides daily apparent temperature and the boundaries and intensity of extreme heat and cold events on a 500 m by 500 m grid from 2008 to 2022, derived from about 2,250 NOAA Integrated Surface Database weather stations. GridEX is designed for linkage to health and socioeconomic data at any geographic scale.",
+ "url": "https://www.confluence-project.org/gridex.html",
+ "sameAs": [
+  "https://doi.org/10.7910/DVN/DJGKDJ",
+  "https://github.com/epedram/us_ehe_ece"
+ ],
+ "identifier": "https://doi.org/10.7910/DVN/DJGKDJ",
+ "keywords": [
+  "extreme heat",
+  "extreme cold",
+  "extreme environmental events",
+  "apparent temperature",
+  "heat wave",
+  "cold wave",
+  "exposure assessment",
+  "exposome",
+  "environmental health",
+  "gridded data",
+  "United States",
+  "GeoTIFF",
+  "GeoPackage"
+ ],
+ "license": "https://opensource.org/licenses/MIT",
+ "isAccessibleForFree": true,
+ "temporalCoverage": "2008-01-01/2022-12-31",
+ "spatialCoverage": {
+  "@type": "Place",
+  "name": "Contiguous United States",
+  "geo": {
+   "@type": "GeoShape",
+   "box": "24.4 -124.9 49.4 -66.9"
+  }
+ },
+ "variableMeasured": [
+  "Apparent temperature",
+  "Air temperature",
+  "Dew point temperature",
+  "Wind speed",
+  "Extreme Heat Magnitude Indicator (EHMI)",
+  "Extreme Cold Magnitude Indicator (ECMI)",
+  "Extreme heat event boundaries",
+  "Extreme cold event boundaries"
+ ],
+ "measurementTechnique": "Station-based extreme event detection from NOAA Integrated Surface Database observations with inverse distance weighted spatial interpolation",
+ "creator": [
+  {
+   "@type": "Person",
+   "name": "Pedram Fard"
+  },
+  {
+   "@type": "Person",
+   "name": "Chirag J. Patel",
+   "affiliation": {
+    "@type": "Organization",
+    "name": "Harvard Medical School"
+   }
+  },
+  {
+   "@type": "Person",
+   "name": "Hossein Estiri",
+   "affiliation": {
+    "@type": "Organization",
+    "name": "Massachusetts General Hospital"
+   }
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "The Confluence Projects",
+  "url": "https://www.confluence-project.org/"
+ },
+ "includedInDataCatalog": {
+  "@type": "DataCatalog",
+  "name": "Harvard Dataverse",
+  "url": "https://dataverse.harvard.edu/"
+ },
+ "distribution": [
+  {
+   "@type": "DataDownload",
+   "name": "GridEX rasters and event boundaries (Harvard Dataverse)",
+   "contentUrl": "https://doi.org/10.7910/DVN/DJGKDJ",
+   "encodingFormat": "image/tiff"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "GridEX event boundaries (GeoPackage)",
+   "contentUrl": "https://doi.org/10.7910/DVN/DJGKDJ",
+   "encodingFormat": "application/geopackage+sqlite3"
+  }
+ ],
+ "citation": {
+  "@type": "ScholarlyArticle",
+  "name": "Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research",
+  "identifier": "https://doi.org/10.1021/acs.est.5c03658",
+  "isPartOf": {
+   "@type": "Periodical",
+   "name": "Environmental Science & Technology"
+  },
+  "datePublished": "2025-09-08"
+ },
+ "funder": [
+  {
+   "@type": "Organization",
+   "name": "National Institute on Aging"
+  },
+  {
+   "@type": "Organization",
+   "name": "National Institute on Minority Health and Health Disparities"
+  }
+ ],
+ "datePublished": "2023"
+}
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="GridEX, Gridded EXposures – The Confluence Projects">
-<meta property="og:description" content="GridEX and the health effects of extreme environmental events such as extreme heat and cold.">
+<meta property="og:title" content="GridEX: 500 m extreme heat and cold exposure data for the United States">
+<meta property="og:description" content="Open 500 m dataset of extreme heat and cold events for the contiguous United States, 2008 to 2022.">
 <meta property="og:image" content="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg">
 <meta property="og:site_name" content="The Confluence Projects">
 <meta property="og:image:height" content="612">
@@ -174,6 +298,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#data-processing-and-issue-tracker-on-github" id="toc-data-processing-and-issue-tracker-on-github" class="nav-link" data-scroll-target="#data-processing-and-issue-tracker-on-github">Data processing and issue tracker on Github</a></li>
   <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently asked questions</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -263,7 +388,7 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <p>The GridEX data set and the binding software scripts are released under the open-source MIT license. To cite the method, use the paper:</p>
 <p>Fard P, Hügel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. <em>Environmental Science &amp; Technology.</em> 2025;59(37):19872–19884. <a href="https://doi.org/10.1021/acs.est.5c03658">doi:10.1021/acs.est.5c03658</a></p>
 <p>To cite the dataset:</p>
-<p>Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, “Spatial Catalog of the Extreme Heat and Cold Events in the U.S.”, <a href="https://doi.org/10.7910/DVN/DJGKDJ" class="uri">https://doi.org/10.7910/DVN/DJGKDJ</a>, Harvard Dataverse”</p>
+<p>Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, “Spatial Catalog of the Extreme Heat and Cold Events in the U.S.”, <a href="https://doi.org/10.7910/DVN/DJGKDJ" class="uri">https://doi.org/10.7910/DVN/DJGKDJ</a>, Harvard Dataverse.</p>
 <section id="data-processing-and-issue-tracker-on-github" class="level3">
 <h3 class="anchored" data-anchor-id="data-processing-and-issue-tracker-on-github">Data processing and issue tracker on Github</h3>
 <p><a href="https://github.com/epedram/us_ehe_ece">GitHub</a></p>
@@ -271,6 +396,15 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 <section id="acknowledgements" class="level3">
 <h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
 <p>This research has been funded by grants from the National Institutes of Health, National Institute on Aging (NIA) RF1AG074372, continued as R01AG074372, and National Institute of Environmental Health Sciences (NIEHS). Portions of computation for this research were conducted on the O2 High Performance Compute Cluster, supported by the <a href="https://it.hms.harvard.edu/our-services/research-computing">Research Computing Group at Harvard Medical School</a>. See for more information.</p>
+</section>
+<section id="frequently-asked-questions" class="level2">
+<h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently asked questions</h2>
+<p><strong>What is GridEX?</strong> GridEX, short for Gridded EXposures, is an open dataset of extreme heat and cold events for the contiguous United States. It provides daily apparent temperature together with the boundaries and intensity of extreme heat and cold events on a 500 × 500 m grid from 2008 to 2022.</p>
+<p><strong>How is GridEX built?</strong> GridEX draws on about 2,250 weather stations in the NOAA Integrated Surface Database and more than 800 million station records. Apparent temperature combines air temperature, humidity, and wind speed. Extreme events are detected at each station, scored with the Extreme Heat and Cold Magnitude Indicators (EHMI and ECMI), and interpolated across the grid by inverse distance weighting. The surfaces were validated against station observations and GridMET reanalysis data.</p>
+<p><strong>How do I download GridEX?</strong> The rasters (GeoTIFF) and event boundaries (GeoPackage) are on <a href="https://doi.org/10.7910/DVN/DJGKDJ">Harvard Dataverse</a> under the MIT license. The processing code is on <a href="https://github.com/epedram/us_ehe_ece">GitHub</a>, and an <a href="https://ehce.connect.hms.harvard.edu/us_ehe_ece">interactive catalog</a> lets you browse events by date and place.</p>
+<p><strong>Can GridEX be linked to health data?</strong> Yes. Because the output is gridded, GridEX joins to residential addresses, clinic locations, census tracts, counties, or any other geography. A <a href="./posts/ochin_jama_netw_open_2026.html">national study of 4.2 million ambulatory encounters</a> in community health centers used GridEX to measure exposure to extreme heat at each clinic.</p>
+<p><strong>How do I cite GridEX?</strong> Cite the method paper, Fard et al., <em>Environmental Science &amp; Technology</em> 2025 (<a href="https://doi.org/10.1021/acs.est.5c03658">doi:10.1021/acs.est.5c03658</a>), and the dataset on Harvard Dataverse (<a href="https://doi.org/10.7910/DVN/DJGKDJ">doi:10.7910/DVN/DJGKDJ</a>).</p>
+<p><strong>Is GridEX related to the GridEx grid security exercise?</strong> GridEX here refers to the Gridded EXposures dataset of extreme heat and cold events developed by the Confluence Projects. The similarly named GridEx is a biennial grid security exercise run by the North American Electric Reliability Corporation, and the two are unrelated.</p>
 
 
 </section>

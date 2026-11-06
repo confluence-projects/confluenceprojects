@@ -4,6 +4,8 @@ project:
   resources:
     - fonts/
     - media/
+    - llms.txt
+    - robots.txt
 
 website:
   title: "The Confluence Projects"

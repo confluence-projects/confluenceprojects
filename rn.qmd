@@ -7,4 +7,5 @@ listing:
   categories: true
   feed: true
   fields: [image, date, title]
+description-meta: "News and posts from the Confluence Projects on GridEX, extreme heat and cold, and health research on extreme environmental events."
 ---

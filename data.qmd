@@ -1,6 +1,8 @@
 ---
 title: "Publications and data"
 body-classes: page-publications
+pagetitle: "GridEX publications and data: extreme heat and cold research"
+description-meta: "Publications, datasets, and code from the Confluence Projects, including the GridEX extreme heat and cold dataset and health studies that use it."
 ---
 
 ## GridEX

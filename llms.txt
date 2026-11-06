@@ -1,0 +1,25 @@
+# The Confluence Projects
+
+> The Confluence Projects measure extreme environmental events, such as extreme heat and cold, where people live and link them to health records. The program is based at Massachusetts General Hospital, Harvard Medical School, and the Harvard T.H. Chan School of Public Health, with support from the National Institute on Aging and the National Institute on Minority Health and Health Disparities. Its core resource is GridEX.
+
+GridEX (Gridded EXposures) is an open dataset of extreme heat and cold events for the contiguous United States. It provides daily apparent temperature and the boundaries and intensity of extreme heat and cold events on a 500 m by 500 m grid from 2008 to 2022, built from about 2,250 NOAA Integrated Surface Database stations. Rasters are distributed as GeoTIFF and event boundaries as GeoPackage under the MIT license. GridEX is unrelated to GridEx, the grid security exercise run by the North American Electric Reliability Corporation.
+
+## GridEX
+
+- [GridEX overview, methods, and FAQ](https://www.confluence-project.org/gridex.html): what GridEX measures, how it is built, accuracy, limitations, and how to download and cite it
+- [GridEX data on Harvard Dataverse](https://doi.org/10.7910/DVN/DJGKDJ): the dataset (DOI 10.7910/DVN/DJGKDJ)
+- [GridEX method paper](https://doi.org/10.1021/acs.est.5c03658): Fard P, Hügel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Environmental Science & Technology. 2025;59(37):19872-19884
+- [GridEX code](https://github.com/epedram/us_ehe_ece): processing pipeline and issue tracker
+- [Interactive catalog](https://ehce.connect.hms.harvard.edu/us_ehe_ece): browse extreme heat and cold events by date and place
+
+## Research and news
+
+- [Publications and data](https://www.confluence-project.org/data.html): GridEX papers and health studies that use GridEX
+- [Extreme heat and blood pressure in community health centers](https://www.confluence-project.org/posts/ochin_jama_netw_open_2026.html): JAMA Network Open 2026 study of 4.2 million encounters linked to GridEX
+- [Asking GridEX: a roadmap for AI-assisted querying](https://www.confluence-project.org/posts/ai_gridex_roadmap.html): plans for plain-language querying of GridEX
+- [News and posts](https://www.confluence-project.org/rn.html)
+
+## Optional
+
+- [Team](https://www.confluence-project.org/team.html): investigators, collaborators, and support
+- [Loading GridEX in R](https://www.confluence-project.org/posts/loading_gridex.html): tutorial

@@ -142,12 +142,20 @@ a:hover { text-decoration-thickness: 2px; }
 .home main.content { margin-top: 0; }
 .home #title-block-header { display: none; }
 
+.hero-band {
+  border-bottom: 1px solid $rule;
+  margin-bottom: 0.5rem;
+}
 .home-hero {
+  max-width: calc(1135px + 3rem);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
-  padding: clamp(2rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
+  padding: clamp(2rem, 6vw, 4.5rem) 1.5rem clamp(2rem, 4vw, 3rem);
 }
 
 .home-hero h1 {
@@ -177,6 +185,10 @@ a:hover { text-decoration-thickness: 2px; }
 // The map: GridEX output, multiplied onto the paper so its white drops away.
 .hero-map {
   margin: 0;
+  background: #fff;
+  border: 1px solid $rule;
+  padding: 0.9rem 1rem 1rem;
+  box-shadow: 0 1px 0 rgba($ink, 0.04);
 }
 .hero-map video {
   display: block;
@@ -237,6 +249,7 @@ a:hover { text-decoration-thickness: 2px; }
   padding: clamp(2.2rem, 5vw, 3.6rem) 0;
   border-top: 1px solid $rule;
 }
+.hero-band + .home-section, .hero-band + p + .home-section { border-top: none; }
 .home-section.after-band { border-top: none; }
 .home-section > h2 {
   margin-top: 0;
@@ -262,7 +275,6 @@ a:hover { text-decoration-thickness: 2px; }
 
 // GridEX band: the one dark surface on the page.
 .gridex-band {
-  background: $ink;
   color: #e6edf0;
   padding: clamp(2.4rem, 5vw, 3.8rem) clamp(1.4rem, 4vw, 3.2rem);
   margin: 0.5rem 0 1rem;
@@ -375,3 +387,7 @@ a:hover { text-decoration-thickness: 2px; }
   max-width: 100%;
 }
 #institutes table td { vertical-align: middle; padding: 1rem 0.5rem; }
+
+// Team member pages: keep bios left-aligned and drop post-style metadata
+div.quarto-about-jolla main.content { text-align: left; max-width: 68ch; margin-left: auto; margin-right: auto; }
+div.quarto-about-jolla .quarto-title-meta { display: none !important; }

@@ -1,19 +1,24 @@
 ---
-title: "Estimating Extreme Heat Events in California"
-description: "Moving beyond nearest neighbors"
+title: "California extreme heat paper published in Environmental Research"
+description: "Interpolating apparent temperature between weather stations identifies about one million more Californians affected on each day of an extreme heat event than nearest-station assignment."
 author: "Pedram Fard"
-date: "1/1/2023"
-date-modified: "1/11/2023"
+date: "2023-11-15"
+image: img/ca_fig4.jpeg
 categories:
   - news
+  - publications
   - california
 ---
 
-![A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).](img/california_dalle.png)
+Fard P, Chung MKJ, Estiri H, Patel CJ. **Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021.** *Environ Res.* 2023;237(Pt 2):116984. [doi:10.1016/j.envres.2023.116984](https://doi.org/10.1016/j.envres.2023.116984)
+
+Code: [github.com/epedram/ehmi](https://github.com/epedram/ehmi)
+
+This paper laid the groundwork for [GridEX](../gridex.qmd), which extends the same approach to the contiguous United States.
 
 ## Summary
 
-Studying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.
+Studying how extreme heat affects health requires accurately identifying the areas and people it reaches. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.
 
 ## Highlights
 
@@ -32,7 +37,3 @@ Studying how climate change affects us requires accurately identifying areas hit
 ![Apparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.](img/ca_fig3.jpeg){fig-align="center"}
 
 ![Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses](img/ca_fig4.jpeg){fig-align="center"}
-
-## Citation:
-
-[Fard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, *Environmental Research* 2022](https://www.sciencedirect.com/science/article/pii/S0013935123017887)

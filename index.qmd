@@ -16,6 +16,7 @@ listing:
 ---
 
 ```{=html}
+<div class="hero-band column-screen">
 <section class="home-hero">
   <div>
     <h1>We measure extreme heat and cold where people live, and study how it shapes health as we age.</h1>
@@ -42,8 +43,9 @@ listing:
     </figcaption>
   </figure>
 </section>
+</div>
 
-<section class="home-section" aria-labelledby="what-we-study">
+<section class="home-section column-page" aria-labelledby="what-we-study">
   <h2 id="what-we-study">What we study</h2>
 
   <div class="thread">
@@ -70,7 +72,7 @@ listing:
   </div>
 </section>
 
-<section class="gridex-band" aria-labelledby="gridex-data">
+<section class="gridex-band column-page" aria-labelledby="gridex-data">
   <div>
     <h2 id="gridex-data">GridEX is open data</h2>
     <p>A national catalog of extreme heat and cold events for the contiguous United States, with daily temperature, dew point, wind, and apparent temperature surfaces. Raster layers come as GeoTIFF and event boundaries as GeoPackage, under the MIT license.</p>
@@ -89,7 +91,7 @@ listing:
 </section>
 ```
 
-::: {.home-section .after-band}
+::: {.home-section .after-band .column-page}
 ## Latest
 
 ::: {#latest}
@@ -99,10 +101,10 @@ listing:
 :::
 
 ```{=html}
-<section class="home-section support" aria-labelledby="support">
+<section class="home-section support column-page" aria-labelledby="support">
   <div>
     <h2 id="support" style="font-size:1.35rem;margin:0 0 .5rem">Support and partners</h2>
-    <p>Funded by the National Institute on Aging (RF1AG074372, R01AG096492).</p>
+    <p>Funded by the National Institute on Aging (RF1AG074372, continued as R01AG074372; R01AG096492) and the National Institute on Minority Health and Health Disparities (P20MD019799).</p>
   </div>
   <div class="partners">
     <img src="img/mgb.png" alt="Mass General Brigham">

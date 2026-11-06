@@ -42,6 +42,30 @@
   <media:content url="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg" medium="image" type="image/jpeg" height="79" width="144"/>
 </item>
 <item>
+  <title>GridEX supplies the exposure data for the OCHIN Community CATALYST Center</title>
+  <dc:creator>The Confluence Projects</dc:creator>
+  <link>https://www.confluence-project.org/posts/catalyst_p20_ochin.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The National Institute on Minority Health and Health Disparities has funded the Community CATALYST Center (<a href="https://reporter.nih.gov/project-details/10977025">P20MD019799</a>), led by <a href="https://ochin.org">OCHIN</a> with Rachel Gold, Karen Albright, and Hossein Estiri as principal investigators.</p>
+<p>GridEX is the environmental data behind the center. OCHIN supports community health centers across the country on a shared electronic health record. Linking GridEX to that record lets the center study how extreme temperature events relate to health care use and outcomes in safety-net populations, at the 500 m resolution where exposure actually differs between neighborhoods.</p>
+<p>The linkage is also a test of what GridEX was built for: a gridded exposure resource that joins to health data regardless of the geographic units those data use.</p>
+<p>Read more about <a href="../gridex.html">GridEX</a> or <a href="https://doi.org/10.7910/DVN/DJGKDJ">download the data</a>.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>gridex</category>
+  <category>funding</category>
+  <guid>https://www.confluence-project.org/posts/catalyst_p20_ochin.html</guid>
+  <pubDate>Sat, 21 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/media/gridex-heat-cold-2022-poster.jpg" medium="image" type="image/jpeg" height="79" width="144"/>
+</item>
+<item>
   <title>US EHE/ECE GridEX Data Loading</title>
   <dc:creator>Pedram Fard</dc:creator>
   <link>https://www.confluence-project.org/posts/loading_gridex.html</link>
@@ -534,7 +558,7 @@ u: Wind speed in m/s</p>
   <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Estimating Extreme Heat Events in California</title>
+  <title>California extreme heat paper published in Environmental Research</title>
   <dc:creator>Pedram Fard</dc:creator>
   <link>https://www.confluence-project.org/posts/extreme_heat_california.html</link>
   <description><![CDATA[ 
@@ -542,15 +566,12 @@ u: Wind speed in m/s</p>
 
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.confluence-project.org/posts/img/california_dalle.png" class="img-fluid figure-img"></p>
-<figcaption>A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24).</figcaption>
-</figure>
-</div>
+<p>Fard P, Chung MKJ, Estiri H, Patel CJ. <strong>Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021.</strong> <em>Environ Res.</em> 2023;237(Pt 2):116984. <a href="https://doi.org/10.1016/j.envres.2023.116984">doi:10.1016/j.envres.2023.116984</a></p>
+<p>Code: <a href="https://github.com/epedram/ehmi">github.com/epedram/ehmi</a></p>
+<p>This paper laid the groundwork for <a href="../gridex.html">GridEX</a>, which extends the same approach to the contiguous United States.</p>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>Studying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.</p>
+<p>Studying how extreme heat affects health requires accurately identifying the areas and people it reaches. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way.</p>
 </section>
 <section id="highlights" class="level2">
 <h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
@@ -580,20 +601,18 @@ u: Wind speed in m/s</p>
 <figcaption>Number of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses</figcaption>
 </figure>
 </div>
-</section>
-</section>
-<section id="citation" class="level2">
-<h2 class="anchored" data-anchor-id="citation">Citation:</h2>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0013935123017887">Fard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, <em>Environmental Research</em> 2022</a></p>
 
 
+</section>
 </section>
 
  ]]></description>
   <category>news</category>
+  <category>publications</category>
   <category>california</category>
   <guid>https://www.confluence-project.org/posts/extreme_heat_california.html</guid>
-  <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 15 Nov 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://www.confluence-project.org/posts/img/ca_fig4.jpeg" medium="image" type="image/jpeg" height="41" width="144"/>
 </item>
 </channel>
 </rss>

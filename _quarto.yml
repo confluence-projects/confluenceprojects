@@ -35,7 +35,7 @@ website:
         aria-label: RSS feed
     search: true
   page-footer:
-    left: "The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health"
+    left: "The Confluence Projects, Mass General Brigham, Harvard Medical School, and Harvard T.H. Chan School of Public Health. Supported by the National Institutes of Health."
     right: "[Site source on GitHub](https://github.com/confluence-projects/confluenceprojects)"
 
 format:

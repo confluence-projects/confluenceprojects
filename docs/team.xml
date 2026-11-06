@@ -66,15 +66,18 @@
   <dc:creator>Chirag </dc:creator>
   <link>https://www.confluence-project.org/team_members/hossein.html</link>
   <description><![CDATA[ 
+<p>Hossein Estiri’s research spans computational phenomics, environmental health informatics, temporal machine learning, and agentic AI for clinical decision support.</p>
+<p>In the Confluence Projects, he co-developed GridEX with Chirag Patel and leads the work that links environmental exposure to longitudinal health records: identifying dementia and its precursors in clinical data, and measuring how fully and how quickly older adults recover after illness. He is contact principal investigator of the NIA-funded R01AG096492 on dementia and the environmental exposome, and a principal investigator of the NIMHD-funded Community CATALYST Center with OCHIN.</p>
+<p>He has led multi-site AI studies in the ENACT and PCORnet networks, and his work has twice been selected as a best paper in clinical research informatics by the IMIA Yearbook of Medical Informatics.</p>
 
 
  ]]></description>
   <category>dementia</category>
-  <category>machine-learning</category>
-  <category>data-science</category>
+  <category>environmental-health-informatics</category>
+  <category>clinical-ai</category>
   <guid>https://www.confluence-project.org/team_members/hossein.html</guid>
   <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://www.confluence-project.org/img/hossein.jpg" medium="image" type="image/jpeg" height="144" width="144"/>
+  <media:content url="https://www.confluence-project.org/img/hossein-estiri.jpg" medium="image" type="image/jpeg" height="144" width="144"/>
 </item>
 </channel>
 </rss>

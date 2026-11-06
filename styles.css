@@ -27,3 +27,12 @@
   font-weight: 100 900;
   src: url("fonts/public-sans-latin-wght-italic.woff2") format("woff2");
 }
+
+/* Contour backgrounds (isotherm-style lines). Kept here so the
+   url() paths resolve from the site root. */
+.hero-band {
+  background: #f3f6f7 url("media/contours-light.svg") center / cover no-repeat;
+}
+.gridex-band {
+  background: #142d3b url("media/contours-dark.svg") center / cover no-repeat;
+}

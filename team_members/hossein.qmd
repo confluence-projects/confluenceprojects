@@ -1,19 +1,25 @@
 ---
 title: "Hossein Estiri, PhD"
 subtitle: "Principal Investigator"
-description: "Associate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Mass General Hospital"
+description: "Associate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital"
 author: "Chirag"
 date: "12/11/2022"
-image: /img/hossein.jpg
+image: /img/hossein-estiri.jpg
 categories:
   - dementia
-  - machine-learning
-  - data-science
+  - environmental-health-informatics
+  - clinical-ai
 about:
   template: jolla
-  image: /img/hossein.jpg
+  image: /img/hossein-estiri.jpg
   links:
-    - icon: body-text
-      text: About Me
-      href: https://www.hsph.harvard.edu/population-development/people/hossein-estiri-phd/
+    - icon: globe
+      text: CLAI Group
+      href: https://clai.mgh.harvard.edu/
 ---
+
+Hossein Estiri's research spans computational phenomics, environmental health informatics, temporal machine learning, and agentic AI for clinical decision support.
+
+In the Confluence Projects, he co-developed GridEX with Chirag Patel and leads the work that links environmental exposure to longitudinal health records: identifying dementia and its precursors in clinical data, and measuring how fully and how quickly older adults recover after illness. He is contact principal investigator of the NIA-funded R01AG096492 on dementia and the environmental exposome, and a principal investigator of the NIMHD-funded Community CATALYST Center with OCHIN.
+
+He has led multi-site AI studies in the ENACT and PCORnet networks, and his work has twice been selected as a best paper in clinical research informatics by the IMIA Yearbook of Medical Informatics.

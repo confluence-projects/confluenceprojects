@@ -79,4 +79,4 @@ Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, "Spatial Catalog of the E
 
 ### Acknowledgements
 
-This research has been funded by grants from the National Institutes of Health, National Institute on Aging (NIA) RF1AG074372, and National Institute of Environmental Health Sciences (NIEHS). Portions of computation for this research were conducted on the O2 High Performance Compute Cluster, supported by the [Research Computing Group at Harvard Medical School](https://it.hms.harvard.edu/our-services/research-computing). See for more information.
+This research has been funded by grants from the National Institutes of Health, National Institute on Aging (NIA) RF1AG074372, continued as R01AG074372, and National Institute of Environmental Health Sciences (NIEHS). Portions of computation for this research were conducted on the O2 High Performance Compute Cluster, supported by the [Research Computing Group at Harvard Medical School](https://it.hms.harvard.edu/our-services/research-computing). See for more information.

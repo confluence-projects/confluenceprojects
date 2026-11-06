@@ -4,7 +4,7 @@
     "href": "rn.html",
     "title": "News and Posts",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nGridEX published in Environmental Science & Technology\n\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n\n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nEstimating Extreme Heat Events in California\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nGridEX published in Environmental Science & Technology\n\n\n\n\n\n\n\n\n\nSep 21, 2024\n\n\nGridEX supplies the exposure data for the OCHIN Community CATALYST Center\n\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nUS EHE/ECE GridEX Data Loading\n\n\n\n\n\n\n\n\n\nJan 14, 2024\n\n\nWhat is ‘Apparent Temperature’?\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nIntroducing GridEX for extreme events\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nHands on tutorials at the PAA\n\n\n\n\n\n\n\n\n\nNov 15, 2023\n\n\nCalifornia extreme heat paper published in Environmental Research\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "gridex.html",
@@ -63,18 +63,25 @@
     "text": "Interactive Catalog\nWe have also developed an app to explore the catalog of daily events and to visualize the aggregate statistical summaries of the events. The app is publicly accessible at: Interactive Catalog of the Extreme Heat and Cold Events in the U.S.\nUsers can process these pre-computed EHE/ECE dataset using standard workstations equipped with 8 cores and 16 GB of memory."
   },
   {
+    "objectID": "team_members/hossein.html",
+    "href": "team_members/hossein.html",
+    "title": "Hossein Estiri, PhD",
+    "section": "",
+    "text": "Hossein Estiri’s research spans computational phenomics, environmental health informatics, temporal machine learning, and agentic AI for clinical decision support.\nIn the Confluence Projects, he co-developed GridEX with Chirag Patel and leads the work that links environmental exposure to longitudinal health records: identifying dementia and its precursors in clinical data, and measuring how fully and how quickly older adults recover after illness. He is contact principal investigator of the NIA-funded R01AG096492 on dementia and the environmental exposome, and a principal investigator of the NIMHD-funded Community CATALYST Center with OCHIN.\nHe has led multi-site AI studies in the ENACT and PCORnet networks, and his work has twice been selected as a best paper in clinical research informatics by the IMIA Yearbook of Medical Informatics."
+  },
+  {
     "objectID": "team.html",
     "href": "team.html",
     "title": "Confluence Team",
     "section": "",
-    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Mass General Hospital\n\n\n\n\n\nNo matching items"
+    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "team.html#team-members",
     "href": "team.html#team-members",
     "title": "Confluence Team",
     "section": "",
-    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Mass General Hospital\n\n\n\n\n\nNo matching items"
+    "text": "Data Scientist\n\n\nPost-doctoral associate in data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Biomedical Informatics\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nProfessor of Statistics and Director, Harvard Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\nAssociate Professor of Medicine at Harvard Medical School and Director of the Clinical Augmented Intelligence (CLAI) Group at Massachusetts General Hospital\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "team.html#institutes",
@@ -88,7 +95,77 @@
     "href": "team.html#support",
     "title": "Confluence Team",
     "section": "Support",
-    "text": "Support\n\nNational Institutes of Health, National Institute on Aging (NIA RF1: Patel, Estiri, and Dominici)"
+    "text": "Support\n\n\nNational Institute on Aging: RF1AG074372 (2022–2025), continued as R01AG074372 (Patel, Estiri, and Dominici)\nNational Institute on Aging: R01AG096492 (Estiri and Dominici)\nNational Institute on Minority Health and Health Disparities: P20MD019799, Community CATALYST Center with OCHIN (Gold, Albright, and Estiri)"
+  },
+  {
+    "objectID": "posts/catalyst_p20_ochin.html",
+    "href": "posts/catalyst_p20_ochin.html",
+    "title": "GridEX supplies the exposure data for the OCHIN Community CATALYST Center",
+    "section": "",
+    "text": "The National Institute on Minority Health and Health Disparities has funded the Community CATALYST Center (P20MD019799), led by OCHIN with Rachel Gold, Karen Albright, and Hossein Estiri as principal investigators.\nGridEX is the environmental data behind the center. OCHIN supports community health centers across the country on a shared electronic health record. Linking GridEX to that record lets the center study how extreme temperature events relate to health care use and outcomes in safety-net populations, at the 500 m resolution where exposure actually differs between neighborhoods.\nThe linkage is also a test of what GridEX was built for: a gridded exposure resource that joins to health data regardless of the geographic units those data use.\nRead more about GridEX or download the data."
+  },
+  {
+    "objectID": "posts/gridex_est_2025.html",
+    "href": "posts/gridex_est_2025.html",
+    "title": "GridEX published in Environmental Science & Technology",
+    "section": "",
+    "text": "Our paper describing GridEX is now out in Environmental Science & Technology:\nFard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. Environ Sci Technol. 2025;59(37):19872–19884. doi:10.1021/acs.est.5c03658\nStudies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.\nThe data and code are open:\n\nGridEX on Harvard Dataverse\nProcessing code on GitHub\nInteractive catalog of extreme heat and cold events\n\nSee the GridEX page for the full method."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html",
+    "href": "posts/extreme_heat_california.html",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "",
+    "text": "Fard P, Chung MKJ, Estiri H, Patel CJ. Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021. Environ Res. 2023;237(Pt 2):116984. doi:10.1016/j.envres.2023.116984\nCode: github.com/epedram/ehmi\nThis paper laid the groundwork for GridEX, which extends the same approach to the contiguous United States."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#summary",
+    "href": "posts/extreme_heat_california.html#summary",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "Summary",
+    "text": "Summary\nStudying how extreme heat affects health requires accurately identifying the areas and people it reaches. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way."
+  },
+  {
+    "objectID": "posts/extreme_heat_california.html#highlights",
+    "href": "posts/extreme_heat_california.html#highlights",
+    "title": "California extreme heat paper published in Environmental Research",
+    "section": "Highlights",
+    "text": "Highlights\n\nOur proposed method uses spatial interpolation to accurately estimate EHE boundaries.\nThe conventional methods rely on absolute temperature and larger spatial scales.\nOur method accounts for antecedent climate conditions and composite heat measure.\nOur method significantly reduces misclassification of populations impacted by EHEs.\n\n\nOverview\n\n\n\nIntegrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.\n\n\n\n\n\nApparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.\n\n\n\n\n\nNumber of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses"
+  },
+  {
+    "objectID": "posts/intro_gridex.html",
+    "href": "posts/intro_gridex.html",
+    "title": "Introducing GridEX for extreme events",
+    "section": "",
+    "text": "Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.\nCheck out the GridEX homepage for more information!"
+  },
+  {
+    "objectID": "posts/intro_gridex.html#pipeline-schematic",
+    "href": "posts/intro_gridex.html#pipeline-schematic",
+    "title": "Introducing GridEX for extreme events",
+    "section": "Pipeline schematic",
+    "text": "Pipeline schematic\n\n\n\nFigure 1. Pipeline to call EHE and ECE\n\n\nWe have developed our dataset in a sequential process illustrated in Fig 1:\n\nData Acquisition: We retrieved a substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations and provided by NOAA (Fig 1a).\nDaily meteorological parameters computation: We computed the daily average values for ambient temperature, vapor pressure, and wind speed by taking the mean of hourly and sub-hourly raw data at station locations (Fig 1b).\nMissing data imputation: We detected and imputed missing daily records of up to five days gap in the daily time series based on the historical data from the same location (Fig 1c).\nApparent temperature computation: We calculated the average daily apparent temperature (AT) for each station using the method developed by Steadman (Fig 1c). What is AT? Check out our post!\nExcess heat and cold factor computation: We began the extreme event delineation by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Fig 1d). We identified anomalies by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location\nStation-based extreme events identification: Leveraging the EHF/ECF, we identified the instances of extreme heat and cold events at the station locations using relative thresholds according to Sheridan et al. (Fig 1e).\nExtreme events intensity measurement: Using the station-based EHE/ECE daily records, we quantified the intensity of these extreme events by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. As suggested by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) can be used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions. In contrast, values approaching +100 pinpoint the prolonged heat events, and those nearing -100 signify places affected by extended cold events (Fig 1f).\nSpatial interpolation: Based on the intensity values derived for station locations, we spatially interpolated EHMI/ECMI values across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Fig 1g). IDW was used to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell. The weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.\nArea-wide extreme events determination: Finally, by analyzing the interpolated grids of EHMI/ECMI, we outlined the geographic extent of extreme events daily (Fig 1h).\n\n\n\n\nFigure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.\n\n\n\n\n\nFigure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries"
+  },
+  {
+    "objectID": "posts/intro_gridex.html#data-and-code-resources",
+    "href": "posts/intro_gridex.html#data-and-code-resources",
+    "title": "Introducing GridEX for extreme events",
+    "section": "Data and Code Resources",
+    "text": "Data and Code Resources\n\nFard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447"
+  },
+  {
+    "objectID": "posts/what_is_at.html",
+    "href": "posts/what_is_at.html",
+    "title": "What is ‘Apparent Temperature’?",
+    "section": "",
+    "text": "In a few of our posts, we talk a lot about apparent temperature. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
+  },
+  {
+    "objectID": "posts/what_is_at.html#references",
+    "href": "posts/what_is_at.html#references",
+    "title": "What is ‘Apparent Temperature’?",
+    "section": "References",
+    "text": "References\n\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
   },
   {
     "objectID": "posts/loading_gridex.html",
@@ -140,76 +217,6 @@
     "text": "An Introduction to GridEX\nDetecting extreme heat events in California\nGithub"
   },
   {
-    "objectID": "posts/what_is_at.html",
-    "href": "posts/what_is_at.html",
-    "title": "What is ‘Apparent Temperature’?",
-    "section": "",
-    "text": "In a few of our posts, we talk a lot about apparent temperature. What is it and how is it calculated?\nWhile different measures have been developed in epidemiological research to quantify heat and cold exposure, a composite is a solution for extreme heat and cold exposure assessment.\nWe used the apparent temperature (AT) as it allows for a holistic representation of thermal comfort and perceived temperature by incorporating factors such as relative humidity and wind speed in addition to the ambient temperature.\nAT is derived through a linear combination of actual temperature, vapor pressure and wind speed in metric units and interpreted in Celsius (°C), where:\n\\(AT = −2.7 + 1.04T + 2.0P − 0.65u\\)\nAT: Apparent Temperature Index in °C\nT: Temperature in °C\nP: Vapor pressure in kPa\nu: Wind speed in m/s"
-  },
-  {
-    "objectID": "posts/what_is_at.html#references",
-    "href": "posts/what_is_at.html#references",
-    "title": "What is ‘Apparent Temperature’?",
-    "section": "References",
-    "text": "References\n\nSpangler KR, Liang S, Wellenius GA. Wet-Bulb Globe Temperature, Universal Thermal Climate Index, and Other Heat Metrics for US Counties, 2000–2020. Scientific Data. 2022 Jun 17;9(1):1–9.\nSteadman RG. A Universal Scale of Apparent Temperature. J Appl Meteorol Climatol. 1984 Dec 1;23(12):1674–87.\nSheridan SC, Lee CC, Allen MJ. The Mortality Response to Absolute and Relative Temperature Extremes. Int J Environ Res Public Health [Internet]. 2019 Apr 27;16(9). Available from:"
-  },
-  {
-    "objectID": "posts/intro_gridex.html",
-    "href": "posts/intro_gridex.html",
-    "title": "Introducing GridEX for extreme events",
-    "section": "",
-    "text": "Accurate attribution of the areas and populations impacted by climate-related events often relies on distance-based methodologies in which the population of the study unit is assigned temperature data to the closest weather station. We have developed a method that provides a grid-based measure of exposure to extreme heat and cold events called Grid EXposure (GridEX). This approach allows for capturing a more comprehensive representation of thermal comfort and the perceived temperature. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient (i.e., the air temperature at 2m above the land surface) and apparent temperature (i.e., the perceived temperature by humans, which takes into account humidity and wind in addition to the actual air temperature) with 500x500m resolution. We validated GridEX against station temperature observations from the NOAA Integrated Surface Database (ISD) and re-analysis climate data provided by GridMET. All the derivative data and the associated source code are publicly available.\nCheck out the GridEX homepage for more information!"
-  },
-  {
-    "objectID": "posts/intro_gridex.html#pipeline-schematic",
-    "href": "posts/intro_gridex.html#pipeline-schematic",
-    "title": "Introducing GridEX for extreme events",
-    "section": "Pipeline schematic",
-    "text": "Pipeline schematic\n\n\n\nFigure 1. Pipeline to call EHE and ECE\n\n\nWe have developed our dataset in a sequential process illustrated in Fig 1:\n\nData Acquisition: We retrieved a substantial dataset comprising over 800 million historical records of hourly and sub-hourly ambient temperature, dew point, and wind speed, recorded at nearly 2,250 weather stations and provided by NOAA (Fig 1a).\nDaily meteorological parameters computation: We computed the daily average values for ambient temperature, vapor pressure, and wind speed by taking the mean of hourly and sub-hourly raw data at station locations (Fig 1b).\nMissing data imputation: We detected and imputed missing daily records of up to five days gap in the daily time series based on the historical data from the same location (Fig 1c).\nApparent temperature computation: We calculated the average daily apparent temperature (AT) for each station using the method developed by Steadman (Fig 1c). What is AT? Check out our post!\nExcess heat and cold factor computation: We began the extreme event delineation by determining the excess heat and cold factors (EHF/ECF) as measures of temperature anomaly against historical normals (Fig 1d). We identified anomalies by contrasting the rolling average AT of the immediate past three days with the rolling average AT observed during the 30 days leading up to those three days at each station location\nStation-based extreme events identification: Leveraging the EHF/ECF, we identified the instances of extreme heat and cold events at the station locations using relative thresholds according to Sheridan et al. (Fig 1e).\nExtreme events intensity measurement: Using the station-based EHE/ECE daily records, we quantified the intensity of these extreme events by multiplying the duration of extreme heat or cold episodes and their levels of excess heat and cold. As suggested by Fard et al., the resulting Extreme Heat and Cold Magnitude Indicators (EHMI/ECMI) can be used to quantitatively compare the strength of EHE/ECE across geographies, where values closer to zero indicate locations minimally impacted by short-lived extreme conditions. In contrast, values approaching +100 pinpoint the prolonged heat events, and those nearing -100 signify places affected by extended cold events (Fig 1f).\nSpatial interpolation: Based on the intensity values derived for station locations, we spatially interpolated EHMI/ECMI values across the contiguous United States using the inverse distance weighted (IDW) method over a high-resolution spatial grid (Fig 1g). IDW was used to assign weights to nearby stations’ measurements (i.e., EHMI/ECMI) inversely proportional to their distances to each grid cell. The weighted values were then averaged to estimate the EHMI/ECMI values for every grid cell, generating the continuous surface.\nArea-wide extreme events determination: Finally, by analyzing the interpolated grids of EHMI/ECMI, we outlined the geographic extent of extreme events daily (Fig 1h).\n\n\n\n\nFigure 2. Statistical distribution of the computed AT for all the stations within the study area (2008 - 2022). The solid red line indicates the overall mean, and the dashed green line denotes the overall median value.\n\n\n\n\n\nFigure 3. Schematic illustration of the meteorological data processes from computing daily values of AT to estimate spatial surface of the extreme events intensity and the delineating the area-wide EHE/ECE boundaries"
-  },
-  {
-    "objectID": "posts/intro_gridex.html#data-and-code-resources",
-    "href": "posts/intro_gridex.html#data-and-code-resources",
-    "title": "Introducing GridEX for extreme events",
-    "section": "Data and Code Resources",
-    "text": "Data and Code Resources\n\nFard et al., GridEX: A Dataset for Assessing the Area-wide Extreme Heat and Cold Exposure in the United States: 2008-2022 (Submitted)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447"
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html",
-    "href": "posts/extreme_heat_california.html",
-    "title": "Estimating Extreme Heat Events in California",
-    "section": "",
-    "text": "A striking illustration representing extreme heat in California. The scene depicts a vast Californian landscape under a blazing sun, with clear signs. Image courtesy of DALL-E (GPT-4, 1/12/24)."
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html#summary",
-    "href": "posts/extreme_heat_california.html#summary",
-    "title": "Estimating Extreme Heat Events in California",
-    "section": "Summary",
-    "text": "Summary\nStudying how climate change affects us requires accurately identifying areas hit by extreme weather, like intense heat waves. Usually, researchers estimate these conditions using data from the nearest weather station, but this method can be inaccurate. A new approach has been developed that better tracks Extreme Heat Events by using a more detailed temperature measure. This improved method is much more precise, correctly identifying about one million more Californians affected by severe heat each day between 2017 and 2021, compared to the old way."
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html#highlights",
-    "href": "posts/extreme_heat_california.html#highlights",
-    "title": "Estimating Extreme Heat Events in California",
-    "section": "Highlights",
-    "text": "Highlights\n\nOur proposed method uses spatial interpolation to accurately estimate EHE boundaries.\nThe conventional methods rely on absolute temperature and larger spatial scales.\nOur method accounts for antecedent climate conditions and composite heat measure.\nOur method significantly reduces misclassification of populations impacted by EHEs.\n\n\nOverview\n\n\n\nIntegrating modalities while considering missing data from NOAA. Figure presents an example of missingness patterns for a certain station, along with the derived Apparent Temperature (AT) computed based on the imputed missing values. Red lines denote missing data; blue points denote non-missing daily data points.\n\n\n\n\n\nApparent temperature (AT) estimated for the held-out test set stations (blank rectangles) using the training set (solid circles) daily records. Plot A (left) shows the uniform spatial surface estimation method. Plot B (right) depicts the spatial interpolation. The regions in shades of blue represent areas with colder AT, while the areas in red represent warmer temperatures.\n\n\n\n\n\nNumber of distinct EHE days impacted an area, along with the spatial distribution and proportion of land areas impacted by at least one EHE (2017–2021). Percent of the land surface impacted by at least one EHE presented in parentheses"
-  },
-  {
-    "objectID": "posts/extreme_heat_california.html#citation",
-    "href": "posts/extreme_heat_california.html#citation",
-    "title": "Estimating Extreme Heat Events in California",
-    "section": "Citation:",
-    "text": "Citation:\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022"
-  },
-  {
-    "objectID": "posts/gridex_est_2025.html",
-    "href": "posts/gridex_est_2025.html",
-    "title": "GridEX published in Environmental Science & Technology",
-    "section": "",
-    "text": "Our paper describing GridEX is now out in Environmental Science & Technology:\nFard P, Huegel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. Environ Sci Technol. 2025;59(37):19872–19884. doi:10.1021/acs.est.5c03658\nStudies of heat and cold often assign each person the temperature recorded at the nearest weather station. GridEX instead estimates apparent temperature, which accounts for humidity and wind, on a 500 × 500 m grid and traces the boundaries of extreme heat and cold events day by day. Because the output is gridded, it can be linked to health and socioeconomic data regardless of their geographic units. We validated the surfaces against NOAA Integrated Surface Database observations and GridMET reanalysis data.\nThe data and code are open:\n\nGridEX on Harvard Dataverse\nProcessing code on GitHub\nInteractive catalog of extreme heat and cold events\n\nSee the GridEX page for the full method."
-  },
-  {
     "objectID": "posts/paa.html",
     "href": "posts/paa.html",
     "title": "Hands on tutorials at the PAA",
@@ -242,13 +249,13 @@
     "href": "index.html#latest",
     "title": "The Confluence Projects",
     "section": "Latest",
-    "text": "Latest\n\n\n\n8 September 2025 GridEX published in Environmental Science & Technology\n\nThe method and data pipeline behind GridEX, our 500 m national catalog of extreme heat and cold events, is now peer reviewed and open access.\n\n\n\n15 January 2024 US EHE/ECE GridEX Data Loading\n\nHow to load GridEx data?\n\n\n\n14 January 2024 What is ‘Apparent Temperature’?\n\nWhat the heck is AT?\n\n\n\nNo matching items\n\nAll news and posts"
+    "text": "Latest\n\n\n\n8 September 2025 GridEX published in Environmental Science & Technology\n\nThe method and data pipeline behind GridEX, our 500 m national catalog of extreme heat and cold events, is now peer reviewed and open access.\n\n\n\n21 September 2024 GridEX supplies the exposure data for the OCHIN Community CATALYST Center\n\nA new NIMHD-funded center (P20MD019799) links GridEX extreme heat and cold estimates to health records from OCHIN’s national network of community health centers.\n\n\n\n15 January 2024 US EHE/ECE GridEX Data Loading\n\nHow to load GridEx data?\n\n\n\nNo matching items\n\nAll news and posts"
   },
   {
     "objectID": "data.html",
     "href": "data.html",
     "title": "Publications and Data",
     "section": "",
-    "text": "Fard et al., Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research, Environmental Science & Technology 2025 (the GridEX paper)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447\n\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2022\n\nGithub: https://github.com/epedram/ehmi\n\nEstiri et al., Temporal characterization of Alzheimer’s Disease with sequences of clinical records, EBioMedicine2023\n\nGithub: https://hestiri.github.io/mlho/"
+    "text": "Fard et al., Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research, Environmental Science & Technology 2025 (the GridEX paper)\n\nGithub: https://github.com/epedram/us_ehe_ece\nData (Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ.\nData (Figshare): https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447\n\nFard et al., Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021, Environmental Research 2023\n\nGithub: https://github.com/epedram/ehmi\n\nEstiri et al., Temporal characterization of Alzheimer’s Disease with sequences of clinical records, EBioMedicine2023\n\nGithub: https://hestiri.github.io/mlho/"
   }
 ]

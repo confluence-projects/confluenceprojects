@@ -1,0 +1,19 @@
+---
+title: "GridEX supplies the exposure data for the OCHIN Community CATALYST Center"
+description: "A new NIMHD-funded center (P20MD019799) links GridEX extreme heat and cold estimates to health records from OCHIN's national network of community health centers."
+author: "The Confluence Projects"
+date: "2024-09-21"
+image: ../media/gridex-heat-cold-2022-poster.jpg
+categories:
+  - news
+  - gridex
+  - funding
+---
+
+The National Institute on Minority Health and Health Disparities has funded the Community CATALYST Center ([P20MD019799](https://reporter.nih.gov/project-details/10977025)), led by [OCHIN](https://ochin.org) with Rachel Gold, Karen Albright, and Hossein Estiri as principal investigators.
+
+GridEX is the environmental data behind the center. OCHIN supports community health centers across the country on a shared electronic health record. Linking GridEX to that record lets the center study how extreme temperature events relate to health care use and outcomes in safety-net populations, at the 500 m resolution where exposure actually differs between neighborhoods.
+
+The linkage is also a test of what GridEX was built for: a gridded exposure resource that joins to health data regardless of the geographic units those data use.
+
+Read more about [GridEX](../gridex.qmd) or [download the data](https://doi.org/10.7910/DVN/DJGKDJ).

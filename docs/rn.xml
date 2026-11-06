@@ -76,6 +76,19 @@
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
 <h1>Quick tutorial on loading the EHE/ECE <a href="intro_gridex.html">GridEX</a> data</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This tutorial loads the state-level event summary from the January 2024 GridEX release, pinned to a fixed commit of the <a href="https://github.com/epedram/us_ehe_ece">GridEX repository</a>. That summary file was later retired upstream; see the repository for the current data files.</p>
+</div>
+</div>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -121,7 +134,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
 <span id="cb8-2"></span>
 <span id="cb8-3">states_geo <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -140,7 +153,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
 <span id="cb10-2"></span>
 <span id="cb10-3">counties_geo <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -176,7 +189,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">url</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
+font-style: inherit;">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
 <span id="cb13-2"></span>
 <span id="cb13-3">events_catalog_sf <span class="ot" style="color: #003B4F;
 background-color: null;

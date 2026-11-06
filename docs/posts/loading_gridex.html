@@ -85,7 +85,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-f0688f390a76b21125ecd060a3d0a4db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-56210aeee01e02e36c2e1585cd440d10.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-02991c25f1634eda47502b77a2878db7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -255,6 +255,19 @@ gtag('config', 'G-X7TVYB1MH3', { 'anonymize_ip': true});
 
 <section id="quick-tutorial-on-loading-the-eheece-gridex-data" class="level1">
 <h1>Quick tutorial on loading the EHE/ECE <a href="intro_gridex.html">GridEX</a> data</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This tutorial loads the state-level event summary from the January 2024 GridEX release, pinned to a fixed commit of the <a href="https://github.com/epedram/us_ehe_ece">GridEX repository</a>. That summary file was later retired upstream; see the repository for the current data files.</p>
+</div>
+</div>
 <section id="recommended-package-setup" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-package-setup">Recommended Package Setup</h2>
 <div class="cell">
@@ -286,14 +299,14 @@ i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all
 <section id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-base-spatial-data-set-including-counties-and-states-boundaries">Loading the base spatial data set including Counties and States boundaries</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>states_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>states_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds'</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>states_geo <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(states_file_path)[[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in readRDS(states_file_path): strings not representable in native
 encoding will be translated to UTF-8</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>counties_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>counties_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds'</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>counties_geo <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(counties_file_path)[[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
@@ -313,7 +326,7 @@ encoding will be translated to UTF-8</code></pre>
 <section id="loading-the-aggregate-extreme-events-data-set" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-aggregate-extreme-events-data-set">Loading the aggregate extreme events data set</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>events_catalog_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>events_catalog_file_path <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">'https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds'</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>events_catalog_sf <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(events_catalog_file_path)[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> </span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(event_type <span class="sc">==</span> <span class="st">"Extreme Heat Event"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>

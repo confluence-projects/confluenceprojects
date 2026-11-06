@@ -12,6 +12,10 @@ categories:
 
 # Quick tutorial on loading the EHE/ECE [GridEX](intro_gridex.html) data
 
+::: {.callout-note}
+This tutorial loads the state-level event summary from the January 2024 GridEX release, pinned to a fixed commit of the [GridEX repository](https://github.com/epedram/us_ehe_ece). That summary file was later retired upstream; see the repository for the current data files.
+:::
+
 ## Recommended Package Setup
 
 ```{r setup}
@@ -24,12 +28,12 @@ library(sf)
 ## Loading the base spatial data set including Counties and States boundaries
 
 ```{r}
-states_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')
+states_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_states_geo_tigris.rds')
 
 states_geo <- readRDS(states_file_path)[[1]]
 
 
-counties_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')
+counties_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/us49_counties_geo_tigris.rds')
 
 counties_geo <- readRDS(counties_file_path)[[1]]
 
@@ -40,7 +44,7 @@ plot(counties_geo[1])
 
 ```{r load the aggreagte events summaries at State level}
 
-events_catalog_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/main/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')
+events_catalog_file_path <- url('https://github.com/epedram/us_ehe_ece/raw/bbfef02e3c958b74b61cc60333f7a5d794da3c56/iv_ehe_ece_data_integration/data/States_events_by_type_sf_2008_2022.rds')
 
 events_catalog_sf <- readRDS(events_catalog_file_path)[[1]] %>% 
   dplyr::filter(event_type == "Extreme Heat Event")

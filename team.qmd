@@ -1,19 +1,36 @@
 ---
-title: "Confluence Team"
+title: "Team"
 listing:
   id: members
   contents: team_members
-  sort: "date desc"
+  sort: "title"
   type: grid
   fields: [image, title, subtitle, description]
   categories: false
   feed: true
 ---
 
-## Team Members
+## Investigators and staff
 
 ::: {#members}
 :::
+
+## Collaborators and trainees
+
+Harvard T.H. Chan School of Public Health
+:   Danielle Braun, Daniel Mork, Federica Spoto
+
+Mass General Brigham
+:   Jiazi Tian and Cameron Cagan (CLAI Group); Deborah Blacker and Christine Ritchie
+
+OCHIN
+:   Rachel Gold and Karen Albright, Community CATALYST Center
+
+Max Planck Institute for Demographic Research
+:   Riccardo Conte Keivabu and Emilio Zagheni
+
+Technical University of Denmark
+:   Jonas Hügel
 
 ## Institutes
 

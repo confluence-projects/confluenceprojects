@@ -14,10 +14,10 @@
   {
     "listing": "/team.html",
     "items": [
-      "/team_members/pedram.html",
       "/team_members/chirag.html",
       "/team_members/francesca.html",
-      "/team_members/hossein.html"
+      "/team_members/hossein.html",
+      "/team_members/pedram.html"
     ]
   },
   {

@@ -15,7 +15,7 @@ title: GridEX, Gridded EXposures
 
 ## What is GridEX?
 
-GridEX (short for "[Grid]{.underline}ded [EX]{.underline}posure") is a grid-based measure of exposure to extreme heat and cold events with a high spatial resolution of 500x500 for the contiguous United States, spanning from 2008 to 2022. GridEx leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient temperature which takes into account humidity and wind in addition to the actual air temperature.
+GridEX (short for "[Grid]{.underline}ded [EX]{.underline}posure") is a grid-based measure of exposure to extreme heat and cold events with a high spatial resolution of 500 × 500 m for the contiguous United States, spanning from 2008 to 2022. GridEX leverages a data science pipeline to gather station-based climatological data and estimate fine-resolution surfaces of ambient temperature which takes into account humidity and wind in addition to the actual air temperature.
 
 ## Methods
 
@@ -69,7 +69,11 @@ Users can process these pre-computed EHE/ECE dataset using standard workstations
 
 # License and Citation
 
-The GridEX data set and the binding software scripts are released under the open-source MIT license. The appropriate citation for the dataset is as follows
+The GridEX data set and the binding software scripts are released under the open-source MIT license. To cite the method, use the paper:
+
+Fard P, Hügel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research. *Environmental Science & Technology.* 2025;59(37):19872–19884. [doi:10.1021/acs.est.5c03658](https://doi.org/10.1021/acs.est.5c03658)
+
+To cite the dataset:
 
 Fard, Pedram; Patel, Chirag J.; Estiri, Hossein, 2023, "Spatial Catalog of the Extreme Heat and Cold Events in the U.S.", <https://doi.org/10.7910/DVN/DJGKDJ>, Harvard Dataverse"
 

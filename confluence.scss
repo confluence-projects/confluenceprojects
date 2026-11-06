@@ -391,3 +391,7 @@ a:hover { text-decoration-thickness: 2px; }
 // Team member pages: keep bios left-aligned and drop post-style metadata
 div.quarto-about-jolla main.content { text-align: left; max-width: 68ch; margin-left: auto; margin-right: auto; }
 div.quarto-about-jolla .quarto-title-meta { display: none !important; }
+
+// Publications page: citations are definition terms; keep them regular weight
+.page-publications dl dt { font-weight: 400; margin-top: 1.4rem; }
+.page-publications dl dd { margin-left: 0; color: $muted; font-size: 0.95rem; }

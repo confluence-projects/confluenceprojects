@@ -1,0 +1,41 @@
+name: Render site
+
+# Rebuilds docs/ (served by GitHub Pages) whenever the site sources on main
+# change, so a new post only needs a push. R code is frozen in _freeze/, so
+# the build needs Quarto only. Re-render posts with R code locally.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-site
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render
+        run: quarto render
+
+      - name: Commit rendered site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No changes to docs/"
+          else
+            git commit -m "Render site [skip ci]"
+            git push
+          fi

@@ -1,19 +1,30 @@
 ---
-title: "Publications and Data"
+title: "Publications and data"
+body-classes: page-publications
 ---
 
--   Fard et al., [**Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research**](https://doi.org/10.1021/acs.est.5c03658), ***Environmental Science & Technology* 2025** (the GridEX paper)
+## Exposure data
 
-    -   **Github**: <https://github.com/epedram/us_ehe_ece>
+Fard P, Hügel J, Conte Keivabu R, Dominici F, Zagheni E, Estiri H, Patel CJ. **Developing a spatiotemporal repository of extreme heat and cold exposure in the United States for precision public health research.** *Environmental Science & Technology.* 2025;59(37):19872–19884. [doi:10.1021/acs.est.5c03658](https://doi.org/10.1021/acs.est.5c03658)
 
-    -   **Data (Dataverse)**: <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DJGKDJ>.
+:   The GridEX paper. Data: [Harvard Dataverse](https://doi.org/10.7910/DVN/DJGKDJ), [Figshare](https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447). Code: [github.com/epedram/us_ehe_ece](https://github.com/epedram/us_ehe_ece). Catalog: [interactive explorer](https://ehce.connect.hms.harvard.edu/us_ehe_ece).
 
-    -   **Data (Figshare)**: <https://figshare.com/s/aab128348a1d0c8a4988/articles/24993447>
+Fard P, Chung MKJ, Estiri H, Patel CJ. **Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021.** *Environmental Research.* 2023;237(Pt 2):116984. [doi:10.1016/j.envres.2023.116984](https://doi.org/10.1016/j.envres.2023.116984)
 
--   Fard et al., [**Spatio-temporal interpolation and delineation of extreme heat events in California between 2017 and 2021**](https://www.sciencedirect.com/science/article/pii/S0013935123017887)**, *Environmental Research* 2023**
+:   The method GridEX builds on. Code: [github.com/epedram/ehmi](https://github.com/epedram/ehmi).
 
-    -   **Github: <https://github.com/epedram/ehmi>**
+## Dementia and clinical records
 
--   Estiri et al., [**Temporal characterization of Alzheimer's Disease with sequences of clinical records**](https://doi.org/10.1016%2Fj.ebiom.2023.104629)**, *EBioMedicine*2023**
+Tian J, Fard P, Cagan C, Rezaii N, Bustamante Rocha R, Wang L, Moura Junior V, Blacker D, Haas JS, Patel CJ, Murphy SN, Moura LMVR, Estiri H. **An autonomous agentic workflow for clinical detection of cognitive concerns using large language models.** *npj Digital Medicine.* 2026;9:51. [doi:10.1038/s41746-025-02324-4](https://doi.org/10.1038/s41746-025-02324-4)
 
-    -   **Github:** <https://hestiri.github.io/mlho/>
+:   Code: [Pythia](https://github.com/clai-group/Pythia), an open-source library for autonomous prompt optimization.
+
+Spoto F, Tian J, Hügel J, Ortega DT, Ritchie CS, Blacker D, Dominici F, Patel CJ, Mork D, Estiri H. **Quantifying diagnostic signal decay in dementia: a national study of Medicare hospitalization data.** *Alzheimer's & Dementia.* 2025;21(11):e70945. [PubMed 41292499](https://pubmed.ncbi.nlm.nih.gov/41292499/)
+
+Cheng J, Tian J, Spoto F, Azhir A, Mork D, Estiri H. **Signal Fidelity Index-aware calibration for addressing distributional shift in predictive modeling across heterogeneous real-world data.** *Scientific Reports.* 2026;16:2807. [PMC12823559](https://pmc.ncbi.nlm.nih.gov/articles/PMC12823559/)
+
+:   Code: [github.com/clai-group/SFI](https://github.com/clai-group/SFI).
+
+Estiri H, Azhir A, Blacker DL, Ritchie CS, Patel CJ, Murphy SN. **Temporal characterization of Alzheimer's disease with sequences of clinical records.** *eBioMedicine.* 2023;92:104629. [doi:10.1016/j.ebiom.2023.104629](https://doi.org/10.1016/j.ebiom.2023.104629)
+
+:   Code: [MLHO](https://hestiri.github.io/mlho/).

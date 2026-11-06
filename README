@@ -4,3 +4,12 @@ Confluence Group Website
 
 v1 by Chirag Patel (chirag@hms)
 12/23
+v2 redesign 11/26
+
+Editing the site
+- Pages and posts are .qmd files; news posts live in posts/.
+- Pushing to main rebuilds docs/ automatically (.github/workflows/render.yml).
+- Posts with R code (posts/loading_gridex.qmd) are frozen in _freeze/.
+  If you change one, render it locally with R first and commit _freeze/.
+- Theme: confluence.scss (colors, type, layout) and styles.css (fonts,
+  contour backgrounds). Fonts are self-hosted in fonts/ (SIL OFL).
